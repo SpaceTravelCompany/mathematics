@@ -18,8 +18,6 @@ slug: resources
 
 | 자료 | 내용 | URL |
 |------|------|-----|
-| **Mathematics for Machine Learning** | 선형대수·미적분·확률을 ML 관점에서 정리 | mml-book.github.io |
-| **Deep Learning (Goodfellow et al.) 3장** | 확률과 정보이론 압축 요약 | deeplearningbook.org |
 | **Information Theory, Inference, and Learning Algorithms — David MacKay** | 정보이론과 추론의 고전 | inference.org.uk/mackay/itila/ |
 | **Linear Algebra Done Wrong — Sergei Treil** | 엄밀하지만 직관적인 선형대수 | math.brown.edu/streil/papers/LADW/ |
 | **Calculus — Gilbert Strang** | MIT 교수의 미적분 교과서 | ocw.mit.edu/ans7870/resources/Strang/strangtext.htm |
@@ -32,7 +30,6 @@ slug: resources
 | **미적분의 힘 (Steven Strogatz)** | 미적분 개념을 일상 언어로 풀어낸 교양서 | 미적분을 시작하기 전 읽으면 좋음 |
 | **통계, 숫자의 거짓말 (Charles Wheelan)** | 통계적 사고의 중요성을 사례 중심으로 | 통계 리터러시 함양 |
 | **선형대수와 그 응용 (Howard Anton)** | 한국어 번역된 선형대수 교과서 | 체계적인 참고서가 필요할 때 |
-| **패턴인식과 머신러닝 (Christopher Bishop)** | 수학적 기초가 탄탄한 패턴인식 교과서 | 심화 학습 단계 |
 
 ## 실습 아이디어
 
