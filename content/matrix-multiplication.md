@@ -136,8 +136,8 @@ $RS$는 "먼저 $x$축으로 2배 확대한 후 회전"이고, $SR$은 "먼저 �
 
 ## 연결
 
-- **[선형결합·span·일차독립](topics/span-independence.html)** : 행렬의 열공간은 열벡터들의 span이며, 행렬의 rank는 일차독립인 열의 개수와 같다.
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : 행렬이 정의하는 선형변환의 핵(kernel)과 상(image)의 차원 관계를 다룬다.
-- **[행렬식의 기하학](topics/determinant.html)** : 정사각행렬이 공간의 부피를 얼마나 늘리는지 측정하며, $\det A = 0$은 변환이 공간을 납작하게 만듦을 의미한다.
-- **[역행렬과 기저 변환](topics/inverse-change-of-basis.html)** : 행렬의 역행렬은 변환을 되돌리는 선형변환에 해당한다.
-- **[평면벡터 기초](topics/plane-vectors.html)** : 벡터의 연산과 기하학적 해석은 행렬 이론의 기초가 된다.
+- **[선형결합·span·일차독립](span-independence.html)** : 행렬의 열공간은 열벡터들의 span이며, 행렬의 rank는 일차독립인 열의 개수와 같다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : 행렬이 정의하는 선형변환의 핵(kernel)과 상(image)의 차원 관계를 다룬다.
+- **[행렬식의 기하학](determinant.html)** : 정사각행렬이 공간의 부피를 얼마나 늘리는지 측정하며, $\det A = 0$은 변환이 공간을 납작하게 만듦을 의미한다.
+- **[역행렬과 기저 변환](inverse-change-of-basis.html)** : 행렬의 역행렬은 변환을 되돌리는 선형변환에 해당한다.
+- **[평면벡터 기초](plane-vectors.html)** : 벡터의 연산과 기하학적 해석은 행렬 이론의 기초가 된다.

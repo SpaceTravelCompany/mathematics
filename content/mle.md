@@ -187,6 +187,6 @@ $$\hat{p} \pm 1.96 \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} = 0.63 \pm 1.96 \cd
 
 ## 연결
 
-- **[주요 분포](topics/distributions.html)** : MLE의 입력은 데이터, 출력은 분포의 모수다. 각 분포(정규, 베르누이, 포아송, 지수)의 PDF/PMF를 알아야 로그가능도를 구성할 수 있다.
-- **[베이지안 추론](topics/bayesian-inference.html)** : MLE는 사전정보 없이 데이터만으로 추정하는 빈도주의(frequentist) 접근이다. 베이지안 추론은 사전분포를 추가하여 MAP 추정으로 확장한다. $n$이 커질수록 MLE와 MAP는 수렴한다.
-- **[가설검정](topics/hypothesis-testing.html)** : MLE는 우도비 검정(likelihood ratio test)의 핵심 재료다. $LR = -2\ln(L(\theta_0)/L(\hat{\theta}))$는 귀무가설 검정에 사용된다.
+- **[주요 분포](distributions.html)** : MLE의 입력은 데이터, 출력은 분포의 모수다. 각 분포(정규, 베르누이, 포아송, 지수)의 PDF/PMF를 알아야 로그가능도를 구성할 수 있다.
+- **[베이지안 추론](bayesian-inference.html)** : MLE는 사전정보 없이 데이터만으로 추정하는 빈도주의(frequentist) 접근이다. 베이지안 추론은 사전분포를 추가하여 MAP 추정으로 확장한다. $n$이 커질수록 MLE와 MAP는 수렴한다.
+- **[가설검정](hypothesis-testing.html)** : MLE는 우도비 검정(likelihood ratio test)의 핵심 재료다. $LR = -2\ln(L(\theta_0)/L(\hat{\theta}))$는 귀무가설 검정에 사용된다.

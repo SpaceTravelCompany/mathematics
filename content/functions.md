@@ -91,6 +91,6 @@ $$y(x-1) = x \;\Rightarrow\; yx - y = x \;\Rightarrow\; yx - x = y \;\Rightarrow
 
 ## 연결
 
-- **[집합과 논리](topics/sets-and-logic.html)** : 함수는 집합 사이의 대응으로 정의되며, 집합론의 용어(정의역, 공역, 치역)를 사용한다.
-- **[행렬과 선형변환](topics/matrix-multiplication.html)** : 행렬은 선형함수(linear map)를 유한차원에서 표현한 것이다.
-- **[극한과 도함수](topics/limits-derivatives.html)** : 미분계수 $f'(a)$는 함수의 국소적 선형근사로, 함수의 개념 위에 세워진다.
+- **[집합과 논리](sets-and-logic.html)** : 함수는 집합 사이의 대응으로 정의되며, 집합론의 용어(정의역, 공역, 치역)를 사용한다.
+- **[행렬과 선형변환](matrix-multiplication.html)** : 행렬은 선형함수(linear map)를 유한차원에서 표현한 것이다.
+- **[극한과 도함수](limits-derivatives.html)** : 미분계수 $f'(a)$는 함수의 국소적 선형근사로, 함수의 개념 위에 세워진다.

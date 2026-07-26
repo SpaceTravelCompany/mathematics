@@ -212,6 +212,6 @@ $$f'(x) = f(x) (1 - f(x))$$
 
 ## 연결
 
-- **[지수와 로그](topics/exponentials-logarithms.html)** : 지수법칙과 로그법칙, $e$의 정의 등 미분의 전제가 되는 기초 개념을 다룬다.
-- **[극한·연속·도함수](topics/limits-derivatives.html)** : $e^x$의 미분은 극한 $\lim_{h\to 0} (e^h-1)/h = 1$에서 출발하며, 이 극한값은 $e$의 정의와 연결된다.
-- **[상미분방정식 기초](topics/ode-basics.html)** : $f' = f$의 유일성 증명과 지수성장 모델은 상미분방정식의 가장 기본적인 예시다. 분리 가능 미분방정식(separable ODE)의 표준 사례이기도 하다.
+- **[지수와 로그](exponentials-logarithms.html)** : 지수법칙과 로그법칙, $e$의 정의 등 미분의 전제가 되는 기초 개념을 다룬다.
+- **[극한·연속·도함수](limits-derivatives.html)** : $e^x$의 미분은 극한 $\lim_{h\to 0} (e^h-1)/h = 1$에서 출발하며, 이 극한값은 $e$의 정의와 연결된다.
+- **[상미분방정식 기초](ode-basics.html)** : $f' = f$의 유일성 증명과 지수성장 모델은 상미분방정식의 가장 기본적인 예시다. 분리 가능 미분방정식(separable ODE)의 표준 사례이기도 하다.

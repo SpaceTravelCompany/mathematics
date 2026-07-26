@@ -193,8 +193,8 @@ $$PPV = \frac{0.95 \times 0.005}{0.95 \times 0.005 + 0.01 \times 0.995} = \frac{
 
 ## 연결
 
-- **[확률·조건부확률·베이즈 정리](topics/conditional-bayes.html)** : 이 페이지의 모든 함정은 조건부확률과 베이즈 정리의 오해용례다. 기저율 무시와 검사자 오류의 해결책은 정확한 베이즈 계산이다.
-- **[인과추론](topics/causal-inference.html)** : 심슨의 역설은 교란변수의 존재를 드러내며, 이는 인과추론(causal inference)의 핵심 문제다. 단순한 조건부확률이 아닌 인과적 구조(개입, intervention)를 고려해야 할 필요성을 보여준다.
-- **[회귀분석](topics/regression-analysis.html)** : 심슨의 역설은 회귀분석에서 교란변수를 통제(control)하지 않으면 추정이 편향(bias)될 수 있음을 경고한다.
-- **[가설검정](topics/hypothesis-testing.html)** : 검사자 오류(prosecutor's fallacy)는 가설검정에서 p-value를 $P(H_0|D)$로 오해하는 오류와 직접 연결된다. p-value는 $P(D|H_0)$일 뿐이다.
-- **[베이지안 추론](topics/bayesian-inference.html)** : 기저율을 고려한 올바른 추론은 베이즈 정리로 이루어지며, 이는 베이지안 추론 전체의 기초다.
+- **[확률·조건부확률·베이즈 정리](conditional-bayes.html)** : 이 페이지의 모든 함정은 조건부확률과 베이즈 정리의 오해용례다. 기저율 무시와 검사자 오류의 해결책은 정확한 베이즈 계산이다.
+- **[인과추론](causal-inference.html)** : 심슨의 역설은 교란변수의 존재를 드러내며, 이는 인과추론(causal inference)의 핵심 문제다. 단순한 조건부확률이 아닌 인과적 구조(개입, intervention)를 고려해야 할 필요성을 보여준다.
+- **[회귀분석](regression-analysis.html)** : 심슨의 역설은 회귀분석에서 교란변수를 통제(control)하지 않으면 추정이 편향(bias)될 수 있음을 경고한다.
+- **[가설검정](hypothesis-testing.html)** : 검사자 오류(prosecutor's fallacy)는 가설검정에서 p-value를 $P(H_0|D)$로 오해하는 오류와 직접 연결된다. p-value는 $P(D|H_0)$일 뿐이다.
+- **[베이지안 추론](bayesian-inference.html)** : 기저율을 고려한 올바른 추론은 베이즈 정리로 이루어지며, 이는 베이지안 추론 전체의 기초다.

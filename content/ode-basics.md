@@ -259,9 +259,9 @@ $$\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}' = \begin{pmatrix} 0 & 1 \\ -\omega^2
 
 ## 연결
 
-- **[지수·로그 함수 미분](topics/exp-log-calculus.html)** : ODE 해의 지수 함수 $e^{rt}$,
+- **[지수·로그 함수 미분](exp-log-calculus.html)** : ODE 해의 지수 함수 $e^{rt}$,
   $e^{At}$는 지수·로그 미분의 자연스러운 확장이다.
-- **[확률미분방정식](topics/sde.html)** : ODE에 무작위 잡음($dW$)을 추가하면 SDE가 된다.
+- **[확률미분방정식](sde.html)** : ODE에 무작위 잡음($dW$)을 추가하면 SDE가 된다.
 드리프트 $f$는 ODE의 우변과 동일한 역할을 한다.
-- **[미분방정식과 동역학](topics/dynamical-systems.html)** : ODE 해의 장기적 행동(안정성, 고정점, 한계 순환)을 분석하는 것이 동역학계 이론이다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : 선형계 $x' = Ax$의 해는 $A$의 고유값으로 완전히 분석된다. $e^{At}$의 계산은 고유값 분해에 의존한다.
+- **[미분방정식과 동역학](dynamical-systems.html)** : ODE 해의 장기적 행동(안정성, 고정점, 한계 순환)을 분석하는 것이 동역학계 이론이다.
+- **[고유값·고유벡터](eigenvalues.html)** : 선형계 $x' = Ax$의 해는 $A$의 고유값으로 완전히 분석된다. $e^{At}$의 계산은 고유값 분해에 의존한다.

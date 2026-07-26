@@ -183,6 +183,6 @@ $$H(p,q) = -0.8\ln 0.6 - 0.2\ln 0.4 \approx -0.8(-0.511) - 0.2(-0.916) = 0.409 +
 
 ## 연결
 
-- **[기댓값·분산·공분산](topics/expectation-variance.html)** : 엔트로피 $H(X) = -\sum p(x)\ln p(x)$는 $\ln(1/p(X))$의 기댓값이다. KL 발산도 로그 비율의 기댓값으로, 기댓값 연산자의 일반성이 드러난다.
-- **[정보기하](topics/information-geometry.html)** : KL 발산은 확률분포 공간에 리만 계량(Riemannian metric)을 유도한다. 피셔 정보 행렬(Fisher information matrix)이 이 계량을 결정하며, 자연 그래디언트(natural gradient)의 기초다.
-- **[최대가능도추정](topics/mle.html)** : MLE는 관측 데이터 분포 $p_{\text{data}}$와 모델 분포 $p_\theta$ 사이의 KL 발산 $D_{KL}(p_{\text{data}} \| p_\theta)$를 최소화하는 것과 동등하다. 가능도 최대화는 교차 엔트로피 최소화와 같다.
+- **[기댓값·분산·공분산](expectation-variance.html)** : 엔트로피 $H(X) = -\sum p(x)\ln p(x)$는 $\ln(1/p(X))$의 기댓값이다. KL 발산도 로그 비율의 기댓값으로, 기댓값 연산자의 일반성이 드러난다.
+- **[정보기하](information-geometry.html)** : KL 발산은 확률분포 공간에 리만 계량(Riemannian metric)을 유도한다. 피셔 정보 행렬(Fisher information matrix)이 이 계량을 결정하며, 자연 그래디언트(natural gradient)의 기초다.
+- **[최대가능도추정](mle.html)** : MLE는 관측 데이터 분포 $p_{\text{data}}$와 모델 분포 $p_\theta$ 사이의 KL 발산 $D_{KL}(p_{\text{data}} \| p_\theta)$를 최소화하는 것과 동등하다. 가능도 최대화는 교차 엔트로피 최소화와 같다.

@@ -185,6 +185,6 @@ $\square$
 
 ## 연결
 
-- **[텐서 연산](topics/tensor-operations.html)** : 발산 $\nabla \cdot F$와 회전 $\nabla \times F$는 각각 벡터장의 1계 미분 연산자이며, 텐서 미적분에서 미분형식(differential form)의 외미분(exterior derivative)으로 일반화된다. $d^2 = 0$은 $\nabla \times (\nabla f) = 0$과 $\nabla \cdot (\nabla \times F) = 0$의 통합이다.
-- **[선적분·면적분](topics/line-surface-integrals.html)** : 발산과 회전은 각각 면적분(플럭스)과 선적분(순환)의 국소적 밀도로 해석된다. 스토크스 정리와 가우스 정리가 이 연결을 수학적으로 완성한다.
-- **[그린·스토크스·가우스 정리](topics/stokes-theorems.html)** : 발산-회전의 적분 버전인 이 세 정리는 벡터장의 국소적 성질(미분)과 대역적 성질(적분)을 연결한다.
+- **[텐서 연산](tensor-operations.html)** : 발산 $\nabla \cdot F$와 회전 $\nabla \times F$는 각각 벡터장의 1계 미분 연산자이며, 텐서 미적분에서 미분형식(differential form)의 외미분(exterior derivative)으로 일반화된다. $d^2 = 0$은 $\nabla \times (\nabla f) = 0$과 $\nabla \cdot (\nabla \times F) = 0$의 통합이다.
+- **[선적분·면적분](line-surface-integrals.html)** : 발산과 회전은 각각 면적분(플럭스)과 선적분(순환)의 국소적 밀도로 해석된다. 스토크스 정리와 가우스 정리가 이 연결을 수학적으로 완성한다.
+- **[그린·스토크스·가우스 정리](stokes-theorems.html)** : 발산-회전의 적분 버전인 이 세 정리는 벡터장의 국소적 성질(미분)과 대역적 성질(적분)을 연결한다.

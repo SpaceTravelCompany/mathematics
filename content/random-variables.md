@@ -210,6 +210,6 @@ CDF는 계단 함수(step function) 형태로, 각 PMF가 양수인 점에서 �
 
 ## 연결
 
-- **[함수](topics/functions.html)** : 확률변수는 함수의 일종이다. 정의역이 표본공간이고 공역이 실수인 특수한 함수로, 가측성(measurability)이라는 추가 조건을 만족해야 한다.
-- **[기댓값·분산·공분산](topics/expectation-variance.html)** : 확률변수의 분포(PMF/PDF)가 주어지면 기댓값, 분산 등 특성값을 계산할 수 있다. $f_X$와 $F_X$는 모든 확률적 특성의 출발점이다.
-- **[주요 분포](topics/distributions.html)** : 베르누이, 이항, 포아송, 정규, 지수 등 구체적인 분포들은 각각 특별한 PMF/PDF를 가진다.
+- **[함수](functions.html)** : 확률변수는 함수의 일종이다. 정의역이 표본공간이고 공역이 실수인 특수한 함수로, 가측성(measurability)이라는 추가 조건을 만족해야 한다.
+- **[기댓값·분산·공분산](expectation-variance.html)** : 확률변수의 분포(PMF/PDF)가 주어지면 기댓값, 분산 등 특성값을 계산할 수 있다. $f_X$와 $F_X$는 모든 확률적 특성의 출발점이다.
+- **[주요 분포](distributions.html)** : 베르누이, 이항, 포아송, 정규, 지수 등 구체적인 분포들은 각각 특별한 PMF/PDF를 가진다.

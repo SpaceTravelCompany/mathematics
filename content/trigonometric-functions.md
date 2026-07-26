@@ -109,6 +109,6 @@ $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2} \cdot \frac
 
 ## 연결
 
-- **[푸리에 급수](topics/fourier.html)** : 모든 주기함수는 삼각함수의 무한급수로 분해된다.
-- **[평면벡터 기초](topics/plane-vectors.html)** : 단위원 위의 점 $(\cos\theta, \sin\theta)$는 벡터이며, 덧셈정리는 벡터 회전과 연결된다.
-- **[극한과 도함수](topics/limits-derivatives.html)** : 삼각함수의 미분 $\frac{d}{dx}\sin x = \cos x$는 극한 $\lim_{x\to 0} \frac{\sin x}{x} = 1$에서 출발한다.
+- **[푸리에 급수](fourier.html)** : 모든 주기함수는 삼각함수의 무한급수로 분해된다.
+- **[평면벡터 기초](plane-vectors.html)** : 단위원 위의 점 $(\cos\theta, \sin\theta)$는 벡터이며, 덧셈정리는 벡터 회전과 연결된다.
+- **[극한과 도함수](limits-derivatives.html)** : 삼각함수의 미분 $\frac{d}{dx}\sin x = \cos x$는 극한 $\lim_{x\to 0} \frac{\sin x}{x} = 1$에서 출발한다.

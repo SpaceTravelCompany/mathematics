@@ -208,8 +208,8 @@ $x$가 $a$에 평행할 때 성립: $x = \pm a/\|a\|$. $\lambda = \|a\|^2$.
 
 ## 연결
 
-- **[양정치 행렬](topics/positive-definite.html)** : 2차 충분 조건에서 헤시안의 제약 접공간 위 양정치성을 이해하는 데 필요하다.
-- **[극값·안장점](topics/extrema-saddle.html)** : 제약이 없는 극값 판정과 제약이 있는 경우의 차이를 비교한다.
-- **[테일러 전개](topics/taylor-expansion.html)** : 2차 충분 조건의 증명에 테일러 전개가 사용된다.
-- **[스펙트럼 정리](topics/spectral-theorem.html)** : 레일리 몫과 고유값 문제와 라그랑주 승수법의 연결을 보여준다.
-- **[등고선과 그래디언트](topics/gradient-geometry.html)** : $\nabla f \parallel \nabla g$의 기하학적 의미를 등고선 접점으로 이해한다.
+- **[양정치 행렬](positive-definite.html)** : 2차 충분 조건에서 헤시안의 제약 접공간 위 양정치성을 이해하는 데 필요하다.
+- **[극값·안장점](extrema-saddle.html)** : 제약이 없는 극값 판정과 제약이 있는 경우의 차이를 비교한다.
+- **[테일러 전개](taylor-expansion.html)** : 2차 충분 조건의 증명에 테일러 전개가 사용된다.
+- **[스펙트럼 정리](spectral-theorem.html)** : 레일리 몫과 고유값 문제와 라그랑주 승수법의 연결을 보여준다.
+- **[등고선과 그래디언트](gradient-geometry.html)** : $\nabla f \parallel \nabla g$의 기하학적 의미를 등고선 접점으로 이해한다.

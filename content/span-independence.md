@@ -108,8 +108,8 @@ $$\alpha + 3\beta = 0, \quad 2\alpha + \beta = 0$$
 
 ## 연결
 
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬의 열들은 선형변환의 상(image)을 생성하며, 열들의 일차독립성은 변환의 단사성(injectivity)과 연결된다.
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : 일차독립인 열의 개수가 행렬의 rank이며, 이는 열공간의 차원이다.
-- **[행렬식의 기하학](topics/determinant.html)** : 정사각행렬의 열들이 일차독립일 필요충분조건은 행렬식이 0이 아닌 것이다.
-- **[평면벡터 기초](topics/plane-vectors.html)** : 벡터의 기본 연산과 선형결합의 시각적 이해.
-- **[내적과 노름](topics/inner-product-norm.html)** : 벡터의 직교성과 노름은 일차독립의 특별한 경우(직교 기저)를 제공한다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬의 열들은 선형변환의 상(image)을 생성하며, 열들의 일차독립성은 변환의 단사성(injectivity)과 연결된다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : 일차독립인 열의 개수가 행렬의 rank이며, 이는 열공간의 차원이다.
+- **[행렬식의 기하학](determinant.html)** : 정사각행렬의 열들이 일차독립일 필요충분조건은 행렬식이 0이 아닌 것이다.
+- **[평면벡터 기초](plane-vectors.html)** : 벡터의 기본 연산과 선형결합의 시각적 이해.
+- **[내적과 노름](inner-product-norm.html)** : 벡터의 직교성과 노름은 일차독립의 특별한 경우(직교 기저)를 제공한다.

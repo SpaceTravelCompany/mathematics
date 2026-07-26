@@ -138,6 +138,6 @@ $$P(x) = (x-1)(x^2 - 5x + 6)$$
 
 ## 연결
 
-- **[좌표기하와 이차곡선](topics/coordinate-geometry.html)** : 원뿔곡선의 방정식은 모두 이차방정식이다.
-- **[고유값과 고유벡터](topics/eigenvalues.html)** : 특성방정식 $\det(A - \lambda I) = 0$은 다항방정식으로, 고유값을 찾는 핵심 도구이다.
-- **[극한과 도함수](topics/limits-derivatives.html)** : 다항함수의 미분은 차수를 낮추는 간단한 연산이다.
+- **[좌표기하와 이차곡선](coordinate-geometry.html)** : 원뿔곡선의 방정식은 모두 이차방정식이다.
+- **[고유값과 고유벡터](eigenvalues.html)** : 특성방정식 $\det(A - \lambda I) = 0$은 다항방정식으로, 고유값을 찾는 핵심 도구이다.
+- **[극한과 도함수](limits-derivatives.html)** : 다항함수의 미분은 차수를 낮추는 간단한 연산이다.

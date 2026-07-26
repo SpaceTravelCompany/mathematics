@@ -109,6 +109,6 @@ $$(2k)^2 = 2q^2 \quad\Rightarrow\quad 4k^2 = 2q^2 \quad\Rightarrow\quad q^2 = 2k
 
 ## 연결
 
-- **[함수](topics/functions.html)** : 함수는 두 집합 사이의 대응 관계를 형식화한 개념이다. 정의역과 공역은 모두 집합이다.
-- **[경우의 수](topics/counting.html)** : 유한집합의 카디널리티를 세는 방법으로, 집합론의 직접적인 응용이다.
-- **[내적과 노름](topics/inner-product-norm.html)** : 벡터공간도 집합이며, 내적공간은 집합에 추가 구조가 부여된 것이다.
+- **[함수](functions.html)** : 함수는 두 집합 사이의 대응 관계를 형식화한 개념이다. 정의역과 공역은 모두 집합이다.
+- **[경우의 수](counting.html)** : 유한집합의 카디널리티를 세는 방법으로, 집합론의 직접적인 응용이다.
+- **[내적과 노름](inner-product-norm.html)** : 벡터공간도 집합이며, 내적공간은 집합에 추가 구조가 부여된 것이다.

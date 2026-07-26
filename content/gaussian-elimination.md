@@ -260,8 +260,8 @@ $$
 
 ## 연결
 
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : RREF에서 pivot의 개수는 rank와 같으며, 자유변수의 개수는 nullity와 같다.
-- **[역행렬과 기저 변환](topics/inverse-change-of-basis.html)** : 가우스-조르단 소거는 역행렬을 계산하는 가장 기본적인 방법이다.
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 연립방정식 $Ax = b$는 선형변환 $T_A$에 의한 $x$의 상(image)이 $b$임을 의미한다.
-- **[행렬식의 기하학](topics/determinant.html)** : $\det A = 0$이면 가우스 소거 중에 pivot이 0이 되는 열이 발생한다.
-- **[최소제곱법](topics/least-squares.html)** : 해가 존재하지 않는 연립방정식의 근사해를 구한다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : RREF에서 pivot의 개수는 rank와 같으며, 자유변수의 개수는 nullity와 같다.
+- **[역행렬과 기저 변환](inverse-change-of-basis.html)** : 가우스-조르단 소거는 역행렬을 계산하는 가장 기본적인 방법이다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 연립방정식 $Ax = b$는 선형변환 $T_A$에 의한 $x$의 상(image)이 $b$임을 의미한다.
+- **[행렬식의 기하학](determinant.html)** : $\det A = 0$이면 가우스 소거 중에 pivot이 0이 되는 열이 발생한다.
+- **[최소제곱법](least-squares.html)** : 해가 존재하지 않는 연립방정식의 근사해를 구한다.

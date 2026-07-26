@@ -200,5 +200,5 @@ $n$명의 보험 가입자가 각각 연간 평균 10만 원의 보험금을 청
 
 ## 연결
 
-- **[기댓값·분산·공분산](topics/expectation-variance.html)** : WLLN 증명은 표본평균의 기댓값과 분산을 사용한다. $\mathbb{E}[\bar{X}_n] = \mu$, $\text{Var}(\bar{X}_n) = \sigma^2/n$이 핵심 계산이다.
-- **[몬테카를로](topics/monte-carlo.html)** : 대수의 법칙이 몬테카를로 방법의 이론적 근거다. $\frac{1}{n}\sum f(X_i) \xrightarrow{P} \mathbb{E}[f(X)]$를 이용해 적분을 근사한다.
+- **[기댓값·분산·공분산](expectation-variance.html)** : WLLN 증명은 표본평균의 기댓값과 분산을 사용한다. $\mathbb{E}[\bar{X}_n] = \mu$, $\text{Var}(\bar{X}_n) = \sigma^2/n$이 핵심 계산이다.
+- **[몬테카를로](monte-carlo.html)** : 대수의 법칙이 몬테카를로 방법의 이론적 근거다. $\frac{1}{n}\sum f(X_i) \xrightarrow{P} \mathbb{E}[f(X)]$를 이용해 적분을 근사한다.

@@ -209,7 +209,7 @@ $\tau$는 직접 관측할 수 없는 **근본적 인과 추론 문제(fundament
 
 ## 연결
 
-- **[회귀분석](topics/regression-analysis.html)** : 회귀분석에서 통제 변수를 추가하는 것은 교란 통제의 한 형태다. 그러나 "통제하면 된다"는 단순한 생각은 위험하다 — 통제해서는 안 되는 변수(매개변수, mediator; 충돌변수, collider)가 있다.
-- **[조건부 확률의 함정](topics/conditional-traps.html)** : 심슨의 역설은 조건부 확률의 오해에서 비롯된다. 층화(stratification)가 역설을 만들 수도 있고 해결할 수도 있으며, 이는 인과 구조에 의존한다.
-- **[상관관계와 인과](topics/joint-marginal-conditional.html)** : 결합분포 $P(X,Y)$와 조건부분포 $P(Y|X)$는 인과 관계 없이도 강한 상관을 보일 수 있다. 인과추론은 $P(Y|X)$에서 $P(Y|\text{do}(X))$를 분리하는 방법이다.
-- **[가설검정](topics/hypothesis-testing.html)** : RCT에서 처리 효과의 통계적 유의성은 가설검정을 통해 평가한다. p-value는 인과 효과의 존재 여부를 판단하는 한 도구이지, 인과 효과 그 자체는 아니다.
+- **[회귀분석](regression-analysis.html)** : 회귀분석에서 통제 변수를 추가하는 것은 교란 통제의 한 형태다. 그러나 "통제하면 된다"는 단순한 생각은 위험하다 — 통제해서는 안 되는 변수(매개변수, mediator; 충돌변수, collider)가 있다.
+- **[조건부 확률의 함정](conditional-traps.html)** : 심슨의 역설은 조건부 확률의 오해에서 비롯된다. 층화(stratification)가 역설을 만들 수도 있고 해결할 수도 있으며, 이는 인과 구조에 의존한다.
+- **[상관관계와 인과](joint-marginal-conditional.html)** : 결합분포 $P(X,Y)$와 조건부분포 $P(Y|X)$는 인과 관계 없이도 강한 상관을 보일 수 있다. 인과추론은 $P(Y|X)$에서 $P(Y|\text{do}(X))$를 분리하는 방법이다.
+- **[가설검정](hypothesis-testing.html)** : RCT에서 처리 효과의 통계적 유의성은 가설검정을 통해 평가한다. p-value는 인과 효과의 존재 여부를 판단하는 한 도구이지, 인과 효과 그 자체는 아니다.

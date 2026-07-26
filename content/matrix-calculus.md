@@ -29,7 +29,7 @@ $$\left(\frac{\partial f}{\partial W}\right)_{ij} = \frac{\partial f}{\partial W
 
 $$J_f(x) = \frac{\partial f}{\partial x^T} = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\ \vdots & \ddots & \vdots \\ \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n} \end{pmatrix}$$
 
-(야코비안은 [야코비안·헤시안](topics/jacobian-hessian.html)에서 자세히 다룬다.)
+(야코비안은 [야코비안·헤시안](jacobian-hessian.html)에서 자세히 다룬다.)
 
 **기본 미분 규칙:** $a, b \in \mathbb{R}^n$, $A \in \mathbb{R}^{n \times n}$일 때:
 
@@ -200,7 +200,7 @@ $$\nabla_x f = A^T \nabla_y f = 2A^T D (Ax + b)$$
 
 ## 연결
 
-- **[고유값·고유벡터](topics/eigenvalues.html)** : $x^T A x$의 그래디언트는 $A$의 대칭 성분과 연결되며, 고유값은 이차형식의 최적화에서 중요한 역할을 한다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 행렬 미분의 자연스러운 확장 — 야코비안은 벡터-대-벡터 미분, 헤시안은 2계 미분 행렬이다.
-- **[최소제곱법](topics/least-squares.html)** : 예제 2의 정규방정식 유도는 최소제곱법의 수학적 기초다.
-- **[다변수 연쇄법칙](topics/multivar-chain-rule.html)** : 행렬 미분의 연쇄법칙은 다변수 연쇄법칙의 행렬 표현이다.
+- **[고유값·고유벡터](eigenvalues.html)** : $x^T A x$의 그래디언트는 $A$의 대칭 성분과 연결되며, 고유값은 이차형식의 최적화에서 중요한 역할을 한다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 행렬 미분의 자연스러운 확장 — 야코비안은 벡터-대-벡터 미분, 헤시안은 2계 미분 행렬이다.
+- **[최소제곱법](least-squares.html)** : 예제 2의 정규방정식 유도는 최소제곱법의 수학적 기초다.
+- **[다변수 연쇄법칙](multivar-chain-rule.html)** : 행렬 미분의 연쇄법칙은 다변수 연쇄법칙의 행렬 표현이다.

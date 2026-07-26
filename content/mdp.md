@@ -207,7 +207,7 @@ $Q^{\pi}(s_2,a_2) = 3 + 0.9 \times 10.70 = 12.63 > 10.21$ → $\pi_1(s_2) = a_2$
 
 ## 연결
 
-- **[확률 행렬·마르코프 체인](topics/markov-chains.html)** : MDP는 마르코프 체인에 행동(agent의 선택)과 보상을 추가한 확장이다. 정책 $\pi$가 고정되면 MDP는 마르코프 체인이 된다(전이확률 $P^\pi(s'|s) = \sum_a \pi(a|s) P(s'|s,a)$).
-- **[중요도 샘플링](topics/importance-sampling.html)** : 강화학습에서 off-policy 학습은 행동 정책(behavior policy)과 목표 정책(target policy)이 다를 때 중요도 샘플링으로 가치를 추정한다.
-- **[몬테카를로](topics/monte-carlo.html)** : 모델 없이 MDP를 푸는 몬테카를로 방법(MC prediction, TD learning)은 표본 궤적(sample trajectory)을 사용하여 가치함수를 추정한다.
-- **[동적 계획법](topics/dynamical-systems.html)** : 가치 반복과 정책 반복은 동적 계획법(dynamic programming)의 예다. 벨만 방정식은 최적성 원리(principle of optimality)의 구체적 표현이다.
+- **[확률 행렬·마르코프 체인](markov-chains.html)** : MDP는 마르코프 체인에 행동(agent의 선택)과 보상을 추가한 확장이다. 정책 $\pi$가 고정되면 MDP는 마르코프 체인이 된다(전이확률 $P^\pi(s'|s) = \sum_a \pi(a|s) P(s'|s,a)$).
+- **[중요도 샘플링](importance-sampling.html)** : 강화학습에서 off-policy 학습은 행동 정책(behavior policy)과 목표 정책(target policy)이 다를 때 중요도 샘플링으로 가치를 추정한다.
+- **[몬테카를로](monte-carlo.html)** : 모델 없이 MDP를 푸는 몬테카를로 방법(MC prediction, TD learning)은 표본 궤적(sample trajectory)을 사용하여 가치함수를 추정한다.
+- **[동적 계획법](dynamical-systems.html)** : 가치 반복과 정책 반복은 동적 계획법(dynamic programming)의 예다. 벨만 방정식은 최적성 원리(principle of optimality)의 구체적 표현이다.

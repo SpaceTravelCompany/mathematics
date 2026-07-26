@@ -219,7 +219,7 @@ $f(0, 0) = 2$에서 $x^2 + y^2$ 항이 음수이므로 극대. $\cos$ 함수의 
 
 ## 연결
 
-- **[급수와 수렴](topics/series-convergence.html)** : 테일러 급수의 수렴 반경과 급수 판정법을 다룬다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 다변수 테일러 전개의 1차·2차 항을 구성한다.
-- **[라그랑주 승수법](topics/lagrange-multipliers.html)** : 제약 최적화에서 2차 충분 조건에 테일러 전개가 사용된다.
-- **[2계 도함수·헤시안·곡률](topics/second-derivatives.html)** : 2차 테일러 항의 계수인 헤시안을 심화 학습한다.
+- **[급수와 수렴](series-convergence.html)** : 테일러 급수의 수렴 반경과 급수 판정법을 다룬다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 다변수 테일러 전개의 1차·2차 항을 구성한다.
+- **[라그랑주 승수법](lagrange-multipliers.html)** : 제약 최적화에서 2차 충분 조건에 테일러 전개가 사용된다.
+- **[2계 도함수·헤시안·곡률](second-derivatives.html)** : 2차 테일러 항의 계수인 헤시안을 심화 학습한다.

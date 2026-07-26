@@ -115,6 +115,6 @@ $$\lim_{n\to\infty} a_n = \lim_{n\to\infty} \frac{2n}{n+1} = \lim_{n\to\infty} \
 
 ## 연결
 
-- **[급수와 수렴](topics/series-convergence.html)** : 다양한 수렴 판정법(비교판정법, 비율판정법, 적분판정법)과 테일러 급수를 본격적으로 다룬다.
-- **[중심극한정리](topics/clt.html)** : 확률변수의 합이 정규분포로 수렴하는 과정은 급수와 수열 극한의 개념 위에 세워진다.
-- **[지수와 로그](topics/exponentials-logarithms.html)** : $e = \sum_{n=0}^\infty 1/n!$로 자연상수 $e$는 급수로 정의될 수 있다.
+- **[급수와 수렴](series-convergence.html)** : 다양한 수렴 판정법(비교판정법, 비율판정법, 적분판정법)과 테일러 급수를 본격적으로 다룬다.
+- **[중심극한정리](clt.html)** : 확률변수의 합이 정규분포로 수렴하는 과정은 급수와 수열 극한의 개념 위에 세워진다.
+- **[지수와 로그](exponentials-logarithms.html)** : $e = \sum_{n=0}^\infty 1/n!$로 자연상수 $e$는 급수로 정의될 수 있다.

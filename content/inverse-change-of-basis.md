@@ -186,9 +186,9 @@ $\mathcal{B}$-기저에서 회전 변환은 $\begin{pmatrix} 0 & 1 \\ -1 & 0 \en
 
 ## 연결
 
-- **[행렬식의 기하학](topics/determinant.html)** : $\det A \neq 0$이 역행렬 존재의 필요충분조건이며, $A^{-1} = \frac{1}{\det A} C^T$로 계산된다.
-- **[가우스 소거와 RREF](topics/gaussian-elimination.html)** : 가우스-조르단 소거는 역행렬을 계산하는 실용적인 알고리즘이다.
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬과 선형변환의 관계는 기저 변환의 개념적 기초다.
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : $A$가 가역일 때 $\text{rank}(A) = n$이고 $\text{Null}(A) = \{0\}$이다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : $P^{-1}AP$를 대각행렬로 만드는 기저 변환을 대각화(diagonalization)라고 한다.
-- **[SVD](topics/svd.html)** : 특이값 분해는 서로 다른 두 기저(입력/출력)에서의 변환을 대각화한다.
+- **[행렬식의 기하학](determinant.html)** : $\det A \neq 0$이 역행렬 존재의 필요충분조건이며, $A^{-1} = \frac{1}{\det A} C^T$로 계산된다.
+- **[가우스 소거와 RREF](gaussian-elimination.html)** : 가우스-조르단 소거는 역행렬을 계산하는 실용적인 알고리즘이다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬과 선형변환의 관계는 기저 변환의 개념적 기초다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : $A$가 가역일 때 $\text{rank}(A) = n$이고 $\text{Null}(A) = \{0\}$이다.
+- **[고유값·고유벡터](eigenvalues.html)** : $P^{-1}AP$를 대각행렬로 만드는 기저 변환을 대각화(diagonalization)라고 한다.
+- **[SVD](svd.html)** : 특이값 분해는 서로 다른 두 기저(입력/출력)에서의 변환을 대각화한다.

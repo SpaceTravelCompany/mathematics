@@ -248,7 +248,7 @@ $$\det J = r^2 \sin\theta$$
 
 ## 연결
 
-- **[행렬 미분](topics/matrix-calculus.html)** : 그래디언트는 야코비안의 특수한 경우($m=1$), 행렬 미분의 규칙들은 야코비안 연쇄법칙의 기초다.
-- **[테일러 전개](topics/taylor-expansion.html)** : 헤시안은 2차 테일러 전개의 핵심이며, 1차 근사는 야코비안으로 표현된다.
-- **[2계 도함수·헤시안·곡률](topics/second-derivatives.html)** : 헤시안의 고유값이 함수의 곡률과 극값 분류를 결정한다.
-- **[다변수 연쇄법칙](topics/multivar-chain-rule.html)** : 야코비안 연쇄법칙은 스칼라 연쇄법칙의 다변수 일반화다.
+- **[행렬 미분](matrix-calculus.html)** : 그래디언트는 야코비안의 특수한 경우($m=1$), 행렬 미분의 규칙들은 야코비안 연쇄법칙의 기초다.
+- **[테일러 전개](taylor-expansion.html)** : 헤시안은 2차 테일러 전개의 핵심이며, 1차 근사는 야코비안으로 표현된다.
+- **[2계 도함수·헤시안·곡률](second-derivatives.html)** : 헤시안의 고유값이 함수의 곡률과 극값 분류를 결정한다.
+- **[다변수 연쇄법칙](multivar-chain-rule.html)** : 야코비안 연쇄법칙은 스칼라 연쇄법칙의 다변수 일반화다.

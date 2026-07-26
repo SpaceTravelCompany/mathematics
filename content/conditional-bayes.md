@@ -200,6 +200,6 @@ $$
 
 ## 연결
 
-- **[경우의 수](topics/counting.html)** : 확률의 분모는 표본공간의 크기다. $P(A) = |A|/|\Omega|$로, 모든 확률 계산은 경우의 수에서 출발한다.
-- **[베이지안 추론](topics/bayesian-inference.html)** : 베이즈 정리는 사전확률(prior)을 사후확률(posterior)로 갱신하는 프레임워크로 확장된다. $P(\theta|D) \propto P(D|\theta)P(\theta)$.
-- **[확률변수](topics/random-variables.html)** : 사건을 숫자로 매핑하는 확률변수는 조건부확률을 조건부 기댓값으로 일반화한다.
+- **[경우의 수](counting.html)** : 확률의 분모는 표본공간의 크기다. $P(A) = |A|/|\Omega|$로, 모든 확률 계산은 경우의 수에서 출발한다.
+- **[베이지안 추론](bayesian-inference.html)** : 베이즈 정리는 사전확률(prior)을 사후확률(posterior)로 갱신하는 프레임워크로 확장된다. $P(\theta|D) \propto P(D|\theta)P(\theta)$.
+- **[확률변수](random-variables.html)** : 사건을 숫자로 매핑하는 확률변수는 조건부확률을 조건부 기댓값으로 일반화한다.

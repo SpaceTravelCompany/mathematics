@@ -200,7 +200,7 @@ $$\frac{dT}{dt}(1) = (2, 4, 6) \cdot (1, 2, 3) = 2 + 8 + 18 = 28$$
 
 ## 연결
 
-- **[미분 법칙·연쇄법칙](topics/differentiation-rules.html)** : 1변수 연쇄법칙이 다변수 확장의 기초다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 야코비안 행렬로 연쇄법칙을 행렬곱으로 표현한다.
-- **[편도함수·기울기 벡터](topics/partial-derivatives.html)** : 연쇄법칙의 구성 요소인 편도함수를 정의한다.
-- **[행렬 미분](topics/matrix-calculus.html)** : 연쇄법칙을 행렬과 벡터의 미분으로 일반화한다.
+- **[미분 법칙·연쇄법칙](differentiation-rules.html)** : 1변수 연쇄법칙이 다변수 확장의 기초다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 야코비안 행렬로 연쇄법칙을 행렬곱으로 표현한다.
+- **[편도함수·기울기 벡터](partial-derivatives.html)** : 연쇄법칙의 구성 요소인 편도함수를 정의한다.
+- **[행렬 미분](matrix-calculus.html)** : 연쇄법칙을 행렬과 벡터의 미분으로 일반화한다.

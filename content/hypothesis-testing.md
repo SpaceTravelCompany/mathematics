@@ -174,7 +174,7 @@ $$\frac{2\sqrt{n}}{5} = 2.80 \quad \Rightarrow \quad \sqrt{n} = 7.0 \quad \Right
 
 ## 연결
 
-- **[중심극한정리](topics/clt.html)** : z-검정과 정규근사의 이론적 근거는 CLT다. 표본평균의 분포가 정규분포에 수렴하기 때문에 p-value를 표준정규분포로 계산할 수 있다.
-- **[회귀분석](topics/regression-analysis.html)** : 회귀계수의 유의성 검정(t-검정, F-검정)은 가설검정의 틀을 따른다. $p < 0.05$로 변수를 선택하는 단계적 회귀(stepwise regression)는 다중검정 문제의 대표적 사례다.
-- **[몬테카를로](topics/monte-carlo.html)** : p-value의 분포를 시뮬레이션으로 추정할 수 있다. 순열 검정(permutation test)은 비모수적 p-value 계산의 예시다.
-- **[조건부 확률·베이즈](topics/conditional-bayes.html)** : p-value의 오해는 조건부 확률 $P(A|B)$와 $P(B|A)$의 혼동에서 비롯된다. 베이즈 요인(Bayes factor)은 p-value의 대안으로 더 직관적인 해석을 제공한다.
+- **[중심극한정리](clt.html)** : z-검정과 정규근사의 이론적 근거는 CLT다. 표본평균의 분포가 정규분포에 수렴하기 때문에 p-value를 표준정규분포로 계산할 수 있다.
+- **[회귀분석](regression-analysis.html)** : 회귀계수의 유의성 검정(t-검정, F-검정)은 가설검정의 틀을 따른다. $p < 0.05$로 변수를 선택하는 단계적 회귀(stepwise regression)는 다중검정 문제의 대표적 사례다.
+- **[몬테카를로](monte-carlo.html)** : p-value의 분포를 시뮬레이션으로 추정할 수 있다. 순열 검정(permutation test)은 비모수적 p-value 계산의 예시다.
+- **[조건부 확률·베이즈](conditional-bayes.html)** : p-value의 오해는 조건부 확률 $P(A|B)$와 $P(B|A)$의 혼동에서 비롯된다. 베이즈 요인(Bayes factor)은 p-value의 대안으로 더 직관적인 해석을 제공한다.

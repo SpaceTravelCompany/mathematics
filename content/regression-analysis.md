@@ -189,8 +189,8 @@ $$t_{\text{obs}} = 0.7/0.277 \approx 2.527$$
 
 ## 연결
 
-- **[최소제곱법](topics/least-squares.html)** : OLS 추정량은 최소제곱법의 통계적 응용이다. 정규방정식 $X^T X \hat{\beta} = X^T y$와 기하학적 해석(직교투영)이 동일하다.
-- **[인과추론](topics/causal-inference.html)** : "상관≠인과"는 회귀분석 해석의 가장 큰 함정이다. 교란변수 통제를 위해 회귀에 추가 변수를 포함하는 것이 인과추론의 첫걸음이다.
-- **[조건부 확률의 함정](topics/conditional-traps.html)** : 심슨의 역설과 교란변수는 조건부 확률의 오해에서 비롯된다. 회귀분석에서 조건부 편향(selection bias)의 이해에 연결된다.
-- **[가설검정](topics/hypothesis-testing.html)** : 회귀계수의 t-검정과 F-검정은 가설검정의 틀을 따른다. 다중검정 문제는 단계적 변수 선택에서 중요해진다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : 다중공선성은 $X^T X$의 조건수(condition number)가 클 때 발생하며, 이는 작은 고유값에 대응한다. 주성분 회귀(PCA regression)는 고유값 분해로 다중공선성을 해결한다.
+- **[최소제곱법](least-squares.html)** : OLS 추정량은 최소제곱법의 통계적 응용이다. 정규방정식 $X^T X \hat{\beta} = X^T y$와 기하학적 해석(직교투영)이 동일하다.
+- **[인과추론](causal-inference.html)** : "상관≠인과"는 회귀분석 해석의 가장 큰 함정이다. 교란변수 통제를 위해 회귀에 추가 변수를 포함하는 것이 인과추론의 첫걸음이다.
+- **[조건부 확률의 함정](conditional-traps.html)** : 심슨의 역설과 교란변수는 조건부 확률의 오해에서 비롯된다. 회귀분석에서 조건부 편향(selection bias)의 이해에 연결된다.
+- **[가설검정](hypothesis-testing.html)** : 회귀계수의 t-검정과 F-검정은 가설검정의 틀을 따른다. 다중검정 문제는 단계적 변수 선택에서 중요해진다.
+- **[고유값·고유벡터](eigenvalues.html)** : 다중공선성은 $X^T X$의 조건수(condition number)가 클 때 발생하며, 이는 작은 고유값에 대응한다. 주성분 회귀(PCA regression)는 고유값 분해로 다중공선성을 해결한다.

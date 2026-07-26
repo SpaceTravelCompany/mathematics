@@ -202,6 +202,6 @@ $\lambda = \frac{5 \pm \sqrt{17}}{2}$, $\sigma_1^2 = \frac{5+\sqrt{17}}{2}$, $\s
 
 ## 연결
 
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : SVD는 행렬의 네 기본공간을 한 번에 드러낸다 — rank는 0이 아닌 특이값의 개수와 같다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : SVD는 $A^T A$의 고유값 분해에서 출발하며, 고유값 개념을 직사각행렬로 확장한다.
-- **[대칭행렬·스펙트럼 정리](topics/spectral-theorem.html)** : SVD 존재 증명은 $A^T A$의 스펙트럼 정리에 의존한다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : SVD는 행렬의 네 기본공간을 한 번에 드러낸다 — rank는 0이 아닌 특이값의 개수와 같다.
+- **[고유값·고유벡터](eigenvalues.html)** : SVD는 $A^T A$의 고유값 분해에서 출발하며, 고유값 개념을 직사각행렬로 확장한다.
+- **[대칭행렬·스펙트럼 정리](spectral-theorem.html)** : SVD 존재 증명은 $A^T A$의 스펙트럼 정리에 의존한다.

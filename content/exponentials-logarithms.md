@@ -118,6 +118,6 @@ $$\ln 2 = t \ln(1.05) \;\Rightarrow\; t = \frac{\ln 2}{\ln 1.05} \approx \frac{0
 
 ## 연결
 
-- **[지수·로그 함수의 미분](topics/exp-log-calculus.html)** : 미적분학에서 $e^x$와 $\ln x$의 미분과 적분을 본격적으로 다룬다.
-- **[엔트로피와 KL 발산](topics/entropy-kl.html)** : 정보량 $I(x) = -\log P(x)$는 로그로 정의되며, 엔트로피는 그 기댓값이다.
-- **[수열과 급수 기초](topics/sequences-series.html)** : $e$의 정의는 수열의 극한이며, 지수함수는 등비수열의 연속 일반화이다.
+- **[지수·로그 함수의 미분](exp-log-calculus.html)** : 미적분학에서 $e^x$와 $\ln x$의 미분과 적분을 본격적으로 다룬다.
+- **[엔트로피와 KL 발산](entropy-kl.html)** : 정보량 $I(x) = -\log P(x)$는 로그로 정의되며, 엔트로피는 그 기댓값이다.
+- **[수열과 급수 기초](sequences-series.html)** : $e$의 정의는 수열의 극한이며, 지수함수는 등비수열의 연속 일반화이다.

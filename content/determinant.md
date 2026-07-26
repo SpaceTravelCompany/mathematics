@@ -130,9 +130,9 @@ $$= 2(3\cdot2 - 1\cdot1) - 1(1\cdot2 - 0\cdot1) = 2(6-1) - 1(2-0) = 10 - 2 = 8$$
 
 ## 연결
 
-- **[역행렬과 기저 변환](topics/inverse-change-of-basis.html)** : $\det A = 0$은 역행렬이 존재하지 않을 조건이며, $\det A \neq 0$일 때 $A^{-1} = \frac{1}{\det A} C^T$로 구한다.
-- **[선형결합·span·일차독립](topics/span-independence.html)** : $\det A \neq 0$은 열(또는 행)들이 일차독립임을 의미한다.
-- **[rank·열공간·널공간](topics/rank-nullspace.html)** : $\det A \neq 0$일 때 $\text{rank}(A) = n$ (full rank)이다.
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬식은 선형변환의 부피 확대율로, $\det(AB) = \det A \det B$는 합성변환의 부피 변화율이 각각의 곱임을 의미한다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : $\det(A - \lambda I) = 0$이 특성방정식이며, 행렬식은 모든 고유값의 곱과 같다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 다변수 적분에서 변수 변환 시 야코비 행렬식이 부피 변화율을 결정한다.
+- **[역행렬과 기저 변환](inverse-change-of-basis.html)** : $\det A = 0$은 역행렬이 존재하지 않을 조건이며, $\det A \neq 0$일 때 $A^{-1} = \frac{1}{\det A} C^T$로 구한다.
+- **[선형결합·span·일차독립](span-independence.html)** : $\det A \neq 0$은 열(또는 행)들이 일차독립임을 의미한다.
+- **[rank·열공간·널공간](rank-nullspace.html)** : $\det A \neq 0$일 때 $\text{rank}(A) = n$ (full rank)이다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬식은 선형변환의 부피 확대율로, $\det(AB) = \det A \det B$는 합성변환의 부피 변화율이 각각의 곱임을 의미한다.
+- **[고유값·고유벡터](eigenvalues.html)** : $\det(A - \lambda I) = 0$이 특성방정식이며, 행렬식은 모든 고유값의 곱과 같다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 다변수 적분에서 변수 변환 시 야코비 행렬식이 부피 변화율을 결정한다.

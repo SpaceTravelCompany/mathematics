@@ -218,5 +218,5 @@ $$\int_0^{\pi/2} \sin x \cos x\,dx = \int_0^1 u\,du = \left[ \frac{u^2}{2} \righ
 
 ## 연결
 
-- **[다중적분](topics/multiple-integrals.html)** : 리만 적분을 2차원, 3차원으로 확장하여 부피와 질량을 계산한다. 반복적분(iterated integral)과 푸비니 정리(Fubini's theorem)가 핵심이다.
-- **[급수와 수렴](topics/series-convergence.html)** : 적분과 급수는 깊이 연결되어 있다. 적분 판정법(integral test)은 급수의 수렴을 적분으로 판정하고, 함수를 다항식으로 전개하는 테일러 급수는 적분으로 표현되는 나머지 항을 가진다.
+- **[다중적분](multiple-integrals.html)** : 리만 적분을 2차원, 3차원으로 확장하여 부피와 질량을 계산한다. 반복적분(iterated integral)과 푸비니 정리(Fubini's theorem)가 핵심이다.
+- **[급수와 수렴](series-convergence.html)** : 적분과 급수는 깊이 연결되어 있다. 적분 판정법(integral test)은 급수의 수렴을 적분으로 판정하고, 함수를 다항식으로 전개하는 테일러 급수는 적분으로 표현되는 나머지 항을 가진다.

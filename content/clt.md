@@ -198,6 +198,6 @@ $$\sqrt{n}(\bar{\mathbf{X}}_n - \boldsymbol{\mu}) \xrightarrow{d} \mathcal{N}_d(
 
 ## 연결
 
-- **[주요 분포](topics/distributions.html)** : CLT가 수렴하는 대상인 정규분포의 정의와 성질을 다룬다. 정규분포가 특별한 이유가 바로 CLT다.
-- **[가설검정](topics/hypothesis-testing.html)** : CLT는 z-검정(z-test)과 t-검정(t-test)의 이론적 근거다. 표본평균의 분포가 정규분포에 가깝다는 사실로부터 p-value를 계산한다.
-- **[기댓값·분산](topics/expectation-variance.html)** : CLT 증명에 등장하는 $\mu$와 $\sigma^2$이 기댓값과 분산이다. $Z_n$의 표준화 과정은 기댓값과 분산을 제거하는 과정이다.
+- **[주요 분포](distributions.html)** : CLT가 수렴하는 대상인 정규분포의 정의와 성질을 다룬다. 정규분포가 특별한 이유가 바로 CLT다.
+- **[가설검정](hypothesis-testing.html)** : CLT는 z-검정(z-test)과 t-검정(t-test)의 이론적 근거다. 표본평균의 분포가 정규분포에 가깝다는 사실로부터 p-value를 계산한다.
+- **[기댓값·분산](expectation-variance.html)** : CLT 증명에 등장하는 $\mu$와 $\sigma^2$이 기댓값과 분산이다. $Z_n$의 표준화 과정은 기댓값과 분산을 제거하는 과정이다.

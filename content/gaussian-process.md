@@ -157,8 +157,8 @@ $$k(x,x') = x^T x'$$
 
 ## 연결
 
-- **[베이즈 추론](topics/bayesian-inference.html)** : GP 회귀는 베이즈 추론의 틀을 따른다 — 사전(prior) $f \sim \mathcal{GP}(0, k)$, 우도(likelihood) $y|f \sim \mathcal{N}(f, \sigma_n^2 I)$, 사후(posterior) $f|D$가 닫힌 형태로 주어진다.
-- **[스코어 함수·피셔 정보](topics/score-function.html)** : GP의 하이퍼파라미터 학습은 로그 한계 가능도의 그래디언트를 계산하며, 이는 스코어 함수와 연결된다. GP의 로그 한계 가능도 최적화는 모든 하이퍼파라미터에 대한 정보를 통합한다.
-- **[확률 행렬·마르코프 체인](topics/markov-chains.html)** : GP는 연속 공간에서 마르코프 성질을 일반화한다 — 특정 커널(예: Matérn $\nu=1/2$)은 GP를 마르코프 과정으로 만든다.
-- **[최소제곱법](topics/least-squares.html)** : GP 사후 평균 $\mu_*(x) = k_*^T (K + \sigma_n^2 I)^{-1} \mathbf{y}$는 최소제곱법과 유사한 형태를 가진다. 능형 회귀(ridge regression)의 커널 버전으로 볼 수 있다.
-- **[양반정치 행렬](topics/positive-definite.html)** : 커널 함수의 양반정치성은 공분산 행렬이 양반정치여야 하는 필요조건에서 비롯된다.
+- **[베이즈 추론](bayesian-inference.html)** : GP 회귀는 베이즈 추론의 틀을 따른다 — 사전(prior) $f \sim \mathcal{GP}(0, k)$, 우도(likelihood) $y|f \sim \mathcal{N}(f, \sigma_n^2 I)$, 사후(posterior) $f|D$가 닫힌 형태로 주어진다.
+- **[스코어 함수·피셔 정보](score-function.html)** : GP의 하이퍼파라미터 학습은 로그 한계 가능도의 그래디언트를 계산하며, 이는 스코어 함수와 연결된다. GP의 로그 한계 가능도 최적화는 모든 하이퍼파라미터에 대한 정보를 통합한다.
+- **[확률 행렬·마르코프 체인](markov-chains.html)** : GP는 연속 공간에서 마르코프 성질을 일반화한다 — 특정 커널(예: Matérn $\nu=1/2$)은 GP를 마르코프 과정으로 만든다.
+- **[최소제곱법](least-squares.html)** : GP 사후 평균 $\mu_*(x) = k_*^T (K + \sigma_n^2 I)^{-1} \mathbf{y}$는 최소제곱법과 유사한 형태를 가진다. 능형 회귀(ridge regression)의 커널 버전으로 볼 수 있다.
+- **[양반정치 행렬](positive-definite.html)** : 커널 함수의 양반정치성은 공분산 행렬이 양반정치여야 하는 필요조건에서 비롯된다.

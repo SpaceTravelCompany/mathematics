@@ -136,7 +136,7 @@ $$\begin{pmatrix} X_1 \\ X_2 \end{pmatrix} \sim \mathcal{N}\left(\begin{pmatrix}
 
 조건부 분포를 이용한 깁스 샘플링 절차를 서술하라.
 
-**풀이:** [결합·주변·조건부 분포](topics/joint-marginal-conditional.html)에서 유도했듯이
+**풀이:** [결합·주변·조건부 분포](joint-marginal-conditional.html)에서 유도했듯이
 
 $$X_1 | X_2 = x_2 \sim \mathcal{N}(\rho x_2,\; 1-\rho^2)$$
 $$X_2 | X_1 = x_1 \sim \mathcal{N}(\rho x_1,\; 1-\rho^2)$$
@@ -164,6 +164,6 @@ $\rho=0.9$인 2변량 정규 깁스 샘플링에서 $B=1000$, $K=10$이 일반�
 
 ## 연결
 
-- **[확률 행렬·마르코프 체인](topics/markov-chains.html)** : MCMC의 "MC"는 마르코프 체인이다. 전이 행렬, 정상분포, 기약성·비주기성 등의 개념이 MCMC의 이론적 토대다.
-- **[몬테카를로](topics/monte-carlo.html)** : MCMC의 "MC"는 몬테카를로다. 수집된 샘플로 기댓값 $\mathbb{E}_\pi[f(X)] \approx \frac{1}{N}\sum f(x_i)$을 계산하는 몬테카를로 적분이 MCMC의 최종 목적이다.
-- **[가우시안 과정](topics/gaussian-process.html)** : 가우시안 과정의 초모수(hyperparameter) 추론은 종종 MCMC로 수행된다. 사후분포 $p(\theta|D)$가 복잡한 형태를 가질 때 MH나 깁스 샘플링으로 샘플링한다.
+- **[확률 행렬·마르코프 체인](markov-chains.html)** : MCMC의 "MC"는 마르코프 체인이다. 전이 행렬, 정상분포, 기약성·비주기성 등의 개념이 MCMC의 이론적 토대다.
+- **[몬테카를로](monte-carlo.html)** : MCMC의 "MC"는 몬테카를로다. 수집된 샘플로 기댓값 $\mathbb{E}_\pi[f(X)] \approx \frac{1}{N}\sum f(x_i)$을 계산하는 몬테카를로 적분이 MCMC의 최종 목적이다.
+- **[가우시안 과정](gaussian-process.html)** : 가우시안 과정의 초모수(hyperparameter) 추론은 종종 MCMC로 수행된다. 사후분포 $p(\theta|D)$가 복잡한 형태를 가질 때 MH나 깁스 샘플링으로 샘플링한다.

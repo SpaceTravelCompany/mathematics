@@ -103,6 +103,6 @@ $$\text{넓이} = |3 \cdot 4 - 1 \cdot 2| = |12 - 2| = 10$$
 
 ## 연결
 
-- **[내적과 노름](topics/inner-product-norm.html)** : 평면벡터의 내적과 노름을 고차원 벡터공간으로 일반화한다.
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬은 벡터를 다른 벡터로 보내는 선형함수이고, 행렬곱은 합성함수에 해당한다.
-- **[좌표기하와 이차곡선](topics/coordinate-geometry.html)** : 벡터의 좌표 표현은 해석기하학의 기본 언어이다.
+- **[내적과 노름](inner-product-norm.html)** : 평면벡터의 내적과 노름을 고차원 벡터공간으로 일반화한다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬은 벡터를 다른 벡터로 보내는 선형함수이고, 행렬곱은 합성함수에 해당한다.
+- **[좌표기하와 이차곡선](coordinate-geometry.html)** : 벡터의 좌표 표현은 해석기하학의 기본 언어이다.

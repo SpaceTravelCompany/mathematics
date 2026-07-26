@@ -249,7 +249,7 @@ $$\frac{\partial L}{\partial x_j} = -\frac{1}{s_k} \cdot \frac{\partial s_k}{\pa
 
 ## 연결
 
-- **[지수·로그 함수의 미분](topics/exp-log-calculus.html)** : 시그모이드와 소프트맥스의 정의에 $e^x$가 핵심이다.
-- **[엔트로피·KL발산](topics/entropy-kl.html)** : 소프트맥스 출력과 cross-entropy의 연결을 통해 확률분포 간의 거리를 측정한다.
-- **[연쇄법칙](topics/differentiation-rules.html)** : 로그-소프트맥스 미분에서 연쇄법칙이 사용된다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 소프트맥스 야코비안은 다변수 벡터 함수 미분의 대표적 예시다.
+- **[지수·로그 함수의 미분](exp-log-calculus.html)** : 시그모이드와 소프트맥스의 정의에 $e^x$가 핵심이다.
+- **[엔트로피·KL발산](entropy-kl.html)** : 소프트맥스 출력과 cross-entropy의 연결을 통해 확률분포 간의 거리를 측정한다.
+- **[연쇄법칙](differentiation-rules.html)** : 로그-소프트맥스 미분에서 연쇄법칙이 사용된다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 소프트맥스 야코비안은 다변수 벡터 함수 미분의 대표적 예시다.

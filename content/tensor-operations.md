@@ -174,6 +174,6 @@ $$I_{ij} = \int_V \rho(r) (\delta_{ij} \|r\|^2 - r_i r_j) \, dV$$
 
 ## 연결
 
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬곱은 2차 텐서의 축 수축이며, 텐서 개념의 가장 친숙한 예시다.
-- **[발산·회전](topics/div-curl.html)** : 응력 텐서 $\sigma_{ij}$의 발산 $\partial_j \sigma_{ij}$는 연속체 역학의 운동방정식에 나타난다.
-- **[SVD](topics/svd.html)** : 2차 텐서(행렬)의 특이값 분해는 텐서 분해(Tucker, CP, Tensor Train)로 일반화된다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬곱은 2차 텐서의 축 수축이며, 텐서 개념의 가장 친숙한 예시다.
+- **[발산·회전](div-curl.html)** : 응력 텐서 $\sigma_{ij}$의 발산 $\partial_j \sigma_{ij}$는 연속체 역학의 운동방정식에 나타난다.
+- **[SVD](svd.html)** : 2차 텐서(행렬)의 특이값 분해는 텐서 분해(Tucker, CP, Tensor Train)로 일반화된다.

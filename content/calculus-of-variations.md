@@ -228,5 +228,5 @@ $$y(1 + (y')^2) = \frac{C}{2}(1 - \cos\theta) \cdot \csc^2(\theta/2) = \frac{C}{
 
 ## 연결
 
-- **[적분의 의미](topics/integral-meaning.html)** : 변분법의 범함수 $J[y] = \int L\,dx$는 적분의 개념을 기반으로 한다. 미적분학의 기본정리와 부분적분이 오일러-라그랑주 유도의 핵심 도구다.
-- **[라그랑주 승수법](topics/lagrange-multipliers.html)** : 라그랑주 승수법(제약 조건 아래 함수 최적화)의 함수 공간 버전이 변분법이다. 제약 변분 문제(예: 등주 문제, isoperimetric problem)는 라그랑주 승수법을 범함수로 확장하여 푼다.
+- **[적분의 의미](integral-meaning.html)** : 변분법의 범함수 $J[y] = \int L\,dx$는 적분의 개념을 기반으로 한다. 미적분학의 기본정리와 부분적분이 오일러-라그랑주 유도의 핵심 도구다.
+- **[라그랑주 승수법](lagrange-multipliers.html)** : 라그랑주 승수법(제약 조건 아래 함수 최적화)의 함수 공간 버전이 변분법이다. 제약 변분 문제(예: 등주 문제, isoperimetric problem)는 라그랑주 승수법을 범함수로 확장하여 푼다.

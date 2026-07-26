@@ -215,7 +215,7 @@ $= 0.4 + 0.25 + 0.4\sqrt{3} \approx 0.4 + 0.25 + 0.693 = 1.343$
 
 ## 연결
 
-- **[극한·연속·도함수](topics/limits-derivatives.html)** : 1변수 도함수의 정의와 극한 개념이 편도함수의 기초다.
-- **[등고선과 그래디언트](topics/gradient-geometry.html)** : $\nabla f$가 등고선에 수직임을 기하학적으로 해석한다.
-- **[방향 도함수](topics/directional-derivative.html)** : 편도함수를 임의의 방향으로 일반화한다.
-- **[다변수 연쇄법칙](topics/multivar-chain-rule.html)** : 편도함수들의 결합으로 합성함수의 변화율을 계산한다.
+- **[극한·연속·도함수](limits-derivatives.html)** : 1변수 도함수의 정의와 극한 개념이 편도함수의 기초다.
+- **[등고선과 그래디언트](gradient-geometry.html)** : $\nabla f$가 등고선에 수직임을 기하학적으로 해석한다.
+- **[방향 도함수](directional-derivative.html)** : 편도함수를 임의의 방향으로 일반화한다.
+- **[다변수 연쇄법칙](multivar-chain-rule.html)** : 편도함수들의 결합으로 합성함수의 변화율을 계산한다.

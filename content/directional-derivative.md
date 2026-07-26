@@ -221,7 +221,7 @@ $D_v T(3, 2) = \nabla T \cdot v = (-6, -8) \cdot (1, -1) = -6 + 8 = 2$.
 
 ## 연결
 
-- **[내적·노름·코사인 유사도](topics/inner-product-norm.html)** : $D_u f = \nabla f \cdot u$는 내적의 기하학적 의미(투영)로 이해할 수 있다.
-- **[편도함수·기울기 벡터](topics/partial-derivatives.html)** : 방향 도함수의 특수한 경우가 편도함수($u = e_i$)다.
-- **[등고선과 그래디언트](topics/gradient-geometry.html)** : $D_u f = 0$인 $u$가 등고선의 접선 방향이다.
-- **[다변수 연쇄법칙](topics/multivar-chain-rule.html)** : $D_u f = \nabla f \cdot u$의 증명은 연쇄법칙을 사용한다.
+- **[내적·노름·코사인 유사도](inner-product-norm.html)** : $D_u f = \nabla f \cdot u$는 내적의 기하학적 의미(투영)로 이해할 수 있다.
+- **[편도함수·기울기 벡터](partial-derivatives.html)** : 방향 도함수의 특수한 경우가 편도함수($u = e_i$)다.
+- **[등고선과 그래디언트](gradient-geometry.html)** : $D_u f = 0$인 $u$가 등고선의 접선 방향이다.
+- **[다변수 연쇄법칙](multivar-chain-rule.html)** : $D_u f = \nabla f \cdot u$의 증명은 연쇄법칙을 사용한다.

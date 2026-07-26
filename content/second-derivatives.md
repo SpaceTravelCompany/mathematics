@@ -199,7 +199,7 @@ $$\Delta f = \sum_{i=1}^3 \frac{\partial^2 f}{\partial x_i^2} = -\frac{3}{r^3} +
 
 ## 연결
 
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 헤시안의 정의와 대칭성(클레로 정리)을 자세히 다룬다.
-- **[테일러 전개](topics/taylor-expansion.html)** : 헤시안은 2차 테일러 전개의 핵심 항이다.
-- **[극값·안장점](topics/extrema-saddle.html)** : 2계 판정법으로 임계점을 분류하는 방법을 더 확장한다.
-- **[양정치 행렬](topics/positive-definite.html)** : 헤시안의 양정치성과 고유값 판정을 연결한다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 헤시안의 정의와 대칭성(클레로 정리)을 자세히 다룬다.
+- **[테일러 전개](taylor-expansion.html)** : 헤시안은 2차 테일러 전개의 핵심 항이다.
+- **[극값·안장점](extrema-saddle.html)** : 2계 판정법으로 임계점을 분류하는 방법을 더 확장한다.
+- **[양정치 행렬](positive-definite.html)** : 헤시안의 양정치성과 고유값 판정을 연결한다.

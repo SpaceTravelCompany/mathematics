@@ -196,6 +196,6 @@ $$[T]_B = \frac12 \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} 
 
 ## 연결
 
-- **[좌표기하와 이차곡선](topics/coordinate-geometry.html)** : 기저 변환은 좌표계를 바꾸어 이차곡선의 표준형을 찾는 과정과 직접 연결된다.
-- **[고유값·고유벡터](topics/eigenvalues.html)** : 대각화는 기저변환을 통해 행렬을 가장 단순한 형태(대각행렬)로 만드는 과정이다.
-- **[대칭행렬·스펙트럼 정리](topics/spectral-theorem.html)** : 직교 기저변환은 대칭행렬의 직교 대각화와 동일하며, 내적을 보존하는 변환이다.
+- **[좌표기하와 이차곡선](coordinate-geometry.html)** : 기저 변환은 좌표계를 바꾸어 이차곡선의 표준형을 찾는 과정과 직접 연결된다.
+- **[고유값·고유벡터](eigenvalues.html)** : 대각화는 기저변환을 통해 행렬을 가장 단순한 형태(대각행렬)로 만드는 과정이다.
+- **[대칭행렬·스펙트럼 정리](spectral-theorem.html)** : 직교 기저변환은 대칭행렬의 직교 대각화와 동일하며, 내적을 보존하는 변환이다.

@@ -150,6 +150,6 @@ $x = 1$ 또는 $x = -1/5$. 대응하는 $y$:
 
 ## 연결
 
-- **[등고선과 그래디언트](topics/gradient-geometry.html)** : 등고선(contour line)은 $f(x, y) = c$ 형태로, 좌표기하에서 직선과 곡선의 개념을 다변수로 확장한다.
-- **[스펙트럼 정리](topics/spectral-theorem.html)** : 대칭행렬의 이차형식(quadratic form)은 이차곡선의 고차원 일반화이며, 주축 정리(principal axis theorem)로 분류된다.
-- **[벡터공간 추상화](topics/vector-space-abstraction.html)** : 좌표 $(x, y)$는 $\mathbb{R}^2$ 벡터공간의 원소이며, 모든 기하학적 대상은 벡터의 관점에서 재해석될 수 있다.
+- **[등고선과 그래디언트](gradient-geometry.html)** : 등고선(contour line)은 $f(x, y) = c$ 형태로, 좌표기하에서 직선과 곡선의 개념을 다변수로 확장한다.
+- **[스펙트럼 정리](spectral-theorem.html)** : 대칭행렬의 이차형식(quadratic form)은 이차곡선의 고차원 일반화이며, 주축 정리(principal axis theorem)로 분류된다.
+- **[벡터공간 추상화](vector-space-abstraction.html)** : 좌표 $(x, y)$는 $\mathbb{R}^2$ 벡터공간의 원소이며, 모든 기하학적 대상은 벡터의 관점에서 재해석될 수 있다.

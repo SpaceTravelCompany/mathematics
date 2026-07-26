@@ -219,6 +219,6 @@ $$Q = \begin{pmatrix} 1/\sqrt{3} & -1/\sqrt{2} \\ 1/\sqrt{3} & 0 \\ 1/\sqrt{3} &
 
 ## 연결
 
-- **[내적·노름·코사인 유사도](topics/inner-product-norm.html)** : 내적공간의 정의와 기본 성질을 학습한다.
-- **[최소제곱법](topics/least-squares.html)** : 직교투영이 최소제곱 문제의 기하학적 해석을 제공한다.
-- **[가우스 소거와 RREF](topics/gaussian-elimination.html)** : QR 분해는 가우스 소거를 직교 변환으로 대체하는 수치적으로 안정적인 방법이다.
+- **[내적·노름·코사인 유사도](inner-product-norm.html)** : 내적공간의 정의와 기본 성질을 학습한다.
+- **[최소제곱법](least-squares.html)** : 직교투영이 최소제곱 문제의 기하학적 해석을 제공한다.
+- **[가우스 소거와 RREF](gaussian-elimination.html)** : QR 분해는 가우스 소거를 직교 변환으로 대체하는 수치적으로 안정적인 방법이다.

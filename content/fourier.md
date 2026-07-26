@@ -260,7 +260,7 @@ $$\frac{\partial}{\partial t} \hat{u}(\omega, t) = -\omega^2 \hat{u}(\omega, t) 
 
 ## 연결
 
-- **[삼각함수](topics/trigonometric-functions.html)** : 푸리에 급수의 기저 함수인 $\sin nx$와 $\cos nx$는 삼각함수에서 정의된다. 덧셈정리, 배각 공식이 직교성 증명에 사용된다.
-- **[급수와 수렴](topics/series-convergence.html)** : 푸리에 급수의 수렴($L^2$ 수렴, 점별 수렴, 깁스 현상)은 급수 이론의 핵심 응용이다. 함수의 푸리에 급수가 원래 함수로 수렴하는 조건은 해석학의 중요한 주제다.
-- **[내적·노름·코사인 유사도](topics/inner-product-norm.html)** : 푸리에 계수는 함수를 삼각 기저에 정사영한 결과이며, 이는 유한차원 내적공간의 투영(projection) 개념을 무한차원 함수공간으로 확장한 것이다.
-- **[다중적분](topics/multiple-integrals.html)** : 푸리에 변환의 컨볼루션 정리 증명에서 이중적분과 적분 순서 교환(푸비니 정리)이 사용된다.
+- **[삼각함수](trigonometric-functions.html)** : 푸리에 급수의 기저 함수인 $\sin nx$와 $\cos nx$는 삼각함수에서 정의된다. 덧셈정리, 배각 공식이 직교성 증명에 사용된다.
+- **[급수와 수렴](series-convergence.html)** : 푸리에 급수의 수렴($L^2$ 수렴, 점별 수렴, 깁스 현상)은 급수 이론의 핵심 응용이다. 함수의 푸리에 급수가 원래 함수로 수렴하는 조건은 해석학의 중요한 주제다.
+- **[내적·노름·코사인 유사도](inner-product-norm.html)** : 푸리에 계수는 함수를 삼각 기저에 정사영한 결과이며, 이는 유한차원 내적공간의 투영(projection) 개념을 무한차원 함수공간으로 확장한 것이다.
+- **[다중적분](multiple-integrals.html)** : 푸리에 변환의 컨볼루션 정리 증명에서 이중적분과 적분 순서 교환(푸비니 정리)이 사용된다.

@@ -129,9 +129,9 @@ RREF가 $I_3$이므로 $\text{rank}(A) = 3$이다. $n = 3$이므로 $\text{nulli
 
 ## 연결
 
-- **[선형결합·span·일차독립](topics/span-independence.html)** : rank는 일차독립인 열(또는 행)의 개수이며, span의 차원 개념을 구체화한다.
-- **[행렬곱과 선형변환](topics/matrix-multiplication.html)** : 행렬을 선형변환으로 해석할 때, rank는 상(image)의 차원이고 nullity는 핵(kernel)의 차원이다.
-- **[가우스 소거와 RREF](topics/gaussian-elimination.html)** : RREF는 rank와 널공간의 기저를 계산하는 실질적인 알고리즘이다.
-- **[행렬식의 기하학](topics/determinant.html)** : 정사각행렬이 최대 rank($=n$)를 가질 필요충분조건은 $\det A \neq 0$이다.
-- **[역행렬과 기저 변환](topics/inverse-change-of-basis.html)** : $A$가 가역일 필요충분조건은 $\text{rank}(A) = n$ (full rank)이다.
-- **[최소제곱법](topics/least-squares.html)** : $Ax = b$의 해가 존재하지 않을 때, 열공간으로의 직교투영을 통해 최적해를 구한다.
+- **[선형결합·span·일차독립](span-independence.html)** : rank는 일차독립인 열(또는 행)의 개수이며, span의 차원 개념을 구체화한다.
+- **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬을 선형변환으로 해석할 때, rank는 상(image)의 차원이고 nullity는 핵(kernel)의 차원이다.
+- **[가우스 소거와 RREF](gaussian-elimination.html)** : RREF는 rank와 널공간의 기저를 계산하는 실질적인 알고리즘이다.
+- **[행렬식의 기하학](determinant.html)** : 정사각행렬이 최대 rank($=n$)를 가질 필요충분조건은 $\det A \neq 0$이다.
+- **[역행렬과 기저 변환](inverse-change-of-basis.html)** : $A$가 가역일 필요충분조건은 $\text{rank}(A) = n$ (full rank)이다.
+- **[최소제곱법](least-squares.html)** : $Ax = b$의 해가 존재하지 않을 때, 열공간으로의 직교투영을 통해 최적해를 구한다.

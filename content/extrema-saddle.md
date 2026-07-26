@@ -211,7 +211,7 @@ $\det H = 0$ → 판정 불가. 직접 조사:
 
 ## 연결
 
-- **[스펙트럼 정리](topics/spectral-theorem.html)** : 헤시안의 고유값 부호가 극값 분류의 핵심이다.
-- **[2계 도함수·헤시안·곡률](topics/second-derivatives.html)** : 헤시안 판정법의 상세한 조건을 다룬다.
-- **[라그랑주 승수법](topics/lagrange-multipliers.html)** : 제약이 있는 경우의 극값 조건으로 확장한다.
-- **[가우시안 과정](topics/gaussian-process.html)** : 볼록 함수의 성질이 최적화 이론에서 어떻게 활용되는지 안다.
+- **[스펙트럼 정리](spectral-theorem.html)** : 헤시안의 고유값 부호가 극값 분류의 핵심이다.
+- **[2계 도함수·헤시안·곡률](second-derivatives.html)** : 헤시안 판정법의 상세한 조건을 다룬다.
+- **[라그랑주 승수법](lagrange-multipliers.html)** : 제약이 있는 경우의 극값 조건으로 확장한다.
+- **[가우시안 과정](gaussian-process.html)** : 볼록 함수의 성질이 최적화 이론에서 어떻게 활용되는지 안다.

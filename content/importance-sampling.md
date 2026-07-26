@@ -178,8 +178,8 @@ $$z = \mu_\phi(x) + \sigma_\phi(x) \odot \epsilon, \quad \epsilon \sim \mathcal{
 
 ## 연결
 
-- **[몬테카를로](topics/monte-carlo.html)** : 중요도 샘플링은 몬테카를로 적분의 일반화다. 비편향성과 수렴 속도 $O(1/\sqrt{N})$을 계승하지만, 분산이 제안분포 선택에 크게 의존한다.
-- **[베이즈 추론](topics/bayesian-inference.html)** : 베이즈 사후분포의 기댓값 계산은 중요도 샘플링의 주요 응용처다. MCMC와 함께 사후 예측(posterior predictive) 분포 계산에 사용된다.
-- **[MCMC](topics/mcmc.html)** : 메트로폴리스-헤이스팅스(Metropolis-Hastings) 알고리즘은 중요도 샘플링과 마르코프 체인을 결합한 것으로, 제안 분포에서 샘플링한 후 수락/기각으로 중요도 가중치를 대체한다.
-- **[스코어 함수](topics/score-function.html)** : 재파라미터 트릭과 스코어 함수 트릭(REINFORCE)은 그래디언트 추정의 두 축이다. 재파라미터 트릭은 분산이 작지만 적용 가능성이 제한적이고, 스코어 함수 트릭은 더 일반적이나 분산이 크다.
-- **[확률미분방정식](topics/sde.html)** : 중요도 샘플링은 SDE 시뮬레이션에서 희귀 사건 확률을 추정하는 데 사용된다(겔서-스트라톤 변환, Girsanov's theorem).
+- **[몬테카를로](monte-carlo.html)** : 중요도 샘플링은 몬테카를로 적분의 일반화다. 비편향성과 수렴 속도 $O(1/\sqrt{N})$을 계승하지만, 분산이 제안분포 선택에 크게 의존한다.
+- **[베이즈 추론](bayesian-inference.html)** : 베이즈 사후분포의 기댓값 계산은 중요도 샘플링의 주요 응용처다. MCMC와 함께 사후 예측(posterior predictive) 분포 계산에 사용된다.
+- **[MCMC](mcmc.html)** : 메트로폴리스-헤이스팅스(Metropolis-Hastings) 알고리즘은 중요도 샘플링과 마르코프 체인을 결합한 것으로, 제안 분포에서 샘플링한 후 수락/기각으로 중요도 가중치를 대체한다.
+- **[스코어 함수](score-function.html)** : 재파라미터 트릭과 스코어 함수 트릭(REINFORCE)은 그래디언트 추정의 두 축이다. 재파라미터 트릭은 분산이 작지만 적용 가능성이 제한적이고, 스코어 함수 트릭은 더 일반적이나 분산이 크다.
+- **[확률미분방정식](sde.html)** : 중요도 샘플링은 SDE 시뮬레이션에서 희귀 사건 확률을 추정하는 데 사용된다(겔서-스트라톤 변환, Girsanov's theorem).

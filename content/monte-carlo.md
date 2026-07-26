@@ -153,6 +153,6 @@ $$N_{\text{eff}} = \frac{N}{1 + \text{Var}_q(w(X))} \approx \frac{N}{\sum w_i^2 
 
 ## 연결
 
-- **[대수의 법칙](topics/law-large-numbers.html)** : 몬테카를로 방법의 이론적 근거는 대수의 법칙이다. $N \to \infty$에서 $\frac{1}{N}\sum f(X_i) \to \mathbb{E}[f(X)]$가 거의 확실히 성립한다.
-- **[중요도 샘플링](topics/importance-sampling.html)** : 중요도 샘플링은 몬테카를로 적분을 일반화하여 샘플링이 어려운 분포를 우회한다. 최적 제안분포 선택, 가중치의 안정성, $N_{\text{eff}}$ 등이 핵심 주제다.
-- **[마르코프 체인·MCMC](topics/mcmc.html)** : MCMC는 몬테카를로 방법과 마르코프 체인을 결합한다. 직접 샘플링이 불가능한 고차원 사후분포에서도 마르코프 체인의 정상분포를 이용해 샘플을 수집할 수 있다.
+- **[대수의 법칙](law-large-numbers.html)** : 몬테카를로 방법의 이론적 근거는 대수의 법칙이다. $N \to \infty$에서 $\frac{1}{N}\sum f(X_i) \to \mathbb{E}[f(X)]$가 거의 확실히 성립한다.
+- **[중요도 샘플링](importance-sampling.html)** : 중요도 샘플링은 몬테카를로 적분을 일반화하여 샘플링이 어려운 분포를 우회한다. 최적 제안분포 선택, 가중치의 안정성, $N_{\text{eff}}$ 등이 핵심 주제다.
+- **[마르코프 체인·MCMC](mcmc.html)** : MCMC는 몬테카를로 방법과 마르코프 체인을 결합한다. 직접 샘플링이 불가능한 고차원 사후분포에서도 마르코프 체인의 정상분포를 이용해 샘플을 수집할 수 있다.

@@ -209,8 +209,8 @@ $$dX_t = [f(X_t, t) - g(t)^2 \nabla \log p_t(X_t)]\,dt + g(t)\,d\bar{W}_t$$
 
 ## 연결
 
-- **[엔트로피·KL 발산](topics/entropy-kl.html)** : 피셰 정보는 KL 발산의 2차 테일러 전개 계수로 나타난다. $D_{KL}(p_\theta \| p_{\theta+d\theta}) \approx \frac{1}{2} d\theta^T \mathcal{I}(\theta) d\theta$.
-- **[정보기하·자연 그래디언트](topics/information-geometry.html)** : 피셔 정보 행렬은 통계 다양체(statistical manifold)의 리만 계량(Riemannian metric)이다. 자연 그래디언트는 이 계량을 고려한 최적화 방향이다.
-- **[확률미분방정식](topics/sde.html)** : 랭주뱅 동역학은 SDE의 한 형태로, 확산 모델(diffusion model)의 수학적 기초다.
-- **[최대가능도추정](topics/mle.html)** : MLE의 점근 분산은 피셔 정보의 역수에 도달한다. MLE는 점근적으로 효율적(asymptotically efficient)이며, CRLB를 점근적으로 달성한다.
-- **[가우시안 과정](topics/gaussian-process.html)** : GP 회귀의 하이퍼파라미터 학습은 로그 한계 가능도의 그래디언트(스코어 함수)를 사용한다.
+- **[엔트로피·KL 발산](entropy-kl.html)** : 피셰 정보는 KL 발산의 2차 테일러 전개 계수로 나타난다. $D_{KL}(p_\theta \| p_{\theta+d\theta}) \approx \frac{1}{2} d\theta^T \mathcal{I}(\theta) d\theta$.
+- **[정보기하·자연 그래디언트](information-geometry.html)** : 피셔 정보 행렬은 통계 다양체(statistical manifold)의 리만 계량(Riemannian metric)이다. 자연 그래디언트는 이 계량을 고려한 최적화 방향이다.
+- **[확률미분방정식](sde.html)** : 랭주뱅 동역학은 SDE의 한 형태로, 확산 모델(diffusion model)의 수학적 기초다.
+- **[최대가능도추정](mle.html)** : MLE의 점근 분산은 피셔 정보의 역수에 도달한다. MLE는 점근적으로 효율적(asymptotically efficient)이며, CRLB를 점근적으로 달성한다.
+- **[가우시안 과정](gaussian-process.html)** : GP 회귀의 하이퍼파라미터 학습은 로그 한계 가능도의 그래디언트(스코어 함수)를 사용한다.

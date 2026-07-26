@@ -195,6 +195,6 @@ $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}$임을 이용했다. $c\pi = 
 
 ## 연결
 
-- **[확률·조건부확률·베이즈 정리](topics/conditional-bayes.html)** : 조건부분포의 정의 $P(A|B) = P(A \cap B)/P(B)$는 확률변수로 확장되어 $f_{X|Y}(x|y) = f_{X,Y}(x,y)/f_Y(y)$가 된다. 베이즈 정리는 조건부분포를 "뒤집는" 도구다.
-- **[최대가능도추정](topics/mle.html)** : 관측 데이터의 결합분포 $f(x_1,\ldots,x_n|\theta)$를 모수 $\theta$의 함수로 보는 것이 가능도(likelihood)다. iid 가정 하에 결합분포는 각 주변분포의 곱으로 인수분해된다.
-- **[베이지안 추론](topics/bayesian-inference.html)** : 사후분포 $p(\theta|D) \propto p(D|\theta)p(\theta)$는 조건부분포의 연속적 적용이다. 분모의 $p(D)$는 주변화 $p(D) = \int p(D|\theta)p(\theta)\,d\theta$로 계산된다.
+- **[확률·조건부확률·베이즈 정리](conditional-bayes.html)** : 조건부분포의 정의 $P(A|B) = P(A \cap B)/P(B)$는 확률변수로 확장되어 $f_{X|Y}(x|y) = f_{X,Y}(x,y)/f_Y(y)$가 된다. 베이즈 정리는 조건부분포를 "뒤집는" 도구다.
+- **[최대가능도추정](mle.html)** : 관측 데이터의 결합분포 $f(x_1,\ldots,x_n|\theta)$를 모수 $\theta$의 함수로 보는 것이 가능도(likelihood)다. iid 가정 하에 결합분포는 각 주변분포의 곱으로 인수분해된다.
+- **[베이지안 추론](bayesian-inference.html)** : 사후분포 $p(\theta|D) \propto p(D|\theta)p(\theta)$는 조건부분포의 연속적 적용이다. 분모의 $p(D)$는 주변화 $p(D) = \int p(D|\theta)p(\theta)\,d\theta$로 계산된다.

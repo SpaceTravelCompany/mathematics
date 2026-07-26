@@ -216,6 +216,6 @@ $$
 
 ## 연결
 
-- **[적분의 의미](topics/integral-meaning.html)** : 연속 확률변수의 기댓값 $\int x f(x)\,dx$는 적분의 직접적인 응용이다. 가중평균(weighted average)으로서의 적분 해석이 확률로 확장된다.
-- **[중심극한정리](topics/clt.html)** : CLT는 $\sqrt{n}(\bar{X}_n - \mu)/\sigma \xrightarrow{d} \mathcal{N}(0,1)$로, 표본평균의 분포가 정규분포로 수렴함을 보여준다. 이때 분산 $\sigma^2$이 핵심 역할을 한다.
-- **[회귀분석](topics/regression-analysis.html)** : 상관계수는 회귀분석에서 두 변수의 선형 관계 강도를 측정한다. 회귀계수 $\beta = \text{Cov}(X,Y)/\text{Var}(X)$와 직접 연결된다.
+- **[적분의 의미](integral-meaning.html)** : 연속 확률변수의 기댓값 $\int x f(x)\,dx$는 적분의 직접적인 응용이다. 가중평균(weighted average)으로서의 적분 해석이 확률로 확장된다.
+- **[중심극한정리](clt.html)** : CLT는 $\sqrt{n}(\bar{X}_n - \mu)/\sigma \xrightarrow{d} \mathcal{N}(0,1)$로, 표본평균의 분포가 정규분포로 수렴함을 보여준다. 이때 분산 $\sigma^2$이 핵심 역할을 한다.
+- **[회귀분석](regression-analysis.html)** : 상관계수는 회귀분석에서 두 변수의 선형 관계 강도를 측정한다. 회귀계수 $\beta = \text{Cov}(X,Y)/\text{Var}(X)$와 직접 연결된다.

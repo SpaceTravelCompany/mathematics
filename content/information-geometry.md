@@ -172,7 +172,7 @@ $$D_{KL}(p_\theta \| p_{\theta'}) = \psi(\theta) + \phi(\theta') - \theta \cdot 
 
 ## 연결
 
-- **[스코어 함수·피셔 정보](topics/score-function.html)** : 피셔 정보 행렬은 스코어 함수의 공분산으로 정의되며, 정보기하의 리만 계량이 된다. 스코어 함수는 다양체 위의 접벡터(tangent vector)로 해석된다.
-- **[양반정치 행렬](topics/positive-definite.html)** : 피셔 정보 행렬이 양반정치행렬임을 증명하는 데 필요한 개념이다. 공분산 행렬의 양반정치성과 직접 연결된다.
-- **[엔트로피·KL 발산](topics/entropy-kl.html)** : KL 발산은 정보기하에서 가장 기본적인 발산 함수(divergence function)다. KL 발산의 2차 근사가 피셔 계량이며, KL 발산 자체가 다양체 위의 비대칭 "거리"를 정의한다.
-- **[확률미분방정식](topics/sde.html)** : 자연 그래디언트는 랭주뱅 동역학의 확률적 버전인 SGLD(stochastic gradient Langevin dynamics)와 결합되어 확률적 자연 그래디언트를 형성한다.
+- **[스코어 함수·피셔 정보](score-function.html)** : 피셔 정보 행렬은 스코어 함수의 공분산으로 정의되며, 정보기하의 리만 계량이 된다. 스코어 함수는 다양체 위의 접벡터(tangent vector)로 해석된다.
+- **[양반정치 행렬](positive-definite.html)** : 피셔 정보 행렬이 양반정치행렬임을 증명하는 데 필요한 개념이다. 공분산 행렬의 양반정치성과 직접 연결된다.
+- **[엔트로피·KL 발산](entropy-kl.html)** : KL 발산은 정보기하에서 가장 기본적인 발산 함수(divergence function)다. KL 발산의 2차 근사가 피셔 계량이며, KL 발산 자체가 다양체 위의 비대칭 "거리"를 정의한다.
+- **[확률미분방정식](sde.html)** : 자연 그래디언트는 랭주뱅 동역학의 확률적 버전인 SGLD(stochastic gradient Langevin dynamics)와 결합되어 확률적 자연 그래디언트를 형성한다.

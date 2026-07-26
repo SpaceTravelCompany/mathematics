@@ -198,7 +198,7 @@ $\nabla f = (x/2, 2y/9)$, $\nabla f(2, 0) = (1, 0)$.
 
 ## 연결
 
-- **[좌표기하와 이차곡선](topics/coordinate-geometry.html)** : 등고선은 좌표평면 위의 곡선으로, 이차곡선(원, 타원 등)을 등고선으로 이해할 수 있다.
-- **[편도함수·기울기 벡터](topics/partial-derivatives.html)** : $\nabla f$의 정의와 계산법을 선행해야 한다.
-- **[라그랑주 승수법](topics/lagrange-multipliers.html)** : 최적점에서 $\nabla f \parallel \nabla g$ 조건은 $\nabla f \perp$ 등고선의 직접적인 응용이다.
-- **[야코비안·헤시안](topics/jacobian-hessian.html)** : 헤시안은 $\nabla f$의 야코비안으로, 등고선의 곡률을 측정한다.
+- **[좌표기하와 이차곡선](coordinate-geometry.html)** : 등고선은 좌표평면 위의 곡선으로, 이차곡선(원, 타원 등)을 등고선으로 이해할 수 있다.
+- **[편도함수·기울기 벡터](partial-derivatives.html)** : $\nabla f$의 정의와 계산법을 선행해야 한다.
+- **[라그랑주 승수법](lagrange-multipliers.html)** : 최적점에서 $\nabla f \parallel \nabla g$ 조건은 $\nabla f \perp$ 등고선의 직접적인 응용이다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 헤시안은 $\nabla f$의 야코비안으로, 등고선의 곡률을 측정한다.
