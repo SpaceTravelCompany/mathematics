@@ -1,0 +1,30 @@
+# Mathematics Roadmap
+
+선형대수 · 미적분 · 확률통계 학습 사이트. 빌더는 [`topic-pages`](https://github.com/SpaceTravelCompany/topic-pages) 패키지를 사용한다.
+
+## 사용법
+
+```bash
+cd mathematics
+npm install         # topic-pages 의존성 설치
+npm run build       # dist/ 정적 HTML 생성
+```
+
+`dist/index.html` + `dist/assets/` 번들로 동작하는 위키 페이지 앱이다.
+
+`assets/`의 이미지·파비콘 등 추가 에셋도 빌드 시 자동으로 `dist/assets/`에 복사된다.
+
+서빙은 사용자 환경의 도구로 (VS Code Live Server, `npx serve`, `python -m http.server` 등).
+`content/*.md` 또는 `site.json` 수정 후 `npm run build` 다시 실행 → `dist/` 갱신.
+
+## 구조
+
+- `site.json` — 섹션·주제·참조 링크·테마 정의
+- `content/` — 주제별 마크다운 (73개 토픽)
+- `assets/` — 파비콘 (빌드 시 `dist/assets/`로 복사)
+- `package.json` — `topic-pages` 의존성 + 빌드 스크립트
+- `docs/` — AI 계획 문서
+
+## 라이선스
+
+[MIT](LICENSE)
