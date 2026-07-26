@@ -17,6 +17,7 @@ $$\nabla_\theta \mathbb{E}_{p_\theta}[f(x)] = \mathbb{E}_{p(\epsilon)}[\nabla_\t
 
 이 트릭의 핵심은 확률적 샘플링 과정을 결정론적 변환으로 "우회"하여, 미분 불가능한 샘플링 연산을 미분 가능한 함수 $g_\theta$로 대체하는 것이다.
 
+---
 ## 정의
 
 **중요도 샘플링 추정량 (importance sampling estimator):** $X_i \stackrel{\text{iid}}{\sim} q$일 때
@@ -44,6 +45,7 @@ $$N_{\text{eff}} = \frac{N}{1 + \text{Var}_q(w(X))} \approx \frac{(\sum w_i)^2}{
 
 가중치의 분산이 클수록 실제 정보량이 줄어듦을 나타낸다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 중요도 샘플링의 비편향성
@@ -118,6 +120,7 @@ $$\nabla_\theta \mathbb{E}_{p_\theta}[f(x)] = \mathbb{E}_{p(\epsilon)}[\nabla_\t
 
 재파라미터 트릭은 일반적으로 분산이 더 작지만, $p_\theta$가 재파라미터화 가능해야 하고(reparameterizable, 예: 정규분포), $f$가 미분 가능해야 한다는 제약이 있다.
 
+---
 ## 예제
 
 **예제 1 (정규 제안으로 코시 분포 기댓값 추정):** 표준 코시 분포(Cauchy distribution) $p(x) = 1/(\pi(1+x^2))$에서 $\mathbb{E}[|X|]$를 추정하라. 코시 분포는 꼬리가 두꺼워 분산이 무한대이므로 일반 몬테카를로가 불안정하다.
@@ -176,6 +179,7 @@ $$z = \mu_\phi(x) + \sigma_\phi(x) \odot \epsilon, \quad \epsilon \sim \mathcal{
 
 이렇게 하면 $\phi$에 대한 ELBO의 그래디언트를 $\epsilon$에 대한 기댓값으로 계산할 수 있어, 낮은 분산의 그래디언트 추정이 가능하다.
 
+---
 ## 연결
 
 - **[몬테카를로](monte-carlo.html)** : 중요도 샘플링은 몬테카를로 적분의 일반화다. 비편향성과 수렴 속도 $O(1/\sqrt{N})$을 계승하지만, 분산이 제안분포 선택에 크게 의존한다.

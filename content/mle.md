@@ -11,6 +11,7 @@ slug: mle
 
 **점추정(point estimation)**은 모수를 하나의 값으로 추정하는 것이고, **구간추정(interval estimation)**은 신뢰구간(confidence interval)으로 추정의 불확실성을 함께 제시한다. MLE는 점추정의 대표적인 방법이다.
 
+---
 ## 정의
 
 **가능도함수(likelihood function):** $n$개의 i.i.d.(independent and identically distributed) 확률변수 $X_1, \ldots, X_n$이 PDF/PMF $f(x|\theta)$를 따를 때
@@ -29,6 +30,7 @@ $$\hat{\theta}_{\text{MLE}} = \arg\max_{\theta \in \Theta} \ell(\theta)$$
 
 즉, 로그가능도를 최대화하는 $\theta$ 값이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 로그 변환의 불변성 — $\log$를 취해도 $\arg\max$는 같다
@@ -133,6 +135,7 @@ $$\sqrt{n}(\hat{\theta} - \theta_0) \approx -\frac{\ell'(\theta_0)/\sqrt{n}}{\el
 
 분자 $\ell'(\theta_0)/\sqrt{n}$는 CLT에 의해 $\mathcal{N}(0, I(\theta_0))$로 수렴하고, 분모 $\ell''(\theta_0)/n$은 대수의 법칙에 의해 $-I(\theta_0)$로 수렴한다. 슬러츠키 정리(Slutsky's theorem)를 적용하면 원하는 결과를 얻는다. $\square$
 
+---
 ## 예제
 
 **예제 1 (정규분포 MLE):** 한 공정에서 생산된 5개 제품의 길이(cm)가 다음과 같다.
@@ -185,6 +188,7 @@ $$\hat{p} \pm 1.96 \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} = 0.63 \pm 1.96 \cd
 
 **풀이:** MLE의 불변성에 의해 $\widehat{\mu^2} = (\hat{\mu})^2 = \bar{x}^2$이다. 예를 들어 데이터가 [2, 4, 6]이면 $\hat{\mu}=4$이고 $\widehat{\mu^2}=16$이다.
 
+---
 ## 연결
 
 - **[주요 분포](distributions.html)** : MLE의 입력은 데이터, 출력은 분포의 모수다. 각 분포(정규, 베르누이, 포아송, 지수)의 PDF/PMF를 알아야 로그가능도를 구성할 수 있다.

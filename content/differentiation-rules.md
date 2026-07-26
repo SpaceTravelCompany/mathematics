@@ -11,6 +11,7 @@ slug: differentiation-rules
 
 **역함수 미분법(inverse function rule)** 은 연쇄법칙의 직접적인 결과로, 역함수의 도함수를 원래 함수의 도함수로 표현한다.
 
+---
 ## 정의
 
 **선형성(linearity of differentiation):** $\alpha, \beta \in \mathbb{R}$이고 $f, g$가 미분가능할 때,
@@ -45,6 +46,7 @@ $$\frac{d}{dx} x^r = r x^{r-1}$$
 
 **음함수 미분법(Implicit Differentiation):** $y$가 $x$의 함수로 $F(x, y) = 0$ 꼴로 주어졌을 때, 양변을 $x$에 대해 미분하고 $y'$에 대해 푼다. 연쇄법칙이 핵심 도구다: $\frac{d}{dx} f(y) = f'(y) \cdot \frac{dy}{dx}$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 곱 법칙 (Product Rule)
@@ -155,6 +157,7 @@ $$\left(\frac{f}{g}\right)' = \frac{f'}{g} - \frac{fg'}{g^2} = \frac{f'g - fg'}{
 
 가 성립한다. 이 유도는 몫 법칙을 별도로 외울 필요 없이 곱 법칙과 연쇄법칙만으로 처리할 수 있음을 보여준다.
 
+---
 ## 예제
 
 **예제 1 (연쇄법칙):** $\frac{d}{dx} \sin(x^2)$를 구하라.
@@ -233,6 +236,7 @@ $$f'(x) = 3[\sin(2x)]^2 \cdot \cos(2x) \cdot 2 = 6 \sin^2(2x) \cos(2x)$$
 
 $$\frac{d}{dx} (x^2 + 1)^{1/2} = \frac{1}{2}(x^2 + 1)^{-1/2} \cdot 2x = \frac{x}{\sqrt{x^2 + 1}}$$
 
+---
 ## 연결
 
 - **[극한·연속·도함수](limits-derivatives.html)** : 모든 미분 법칙은 극한 정의에서 출발한다. 도함수의 정의와 기본 성질(미분가능성, 연속성)이 선행되어야 한다.

@@ -11,6 +11,7 @@ slug: partial-derivatives
 
 1변수 함수의 도함수 $f'(a)$가 "접선의 기울기"였다면, 다변수에서는 각 축 방향의 기울기를 따로따로 계산해야 한다. 편도함수는 이렇게 "한 방향씩" 미분하는 자연스러운 확장이다.
 
+---
 ## 정의
 
 **편도함수 (partial derivative):** 함수 $f: \mathbb{R}^n \to \mathbb{R}$가 주어질 때, $x = a \in \mathbb{R}^n$에서의 $x_i$에 대한 편도함수는 다음 극한이 존재할 때 정의된다:
@@ -41,6 +42,7 @@ $$df = \frac{\partial f}{\partial x_1} dx_1 + \frac{\partial f}{\partial x_2} dx
 
 **$C^1$ 함수 (continuously differentiable):** 모든 1계 편도함수가 존재하고 연속인 함수를 $C^1$ 함수라 한다. $C^1$이면 미분가능하다(아래 정리 2).
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 편도함수 존재 ≠ 미분가능 (Partial Derivatives Exist ≠ Differentiable)
@@ -129,6 +131,7 @@ $h \to 0$일 때 $\nabla f(a)^T h \to 0$이고 $o(\|h\|) \to 0$이므로 $\lim_{
 
 $\square$
 
+---
 ## 예제
 
 **예제 1:** $f(x, y) = x^2 y + e^{xy}$의 편도함수와 기울기 벡터를 구하라.
@@ -213,6 +216,7 @@ $= \frac{1}{2} \cdot 16 \cdot \frac{1}{2} \cdot 0.1 + \frac{1}{2} \cdot 10 \cdot
 
 $= 0.4 + 0.25 + 0.4\sqrt{3} \approx 0.4 + 0.25 + 0.693 = 1.343$
 
+---
 ## 연결
 
 - **[극한·연속·도함수](limits-derivatives.html)** : 1변수 도함수의 정의와 극한 개념이 편도함수의 기초다.

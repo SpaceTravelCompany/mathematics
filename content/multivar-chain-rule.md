@@ -15,6 +15,7 @@ $$\frac{dz}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f
 
 더 일반적으로, $f: \mathbb{R}^n \to \mathbb{R}^m$과 $g: \mathbb{R}^m \to \mathbb{R}^p$의 합성 $g \circ f$의 도함수는 야코비안 행렬의 곱 $(J_g \circ J_f)$이다.
 
+---
 ## 정의
 
 **스칼라-경로 연쇄법칙 (chain rule for scalar path):** $f: \mathbb{R}^n \to \mathbb{R}$이 미분가능하고 $\gamma: \mathbb{R} \to \mathbb{R}^n$이 미분가능하면, 합성 $f \circ \gamma: \mathbb{R} \to \mathbb{R}$에 대해:
@@ -43,6 +44,7 @@ $$dz = \frac{\partial f}{\partial x_1} dx_1 + \cdots + \frac{\partial f}{\partia
 
 $dx_i = \frac{dx_i}{dt} dt$를 대입하면 $dz/dt$를 얻는다. 전미분 형식은 변수 간의 의존 관계를 명시적으로 드러낸다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 스칼라-경로 연쇄법칙 (Scalar-Path Chain Rule)
@@ -113,6 +115,7 @@ $f$가 $C^k$($k$번 연속 미분가능)이고 $g$가 $C^k$이면 $g \circ f$도
 
 $\square$
 
+---
 ## 예제
 
 **예제 1 (극좌표 연쇄법칙):** $f(x, y)$를 극좌표 $(r, \theta)$로 표현할 때, $x = r\cos\theta$, $y = r\sin\theta$에 대해 $f_r$과 $f_\theta$를 $f_x$, $f_y$로 표현하라.
@@ -198,6 +201,7 @@ $t = 1$에서 $\gamma(1) = (1, 1, 1)$, $\nabla T(1, 1, 1) = (2, 4, 6)$, $\gamma'
 
 $$\frac{dT}{dt}(1) = (2, 4, 6) \cdot (1, 2, 3) = 2 + 8 + 18 = 28$$
 
+---
 ## 연결
 
 - **[미분 법칙·연쇄법칙](differentiation-rules.html)** : 1변수 연쇄법칙이 다변수 확장의 기초다.

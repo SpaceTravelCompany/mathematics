@@ -13,6 +13,7 @@ p-value는 가장 널리 사용되면서도 가장 자주 오해받는 통계량
 
 **다중검정 문제(multiple testing problem)**는 여러 가설을 동시에 검정할 때 발생한다. 100개의 가설을 각각 $\alpha = 0.05$로 검정하면, 모든 귀무가설이 참일 때도 평균 5개의 "유의한" 결과가 우연히 나온다. 본페로니 보정(Bonferroni correction) $\alpha' = \alpha/m$는 가장 단순한 해결책이다.
 
+---
 ## 정의
 
 **귀무가설(null hypothesis) $H_0$:** 기각하려는 대상, 보통 "효과가 없다" 또는 "차이가 없다"는 진술. 유지되는 기본 가정(default assumption)이다.
@@ -43,6 +44,7 @@ $$Z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \sim \mathcal{N}(0, 1) \quad \text
 
 **본페로니 보정 (Bonferroni correction):** $m$개의 가설을 동시에 검정할 때, 개별 유의수준을 $\alpha' = \alpha/m$으로 설정하여 전체 family-wise error rate(FWER)를 $\alpha$ 이하로 유지한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: p-value의 정확한 의미와 오해
@@ -121,6 +123,7 @@ $$= P\left(Z > z_\alpha - \frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}}\right) = \Phi\le
 
 검정력은 효과 크기 $(\mu_1 - \mu_0)/\sigma$와 $\sqrt{n}$에 비례하여 증가한다. $\square$
 
+---
 ## 예제
 
 **예제 1 (동전의 공정성 검정):** 동전을 100번 던져 60번 앞면이 나왔다. 이 동전이 공정한지($H_0: p = 0.5$) 유의수준 $\alpha = 0.05$에서 검정하라.
@@ -172,6 +175,7 @@ $$\frac{2\sqrt{n}}{5} = 2.80 \quad \Rightarrow \quad \sqrt{n} = 7.0 \quad \Right
 
 따라서 최소 49개의 표본이 필요하다.
 
+---
 ## 연결
 
 - **[중심극한정리](clt.html)** : z-검정과 정규근사의 이론적 근거는 CLT다. 표본평균의 분포가 정규분포에 수렴하기 때문에 p-value를 표준정규분포로 계산할 수 있다.

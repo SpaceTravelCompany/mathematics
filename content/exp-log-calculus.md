@@ -11,6 +11,7 @@ slug: exp-log-calculus
 
 지수함수와 로그함수는 미분방정식 $\frac{dy}{dt} = ky$의 해로서, 지수성장(exponential growth)과 지수붕괴(exponential decay)의 모델을 제공한다. $k > 0$이면 성장, $k < 0$이면 붕괴다.
 
+---
 ## 정의
 
 **자연상수 $e$:**
@@ -60,6 +61,7 @@ $$\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^x - e^{-x}}{e^x + e^{-x}}$$
 
 쌍곡선 함수는 현수선(catenary), 상대론적 속도 덧셈, 변분법의 브라키스토크론(brachistochrone) 문제 등 다양한 물리적 상황에 자연스럽게 등장한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: $\frac{d}{dx} e^x = e^x$
@@ -124,6 +126,7 @@ $$\frac{d}{dx} \log_a x = \frac{1}{\ln a} \cdot \frac{d}{dx} \ln x = \frac{1}{\l
 
 여기서 $a > 0$, $a \neq 1$이고 $x > 0$이다. $\square$
 
+---
 ## 예제
 
 **예제 1 (지수성장 모델):** 어떤 세포 배양의 개체 수가 초기 $1000$개에서 3시간 후 $8000$개로 증가했다. 성장이 지수적이라고 가정할 때, (a) 성장률 $k$를 구하고, (b) 6시간 후의 개체 수를 예측하라.
@@ -210,6 +213,7 @@ $$f'(x) = f(x) (1 - f(x))$$
 
 즉, 로지스틱 함수의 미분은 자기 자신과 여함수(complement)의 곱이다. 이 성질은 로지스틱 회귀(logistic regression)의 우도 최적화에 중요하게 사용된다.
 
+---
 ## 연결
 
 - **[지수와 로그](exponentials-logarithms.html)** : 지수법칙과 로그법칙, $e$의 정의 등 미분의 전제가 되는 기초 개념을 다룬다.

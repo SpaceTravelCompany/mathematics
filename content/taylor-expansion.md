@@ -13,6 +13,7 @@ slug: taylor-expansion
 
 소진동 근사(small-angle approximation) $\sin\theta \approx \theta$나 $e^x \approx 1 + x$는 테일러 전개의 1차 항만 취한 것이다. 물리학과 공학에서 비선형 시스템을 선형화할 때 테일러 전개가 필수적이다.
 
+---
 ## 정의
 
 **1변수 테일러 전개 (Taylor expansion, 1D):** $f: \mathbb{R} \to \mathbb{R}$이 $C^{n+1}$ 함수일 때, $x = a$ 근방에서:
@@ -43,6 +44,7 @@ $$f(x) = \sum_{k=0}^\infty \frac{f^{(k)}(0)}{k!} x^k$$
 
 **2차 근사 (quadratic approximation):** $f(x) \approx f(a) + f'(a)(x-a) + \frac{1}{2}f''(a)(x-a)^2$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 테일러 정리 — 라그랑주 나머지 (Taylor's Theorem with Lagrange Remainder)
@@ -131,6 +133,7 @@ $$\ln(1+x) = \sum_{k=1}^\infty \frac{(-1)^{k+1} x^k}{k} = x - \frac{x^2}{2} + \f
 
 $$(1+x)^\alpha = \sum_{k=0}^\infty \binom{\alpha}{k} x^k = 1 + \alpha x + \frac{\alpha(\alpha-1)}{2!}x^2 + \cdots \quad (|x| < 1, \text{ 이항급수})$$
 
+---
 ## 예제
 
 **예제 1:** $e^x$의 $a = 0$에서 3차 테일러 전개와 나머지항을 구하고, $e^{0.1}$의 근삿값과 오차를 평가하라.
@@ -217,6 +220,7 @@ $H = \begin{pmatrix} -\cos x & 0 \\ 0 & -\cos y \end{pmatrix}$, $H(0, 0) = \begi
 
 $f(0, 0) = 2$에서 $x^2 + y^2$ 항이 음수이므로 극대. $\cos$ 함수의 그래프를 생각하면 타당하다.
 
+---
 ## 연결
 
 - **[급수와 수렴](series-convergence.html)** : 테일러 급수의 수렴 반경과 급수 판정법을 다룬다.

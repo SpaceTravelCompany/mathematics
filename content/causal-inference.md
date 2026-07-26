@@ -13,6 +13,7 @@ slug: causal-inference
 
 인과추론의 주요 도구로는 **도구변수(instrumental variable, IV)**, **백도어 조정(backdoor adjustment)**, **반사실(counterfactual)** 분석, **무작위 대조시험(randomized controlled trial, RCT)** 등이 있다. RCT는 교란을 제거하는 가장 확실한 방법으로, 무작위 할당이 처리(treatment)와 교란변수를 독립적으로 만든다.
 
+---
 ## 정의
 
 **구조방정식 모델 (Structural Equation Model, SEM):** 각 변수를 그 원인들의 함수와 외생적(exogenous) 잡음으로 표현한다:
@@ -43,6 +44,7 @@ $$P(Y|\text{do}(X)) = \sum_z P(Y|X, z) P(z)$$
 
 **반사실 (counterfactual):** "만약 $X$가 $x$였다면 $Y$는?"이라는 질문에 대한 답. $Y_{X=x}(u)$로 표기하며, 단위(unit) $u$에서 $X$를 $x$로 설정했을 때 $Y$의 값이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 백도어 조정 공식 (Backdoor Adjustment)
@@ -143,6 +145,7 @@ $$\mathbb{E}[Y|T=1] - \mathbb{E}[Y|T=0] = \mathbb{E}[Y(1)] - \mathbb{E}[Y(0)]$$
 
 **RCT의 한계:** 비용, 윤리적 문제(예: 흡연 강제 할당 불가), 외부 타당도(external validity) 문제 등으로 RCT가 항상 가능한 것은 아니다. 이때 관측 연구(observational study)에서의 인과추론 방법이 필요하다.
 
+---
 ## 예제
 
 **예제 1 (아이스크림-익사 교란):** 여름철 데이터에서 아이스크림 판매량($X$)과 익사 사고 수($Y$) 사이에 강한 양의 상관관계가 관측된다. $r = 0.8$로 매우 높다.
@@ -207,6 +210,7 @@ $Y(0)$: 약물 미복용 시 결과(반사실, 미관측)
 
 $\tau$는 직접 관측할 수 없는 **근본적 인과 추론 문제(fundamental problem of causal inference)**다. 한 개인에 대해 두 결과를 동시에 관측할 수 없기 때문이다. RCT는 집단 수준에서 $\mathbb{E}[Y(1)] - \mathbb{E}[Y(0)]$을 식별한다.
 
+---
 ## 연결
 
 - **[회귀분석](regression-analysis.html)** : 회귀분석에서 통제 변수를 추가하는 것은 교란 통제의 한 형태다. 그러나 "통제하면 된다"는 단순한 생각은 위험하다 — 통제해서는 안 되는 변수(매개변수, mediator; 충돌변수, collider)가 있다.

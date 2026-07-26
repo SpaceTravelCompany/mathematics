@@ -11,6 +11,7 @@ slug: jacobian-hessian
 
 야코비안은 좌표 변환, 최적화, 로봇 공학(조작기의 속도 관계), 유체 역학(변형률)에서 필수적이다. 헤시안은 최적점의 분류(최소/최대/안장점), 뉴턴 방법(Newton's method)의 2차 최적화, 테일러 전개의 2차 항에서 핵심적인 역할을 한다.
 
+---
 ## 정의
 
 **야코비안 행렬 (Jacobian matrix):** 함수 $f: \mathbb{R}^n \to \mathbb{R}^m$이 $f(x) = (f_1(x), f_2(x), \ldots, f_m(x))^T$로 주어질 때, $x \in \mathbb{R}^n$에서의 야코비안 $J_f(x)$는 $m \times n$ 행렬이다:
@@ -49,6 +50,7 @@ $$f(x + \Delta x) \approx f(x) + \nabla f(x)^T \Delta x + \frac{1}{2} \Delta x^T
 
 헤시안 $H_f(x)$는 이 2차 항의 곡률을 결정한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 헤시안의 대칭성 — 클레로 정리 (Clairaut's Theorem)
@@ -130,6 +132,7 @@ $$dy_1 \wedge \cdots \wedge dy_n = (\det J_f) \, dx_1 \wedge \cdots \wedge dx_n$
 
 이는 야코비안이 좌표 변환에서 부피 형식(volume form)을 어떻게 변환하는지를 나타낸다.
 
+---
 ## 예제
 
 **예제 1 (극좌표 변환의 야코비안):** 극좌표 변환 $T: (r, \theta) \mapsto (x, y)$를 $x = r\cos\theta$, $y = r\sin\theta$로 정의할 때 야코비안 행렬과 행렬식을 구하라.
@@ -246,6 +249,7 @@ $$\det J = r^2 \sin\theta$$
 
 따라서 $dx\,dy\,dz = r^2 \sin\theta \, dr \, d\theta \, d\phi$이다.
 
+---
 ## 연결
 
 - **[행렬 미분](matrix-calculus.html)** : 그래디언트는 야코비안의 특수한 경우($m=1$), 행렬 미분의 규칙들은 야코비안 연쇄법칙의 기초다.

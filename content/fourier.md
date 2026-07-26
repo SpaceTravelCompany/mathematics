@@ -11,6 +11,7 @@ slug: fourier
 
 핵심 통찰은 삼각함수 집합 $\{1, \cos nx, \sin nx\}$이 내적공간 $L^2[-\pi, \pi]$의 **직교 기저(orthogonal basis)** 를 이룬다는 것이다. 푸리에 계수는 함수를 이 기저에 정사영(projection)한 좌표다.
 
+---
 ## 정의
 
 **주기 함수 (periodic function):** $f(x + T) = f(x)$를 모든 $x$에 대해 만족하는 $T > 0$가 존재할 때 $f$를 주기함수라 하고 $T$를 주기라 한다. 편의상 주기를 $2\pi$로 표준화한다.
@@ -49,6 +50,7 @@ $$f(x) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \hat{f}(\omega) e^{i\omega x}\,d
 
 $$(f * g)(x) = \int_{-\infty}^{\infty} f(x - t) g(t)\,dt = \int_{-\infty}^{\infty} f(t) g(x - t)\,dt$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 삼각함수 집합의 직교성 (Orthogonality)
@@ -184,6 +186,7 @@ $$= \int_{-\infty}^{\infty} f(u) e^{-i\omega(u + a)}\,du = e^{-i\omega a} \int_{
 
 $\square$
 
+---
 ## 예제
 
 **예제 1 (구형파의 푸리에 급수):** 구형파(square wave) $f(x) = \begin{cases} -1, & -\pi < x < 0 \\ 1, & 0 < x < \pi \end{cases}$ (주기 $2\pi$)의 푸리에 급수를 구하라.
@@ -258,6 +261,7 @@ $$\frac{\partial}{\partial t} \hat{u}(\omega, t) = -\omega^2 \hat{u}(\omega, t) 
 
 역변환하면 $u(x,t) = \frac{1}{2\pi} \int \hat{f}(\omega) e^{-\omega^2 t} e^{i\omega x}\,d\omega = f * G_t$ ($G_t$는 가우시안 커널). $\square$
 
+---
 ## 연결
 
 - **[삼각함수](trigonometric-functions.html)** : 푸리에 급수의 기저 함수인 $\sin nx$와 $\cos nx$는 삼각함수에서 정의된다. 덧셈정리, 배각 공식이 직교성 증명에 사용된다.

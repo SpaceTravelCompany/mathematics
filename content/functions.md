@@ -7,6 +7,7 @@ slug: functions
 
 함수(function)는 단순한 "입력-출력 기계"가 아니다. 두 집합 사이의 **대응 규칙** 중 특별한 성질을 만족하는 것이다: 정의역(domain)의 각 원소에 대해 공역(codomain)의 **오직 하나**의 원소를 대응시킨다. 이 대응이 수학 전반에서 구조를 보존하고 변환하는 기본 단위가 된다. 선형변환(linear transformation)은 벡터공간 사이의 함수이고, 확률변수(random variable)는 표본공간에서 실수로 가는 함수이며, 미분(differentiation)은 함수를 함수로 보내는 함수(범함수, functional)이다. 함수를 이해하는 것은 수학의 가장 보편적인 렌즈를 얻는 일이다.
 
+---
 ## 정의
 
 **함수(function)** $f: A \to B$는 집합 $A$의 각 원소 $x$에 집합 $B$의 **유일한(unique)** 원소 $f(x)$를 대응시키는 규칙이다.
@@ -27,6 +28,7 @@ slug: functions
 
 **역함수(inverse function):** $f: A \to B$가 전단사일 때, $f^{-1}: B \to A$가 존재하여 $f^{-1}(y) = x \iff f(x) = y$를 만족한다. 이때 $f^{-1} \circ f = \text{id}_A$, $f \circ f^{-1} = \text{id}_B$이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 전단사와 역함수의 동치
@@ -67,6 +69,7 @@ $$f \circ \text{id}_A = f = \text{id}_B \circ f$$
 
 **증명:** 임의의 $x \in A$에 대해 $(f \circ \text{id}_A)(x) = f(\text{id}_A(x)) = f(x)$이고, 임의의 $y \in A$에 대해 $(\text{id}_B \circ f)(y) = \text{id}_B(f(y)) = f(y)$. 따라서 성립한다.
 
+---
 ## 예제
 
 **예제 1:** $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$과 $g: \mathbb{R} \to \mathbb{R}$, $g(x) = 2x + 1$에 대해 단사(surjectivity)와 전사(surjectivity)를 판정하라.
@@ -89,6 +92,7 @@ $$(g \circ f)(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2 = 4x^2 + 4x + 1$$
 $$y(x-1) = x \;\Rightarrow\; yx - y = x \;\Rightarrow\; yx - x = y \;\Rightarrow\; x(y-1) = y \;\Rightarrow\; x = \frac{y}{y-1}$$
 따라서 $f^{-1}(y) = \frac{y}{y-1}$ ($y \neq 1$)이다. $f^{-1}$의 정의역이 $f$의 치역과 일치함을 확인할 수 있다.
 
+---
 ## 연결
 
 - **[집합과 논리](sets-and-logic.html)** : 함수는 집합 사이의 대응으로 정의되며, 집합론의 용어(정의역, 공역, 치역)를 사용한다.

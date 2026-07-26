@@ -17,6 +17,7 @@ $$D_{KL}(p_\theta \| p_{\theta+d\theta}) \approx \frac{1}{2} d\theta^T g(\theta)
 
 **자연 그래디언트(natural gradient)**는 이 리만 계량을 고려한 최적화 방향이다. 일반 그래디언트 $\nabla \mathcal{L}(\theta)$가 유클리드 공간에서의 "가장 가파른 하강 방향"이라면, 자연 그래디언트 $\tilde{\nabla} \mathcal{L}(\theta) = g^{-1} \nabla \mathcal{L}(\theta)$는 **통계 다양체에서의 가장 가파른 하강 방향**이다. 자연 그래디언트는 모수의 재매개변수화(reparameterization)에 불변(invariant)하여, 더 효율적인 최적화를 가능하게 한다.
 
+---
 ## 정의
 
 **통계 다양체 (statistical manifold):** 모수 공간 $\Theta \subset \mathbb{R}^d$로 매개변수화된 확률분포족 $\{p_\theta : \theta \in \Theta\}$을 다양체(manifold)로 간주한 것. 각 점 $\theta$는 하나의 확률분포 $p_\theta$에 대응한다.
@@ -37,6 +38,7 @@ $$\theta_{t+1} = \theta_t - \eta \, g(\theta_t)^{-1} \nabla \mathcal{L}(\theta_t
 
 **e-접속과 m-접속 (exponential and mixture connections):** 정보기하에서 중요한 두 가지 affine 접속(connection)으로, 각각 지수족(exponential family)과 혼합족(mixture family)의 자연스러운 기하를 정의한다. 이중 평탄 구조(dually flat structure)를 형성한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: KL 발산의 2차 테일러 전개 → 피셔 정보
@@ -124,6 +126,7 @@ $$= \left(\frac{\partial\theta}{\partial\phi}\right)^{-1} g_\theta^{-1} \nabla_\
 
 **대비 — 일반 그래디언트:** 일반 그래디언트 $\nabla_\theta \mathcal{L}$은 좌표 변환 아래 공변(covariant)하지 않는다. 같은 방향이라도 다른 좌표계에서 다르게 표현된다. 이는 일반 그래디언트 하강이 모수화(parameterization)에 민감한 이유다.
 
+---
 ## 예제
 
 **예제 1 (베르누이 분포의 피셔 계량):** $X \sim \text{Bernoulli}(p)$, $\theta = p \in (0,1)$.
@@ -170,6 +173,7 @@ $$D_{KL}(p_\theta \| p_{\theta'}) = \psi(\theta) + \phi(\theta') - \theta \cdot 
 
 여기서 $\psi$와 $\phi$는 각각 지수족과 혼합족의 potential 함수다.
 
+---
 ## 연결
 
 - **[스코어 함수·피셔 정보](score-function.html)** : 피셔 정보 행렬은 스코어 함수의 공분산으로 정의되며, 정보기하의 리만 계량이 된다. 스코어 함수는 다양체 위의 접벡터(tangent vector)로 해석된다.

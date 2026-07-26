@@ -7,6 +7,7 @@ slug: trigonometric-functions
 
 **삼각함수(trigonometric functions)** 는 각도를 입력하면 좌표를 출력하는 함수다. 단위원(unit circle) 위를 회전하는 점의 $x$좌표와 $y$좌표가 각각 코사인(cosine)과 사인(sine)이다. 이 관점은 삼각형의 비율이라는 기하학적 기원을 훨씬 넘어서, 주기적인 현상(periodic phenomena)을 기술하는 가장 강력한 언어로 확장된다. 파동(wave), 진동(oscillation), 회전(rotation), 그리고 원운동(circular motion)은 모두 삼각함수로 표현된다. 푸리에 해석(Fourier analysis)은 모든 주기 신호를 삼각함수의 합으로 분해하며, 이는 신호처리와 양자역학의 초석이다.
 
+---
 ## 정의
 
 **호도법(radian measure):** 각도를 측정하는 단위로, 반지름 1인 원에서 호(arc)의 길이로 각도를 나타낸다. $360^\circ = 2\pi$ (rad)이다.
@@ -22,6 +23,7 @@ slug: trigonometric-functions
 
 **역삼각함수(inverse trigonometric functions):** $\sin^{-1} x$ (또는 $\arcsin x$)는 $\sin\theta = x$를 만족하는 각도를 $[-\pi/2, \pi/2]$ 범위에서 반환한다. 유사하게 $\cos^{-1} x$ ($[0, \pi]$), $\tan^{-1} x$ ($(-\pi/2, \pi/2)$)가 정의된다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 피타고라스 항등식 (Pythagorean Identity)
@@ -79,6 +81,7 @@ $$\cos\frac{\theta}{2} = \pm\sqrt{\frac{1 + \cos\theta}{2}}, \quad \sin\frac{\th
 
 여기서 부호는 $\theta/2$가 위치한 사분면에 따라 결정된다.
 
+---
 ## 예제
 
 **예제 1:** 삼각방정식 $\sin x = \frac{1}{2}$를 $0 \leq x < 2\pi$ 범위에서 풀어라.
@@ -107,6 +110,7 @@ $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2} \cdot \frac
 
 기본 $\cos x$에 비해 진폭이 2배, 주기가 $1/3$로 줄고, $\pi/12$만큼 우측으로, 1만큼 위로 이동했다.
 
+---
 ## 연결
 
 - **[푸리에 급수](fourier.html)** : 모든 주기함수는 삼각함수의 무한급수로 분해된다.

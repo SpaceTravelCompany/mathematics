@@ -11,6 +11,7 @@ slug: vector-space-abstraction
 
 양자역학에서 파동함수는 무한차원 벡터공간(힐베르트 공간)의 벡터이며, 신호 처리에서 신호는 함수공간의 원소다. 미분방정식의 해의 집합이 벡터공간을 이룬다는 사실(중첩 원리, superposition principle)은 선형 미분방정식 이론의 출발점이다.
 
+---
 ## 정의
 
 **벡터공간(vector space):** 집합 $V$와 체(field) $\mathbb{R}$ (실수)에 대해, 다음 두 연산이 정의되고 여덟 개의 공리를 만족하면 $V$를 $\mathbb{R}$-벡터공간(또는 실벡터공간)이라 한다.
@@ -52,6 +53,7 @@ $$T(\alpha u + \beta v) = \alpha T(u) + \beta T(v) \quad \forall u, v \in V,\; \
 
 **수열공간 $\ell^2$:** 제곱합이 수렴하는 실수열 $(a_n)_{n=1}^{\infty}$의 집합. $\sum_{n=1}^{\infty} a_n^2 < \infty$. 무한차원이며, 내적이 정의되는 힐베르트 공간의 예시이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 부분공간 판정 정리
@@ -111,6 +113,7 @@ $$\phi(v) = [v]_{\mathcal{B}} = (\alpha_1, \dots, \alpha_n)^T$$
 
 로 정의한다 (여기서 $v = \sum \alpha_i b_i$). $\phi$는 선형이고($\phi(\alpha u + \beta v) = \alpha \phi(u) + \beta \phi(v)$), 전단사(bijective)이므로 동형사상이다. 따라서 $V \cong \mathbb{R}^n$이다.
 
+---
 ## 예제
 
 **예제 1:** 다음 집합이 $\mathbb{R}^3$의 부분공간인지 판정하라.
@@ -151,6 +154,7 @@ $\gamma = 0$에서 $\alpha + \beta = 0$, $\alpha - \beta = 0$이므로 $\alpha =
 
 따라서 $W$는 부분공간이다.
 
+---
 ## 연결
 
 - **[내적과 노름](inner-product-norm.html)** : 벡터공간에 내적이 추가되면 내적공간이 되고, 노름과 직교성의 개념을 추상공간으로 확장할 수 있다.

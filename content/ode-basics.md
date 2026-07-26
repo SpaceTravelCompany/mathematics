@@ -15,6 +15,7 @@ $$\frac{dx}{dt} = f(x, t), \quad x(t_0) = x_0$$
 
 이것이 미분방정식 이론의 가장 기본적인 문제 설정이다. 모든 해는 이 초기조건에 의해 유일하게 결정되며(조건이 충족될 때), 이는 물리적 인과율(causality)의 수학적 반영이다.
 
+---
 ## 정의
 
 **상미분방정식(ODE):** 미지의 함수 $x: \mathbb{R} \to \mathbb{R}^n$와 그 도함수들 사이의 관계를 나타내는 방정식. $n$계 ODE의 일반형:
@@ -55,6 +56,7 @@ $$x' = A x$$
 
 **해의 존재·유일성 (existence and uniqueness):** 함수 $f$가 충분히 매끄럽다면 (특히 $x$에 대해 립시츠 연속), 초기값 문제는 국소적으로 유일한 해를 가진다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 피카르-린델뢰프 정리 (Picard–Lindelöf Theorem)
@@ -160,6 +162,7 @@ $n \times n$ 행렬 $A$에 대해 $\dot{x} = Ax$의 해 $x(t) = e^{At}x_0$의 �
 
 **증명:** $e^{At} = Pe^{Dt}P^{-1}$ (대각화 가능한 경우)이므로 $x(t)$의 $i$번째 성분은 $e^{\lambda_i t}$의 선형결합이다. $\lambda_i = a_i + ib_i$일 때 $|e^{\lambda_i t}| = e^{a_i t}$이므로, $a_i < 0$이면 $t \to \infty$에서 소멸하고 $a_i > 0$이면 발산한다. 대각화 불가능한 경우에는 $t^k e^{\lambda_i t}$ 형태의 항이 추가로 나타나지만, $a_i < 0$이면 지수적 감쇠가 다항식 증가를 압도한다. $\square$
 
+---
 ## 예제
 
 **예제 1 (가장 단순한 ODE — 지수 성장, exponential growth):** 인구 성장 모델 $\frac{dx}{dt} = rx$, $x(0) = x_0$의 해를 구하라.
@@ -257,6 +260,7 @@ $$\begin{pmatrix} x_1 \\ x_2 \end{pmatrix}' = \begin{pmatrix} 0 & 1 \\ -\omega^2
 
 저감쇠 케이스는 주파수 $\omega_d$로 진동하면서 지수적 감쇠하는 해를 나타낸다. 감쇠비(damping ratio) $\zeta = \gamma/\omega$는 진동의 성격을 결정한다.
 
+---
 ## 연결
 
 - **[지수·로그 함수 미분](exp-log-calculus.html)** : ODE 해의 지수 함수 $e^{rt}$,

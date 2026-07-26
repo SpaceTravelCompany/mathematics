@@ -17,6 +17,7 @@ $$V^*(s) = \max_a \sum_{s'} P(s'|s,a)[R(s,a,s') + \gamma V^*(s')]$$
 
 가치 반복(value iteration)과 정책 반복(policy iteration)은 이 방정식을 풀어 최적 정책을 찾는 대표적 알고리즘이다.
 
+---
 ## 정의
 
 **마르코프 결정과정 (Markov Decision Process):** MDP는 다음 5개의 요소로 구성된 튜플 $(\mathcal{S}, \mathcal{A}, P, R, \gamma)$이다.
@@ -47,6 +48,7 @@ $$V^*(s) = \max_\pi V^\pi(s), \quad Q^*(s,a) = \max_\pi Q^\pi(s,a)$$
 $$V^*(s) = \max_a \sum_{s'} P(s'|s,a)[R(s,a,s') + \gamma V^*(s')]$$
 $$Q^*(s,a) = \sum_{s'} P(s'|s,a)\left[R(s,a,s') + \gamma \max_{a'} Q^*(s',a')\right]$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 벨만 방정식의 유도
@@ -137,6 +139,7 @@ $$= \mathbb{E}_{\pi'}[R_{t+1} + \gamma \mathbb{E}[R_{t+2} + \gamma V^\pi(S_{t+2}
 
 **정책 반복 알고리즘:** (1) 초기 정책 $\pi_0$에서 시작, (2) 정책 평가(policy evaluation): $V^{\pi_k}$ 계산, (3) 정책 개선(policy improvement): $\pi_{k+1}(s) = \arg\max_a Q^{\pi_k}(s,a)$, (4) 수렴할 때까지 반복. 유한 MDP에서 정책 반복은 유한 단계 내에 수렴한다.
 
+---
 ## 예제
 
 **예제 1 (2상태 MDP):** 두 상태 $s_1, s_2$와 두 행동 $a_1, a_2$가 있는 MDP를 고려하자. 전이확률과 보상은 다음과 같다:
@@ -205,6 +208,7 @@ $Q^{\pi}(s_2,a_2) = 3 + 0.9 \times 10.70 = 12.63 > 10.21$ → $\pi_1(s_2) = a_2$
 
 1회 개선으로 이미 $\pi^*$에 도달했다.
 
+---
 ## 연결
 
 - **[확률 행렬·마르코프 체인](markov-chains.html)** : MDP는 마르코프 체인에 행동(agent의 선택)과 보상을 추가한 확장이다. 정책 $\pi$가 고정되면 MDP는 마르코프 체인이 된다(전이확률 $P^\pi(s'|s) = \sum_a \pi(a|s) P(s'|s,a)$).

@@ -11,6 +11,7 @@ slug: multiple-integrals
 
 좌표 변환(coordinate transformation)은 적분 영역을 더 간단한 형태로 바꾸거나 대칭성을 활용하기 위해 필수적이다. 극좌표(polar), 원통좌표(cylindrical), 구면좌표(spherical)로의 변환은 각각 원형·원통형·구형 대칭 문제에서 야코비안(Jacobian) 행렬식을 통해 부피 요소를 보정한다.
 
+---
 ## 정의
 
 **2중적분 (double integral):** 유계 영역 $D \subset \mathbb{R}^2$ 위에서 정의된 함수 $f: D \to \mathbb{R}$의 2중적분은 리만 합의 극한으로 정의된다. $D$를 작은 직사각형들로 분할하고 각각의 넓이 $\Delta A$와 함수값의 곱을 더한 뒤, 분할을 세밀하게 하는 극한이다:
@@ -55,6 +56,7 @@ $$dx\,dy = |J|\,du\,dv$$
 
 $$J = \left|\frac{\partial(x,y,z)}{\partial(u,v,w)}\right| = \left| \det \begin{pmatrix} x_u & x_v & x_w \\ y_u & y_v & y_w \\ z_u & z_v & z_w \end{pmatrix} \right|$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 푸비니 정리 (Fubini's Theorem)
@@ -163,6 +165,7 @@ $$\iiint_E 1\,dV = \int_a^b \int_{g_1(x)}^{g_2(x)} \int_{h_1(x,y)}^{h_2(x,y)} 1\
 
 내부 적분: $\int_{h_1}^{h_2} 1\,dz = h_2(x,y) - h_1(x,y)$는 $(x,y)$에서의 수직 길이. $y$에 대해 적분하면 단면적 $A(x)$, $x$에 대해 적분하면 부피가 된다. $\square$
 
+---
 ## 예제
 
 **예제 1 (극좌표로 가우시안 적분):** $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}$임을 2중적분으로 증명하라.
@@ -243,6 +246,7 @@ $$V = \int_{z=0}^H \int_{\theta=0}^{2\pi} \int_{r=0}^R r\,dr\,d\theta\,dz = H \c
 
 $\square$
 
+---
 ## 연결
 
 - **[적분의 의미](integral-meaning.html)** : 1변수 리만 적분의 개념을 2차원·3차원으로 확장한 것이 다중적분이다. 미적분학의 기본정리는 선적분에서도 경로 무관성(path independence)의 형태로 일반화된다.

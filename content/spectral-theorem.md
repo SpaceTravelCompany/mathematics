@@ -11,6 +11,7 @@ slug: spectral-theorem
 
 스펙트럼 정리는 양자역학에서 관측 가능량(observable)이 에르미트 연산자(Hermitian operator)로 표현되는 이유의 수학적 기초다. 또한 주성분 분석(PCA), 이차 최적화(quadratic programming), 그래프 이론의 라플라시안 등 수많은 응용의 핵심에 자리잡고 있다.
 
+---
 ## 정의
 
 **대칭행렬 (symmetric matrix):** $A = A^T$를 만족하는 실정사각행렬. 즉, $a_{ij} = a_{ji}$.
@@ -36,6 +37,7 @@ $$R(x) = \frac{x^T A x}{x^T x}$$
 - **음정치 (negative definite):** $x \neq 0 \Rightarrow x^T A x < 0$ (모든 고유값 < 0)
 - **부정부정 (indefinite):** 양수와 음수 값을 모두 가짐 (고유값에 양수와 음수 섞임)
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 대칭행렬의 고유값은 실수
@@ -127,6 +129,7 @@ $$x^T A x = y^T \Lambda y = \sum \lambda_i y_i^2 \leq \lambda_{\max} \sum y_i^2 
 
 **증명 (개요):** $A$의 고유공간 $E_\lambda$에서 $B$는 $A$와 가환이므로 $E_\lambda$를 보존한다($B(E_\lambda) \subseteq E_\lambda$). 각 고유공간에서 $B$를 대각화하면 전체 공간에서 동시 대각화를 얻는다.
 
+---
 ## 예제
 
 **예제 1:** $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$를 직교 대각화하라.
@@ -201,6 +204,7 @@ $$\min_{\|x\| = 1} x^T A x = 1, \quad \max_{\|x\| = 1} x^T A x = 5$$
 
 $x = q_1 = \frac{1}{\sqrt{2}}(1, -1)$일 때 $x^T A x = 1$, $x = q_2 = \frac{1}{\sqrt{2}}(1, 1)$일 때 $x^T A x = 5$이다.
 
+---
 ## 연결
 
 - **[고유값·고유벡터](eigenvalues.html)** : 스펙트럼 정리는 대칭행렬의 고유값이 가지는 특별한 성질을 종합한다.

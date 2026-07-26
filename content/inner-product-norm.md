@@ -13,6 +13,7 @@ slug: inner-product-norm
 
 내적공간(inner product space)은 유클리드 공간 $\mathbb{R}^n$의 기하학 — 길이, 각도, 직교성 — 을 일반적인 벡터공간으로 확장한다. 다항식, 함수, 신호도 내적공간의 원소가 될 수 있다.
 
+---
 ## 정의
 
 **내적 (inner product):** 실벡터공간 $V$ 위의 내적 $\langle \cdot, \cdot \rangle : V \times V \to \mathbb{R}$은 다음 공리를 만족하는 함수다.
@@ -47,6 +48,7 @@ $$\langle f, g \rangle = \int_a^b f(x) g(x) \, dx$$
 
 $L^2$ 노름은 $\|f\|_2 = \left( \int_a^b |f(x)|^2 \, dx \right)^{1/2}$이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 코시-슈바르츠 부등식 (Cauchy-Schwarz Inequality)
@@ -134,6 +136,7 @@ $$\langle u, v \rangle = \frac{1}{4} \left( \|u+v\|^2 - \|u-v\|^2 + i\|u+iv\|^2 
 $$|\langle u_n, v_n \rangle - \langle u, v \rangle| = |\langle u_n - u, v_n \rangle + \langle u, v_n - v \rangle|$$
 $$\leq \|u_n - u\|\|v_n\| + \|u\|\|v_n - v\| \to 0$$
 
+---
 ## 예제
 
 **예제 1:** $\mathbb{R}^4$에서 $u = (1, -2, 0, 3)$, $v = (2, 1, -1, 1)$에 대해 내적, 노름, 코사인 유사도를 구하라.
@@ -196,6 +199,7 @@ $$\|u + v\|^2 = 4^2 + 3^2 = 25, \quad \|u - v\|^2 = (-2)^2 + 1^2 = 5$$
 $$\|u\|^2 = 5, \quad \|v\|^2 = 10$$
 $$\|u + v\|^2 + \|u - v\|^2 = 25 + 5 = 30 = 2\cdot5 + 2\cdot10$$
 
+---
 ## 연결
 
 - **[평면벡터 기초](plane-vectors.html)** : 2차원 벡터의 내적과 기하학적 의미를 먼저 학습한다.

@@ -11,6 +11,7 @@ slug: line-surface-integrals
 
 **보존장(conservative field)** $F = \nabla f$에서는 선적분이 경로에 무관(path-independent)하며, 시작점과 끝점만으로 결정된다. 이는 중력장이나 정전기장에서 한 일이 경로와 무관하다는 물리적 사실을 반영한다.
 
+---
 ## 정의
 
 **매개변수화된 곡선 (parametrized curve):** $r(t) = (x(t), y(t), z(t))$, $a \leq t \leq b$. 곡선 $C$의 접선 벡터는 $r'(t) = (x'(t), y'(t), z'(t))$이고, 호의 길이 미분(arc length differential)은 $ds = \|r'(t)\|\,dt$이다.
@@ -45,6 +46,7 @@ $$\iint_S F \cdot dS = \iint_D F(r(u,v)) \cdot (r_u \times r_v)\,du\,dv$$
 
 방향 $r_u \times r_v$는 곡면의 법선 벡터(normal vector)이며, $F \cdot (r_u \times r_v)$는 $F$가 곡면을 수직으로 뚫고 나가는 성분이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 보존장의 경로 무관성 (Path Independence)
@@ -118,6 +120,7 @@ $$\int_{-C} F \cdot dr = -\int_C F \cdot dr$$
 
 이 성질들은 정의와 리만 합의 선형성에서 직접 유도된다.
 
+---
 ## 예제
 
 **예제 1 (선적분 — 일 계산):** $F(x,y) = (y, x)$를 $C$: 원 $x^2 + y^2 = 1$의 상반부(반시계 방향)를 따라 적분하라.
@@ -213,6 +216,7 @@ $$A = \iint_S 1\,dS = \int_0^{2\pi} \int_0^{\pi} R^2\sin\phi\,d\phi\,d\theta = 2
 
 $\square$
 
+---
 ## 연결
 
 - **[그린·스토크스·가우스 정리](stokes-theorems.html)** : 선적분과 면적분은 각각 그린 정리, 스토크스 정리, 가우스 정리를 통해 2중적분·3중적분과 연결된다. 이 정리들은 곡선/곡면의 경계(boundary)에서의 적분을 내부 영역의 적분으로 변환한다.

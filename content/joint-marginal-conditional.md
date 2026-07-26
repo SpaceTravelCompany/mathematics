@@ -11,6 +11,7 @@ slug: joint-marginal-conditional
 
 **조건부분포(conditional distribution)**는 한 변수의 값을 고정했을 때 다른 변수의 분포다. "몸무게가 70kg인 사람들 중에서 키의 분포"가 조건부분포의 예시다. 정보가 주어졌을 때 불확실성이 어떻게 변하는지 보여준다.
 
+---
 ## 정의
 
 두 확률변수 $X$, $Y$를 고려하자.
@@ -35,6 +36,7 @@ slug: joint-marginal-conditional
 
 $$f_{\mathbf{X}}(\mathbf{x}) = \frac{1}{(2\pi)^{d/2} |\Sigma|^{1/2}} \exp\left(-\frac{1}{2} (\mathbf{x} - \boldsymbol{\mu})^\top \Sigma^{-1} (\mathbf{x} - \boldsymbol{\mu})\right)$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 조건부 = 결합 / 주변 (베이즈 정리의 연속 형태)
@@ -127,6 +129,7 @@ $$f_X(x) = \frac{d}{dx} F_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y)\,dy$$
 
 $\square$
 
+---
 ## 예제
 
 **예제 1 (2변량 정규 조건부 분포):** $X$와 $Y$가 다음 결합 정규분포를 따른다고 하자.
@@ -193,6 +196,7 @@ $$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} c e^{-x^2 - y^2}\,dx\,dy = c \
 
 $\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}$임을 이용했다. $c\pi = 1$이므로 $c = 1/\pi$이다.
 
+---
 ## 연결
 
 - **[확률·조건부확률·베이즈 정리](conditional-bayes.html)** : 조건부분포의 정의 $P(A|B) = P(A \cap B)/P(B)$는 확률변수로 확장되어 $f_{X|Y}(x|y) = f_{X,Y}(x,y)/f_Y(y)$가 된다. 베이즈 정리는 조건부분포를 "뒤집는" 도구다.

@@ -13,6 +13,7 @@ slug: div-curl
 
 두 연산자는 벡터 미적분의 기본 구성 요소이며, 그린-스토크스-가우스 정리들을 통해 적분과 연결된다.
 
+---
 ## 정의
 
 **벡터장 (vector field):** $F: \mathbb{R}^n \to \mathbb{R}^n$은 각 점에 벡터를 대응시키는 함수이다. 3차원에서 $F(x,y,z) = (P(x,y,z), Q(x,y,z), R(x,y,z))$로 표현한다.
@@ -39,6 +40,7 @@ $$\nabla^2 f = \nabla \cdot (\nabla f) = \frac{\partial^2 f}{\partial x^2} + \fr
 
 **벡터 라플라시안:** $\nabla^2 F = (\nabla^2 P, \nabla^2 Q, \nabla^2 R)$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: $\nabla \cdot (\nabla \times F) = 0$
@@ -115,6 +117,7 @@ $$\nabla^2 f(p) = \lim_{\epsilon \to 0} \frac{2n}{\epsilon^2} \left( \frac{1}{|\
 
 즉, $\nabla^2 f > 0$이면 $p$의 함수값이 주변 평균보다 작고(오목), $\nabla^2 f < 0$이면 크다(볼록). 열방정식 $u_t = \nabla^2 u$에서 라플라시안은 온도가 퍼져나가는 정도를 결정한다.
 
+---
 ## 예제
 
 **예제 1 (발산과 회전 계산):** $F(x,y,z) = (x^2, y^2, z^2)$의 발산과 회전을 구하라.
@@ -183,6 +186,7 @@ $$\nabla \cdot (\nabla \times F) = \frac{\partial}{\partial x}(x-y) + \frac{\par
 
 $\square$
 
+---
 ## 연결
 
 - **[텐서 연산](tensor-operations.html)** : 발산 $\nabla \cdot F$와 회전 $\nabla \times F$는 각각 벡터장의 1계 미분 연산자이며, 텐서 미적분에서 미분형식(differential form)의 외미분(exterior derivative)으로 일반화된다. $d^2 = 0$은 $\nabla \times (\nabla f) = 0$과 $\nabla \cdot (\nabla \times F) = 0$의 통합이다.

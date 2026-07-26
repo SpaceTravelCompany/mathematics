@@ -11,6 +11,7 @@ slug: rank-nullspace
 
 이 개념은 연립방정식 $Ax = b$의 해의 존재 여부 판정에 직접 사용된다. $b$가 $A$의 열공간(column space)에 속하면 해가 존재하고, 속하지 않으면 해가 없다. 이미지 압축에서는 rank가 낮은 행렬이 압축률이 높은 행렬임을 의미한다. 제어공학에서는 시스템의 상태가 제어 가능한지를 판정하는 데 rank가 사용된다.
 
+---
 ## 정의
 
 **열공간(column space):** $m \times n$ 행렬 $A$의 열벡터들의 모든 선형결합의 집합을 **열공간**이라 하고 $\text{Col}(A)$로 표기한다.
@@ -37,6 +38,7 @@ $$\text{nullity}(A) = \dim(\text{Null}(A))$$
 
 **기본 정리:** 행렬 $A$의 행공간과 열공간의 차원은 같다: $\dim(\text{Row}(A)) = \dim(\text{Col}(A)) = \text{rank}(A)$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: Rank-Nullity 정리
@@ -89,6 +91,7 @@ $\dim(\text{Col}(A)) = \dim(\text{Row}(A))$이다.
 
 **증명:** $A$를 RREF(reduced row echelon form) $R$로 변환하면, $R$의 **pivot(선행 1)** 이 있는 열들이 $\text{Col}(A)$의 기저를 결정하고, pivot이 있는 행들이 $\text{Row}(A)$의 기저를 결정한다. pivot의 개수는 열공간과 행공간에서 동일하므로 두 차원은 같다.
 
+---
 ## 예제
 
 **예제 1:** $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 1 & 2 \end{pmatrix}$의 rank, nullity, 열공간, 널공간을 구하라.
@@ -127,6 +130,7 @@ $$\xrightarrow{R_3 \leftarrow \frac{1}{2}R_3} \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1
 
 RREF가 $I_3$이므로 $\text{rank}(A) = 3$이다. $n = 3$이므로 $\text{nullity}(A) = 0$이다. $Ax = 0$의 유일해는 $x = 0$뿐이며, 이는 $A$의 열들이 일차독립임을 의미한다. $\text{rank} + \text{nullity} = 3 = n$이 성립한다.
 
+---
 ## 연결
 
 - **[선형결합·span·일차독립](span-independence.html)** : rank는 일차독립인 열(또는 행)의 개수이며, span의 차원 개념을 구체화한다.

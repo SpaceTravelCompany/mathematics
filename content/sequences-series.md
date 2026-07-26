@@ -7,6 +7,7 @@ slug: sequences-series
 
 **수열(sequence)** 은 숫자를 순서대로 늘어놓은 것이다. 영화의 프레임처럼, 각 항목에는 위치(첫 번째, 두 번째, ...)가 있다. **급수(series)** 는 수열의 항들을 계속 더해나가는 것이다. 급수의 핵심 질문은 "무한히 더했을 때 유한한 값이 나오는가"이다. 이 질문은 고대 그리스의 제논의 역설(Zeno's paradox)에서 시작하여, 미적분학의 기초와 현대 해석학(analysis)의 출발점이 되었다. 무한급수는 함수를 다항식으로 근사하는 테일러 급수(Taylor series)의 기반이며, 확률론에서 중심극한정리(Central Limit Theorem)의 증명에도 등장한다.
 
+---
 ## 정의
 
 **수열(sequence):** 자연수 집합 $\mathbb{N}$에서 실수 집합 $\mathbb{R}$로 가는 함수 $a: \mathbb{N} \to \mathbb{R}$이다. $a(n)$ 대신 $a_n$으로 표기하고, 수열 전체를 $\{a_n\}_{n=1}^\infty$ 또는 간단히 $\{a_n\}$으로 나타낸다.
@@ -33,6 +34,7 @@ $$S_N = \sum_{n=1}^{N} a_n, \qquad \sum_{n=1}^{\infty} a_n = \lim_{N\to\infty} S
 
 **수렴(convergence):** 급수 $\sum a_n$이 수렴한다는 것은 극한 $\lim_{N\to\infty} S_N$이 유한한 값으로 존재한다는 뜻이다. 엄밀히: 임의의 $\epsilon > 0$에 대해 어떤 $N \in \mathbb{N}$이 존재하여 $m > n \geq N$이면 $|S_m - S_n| < \epsilon$이다 (코시 수렴 판정, Cauchy convergence criterion).
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 등차수열의 합
@@ -92,6 +94,7 @@ $$1 + \frac{1}{2} + \left(\frac{1}{3} + \frac{1}{4}\right) + \left(\frac{1}{5} +
 
 각 괄호 안의 합은 최소한 $\frac{1}{2}$이다. 예를 들어 $\frac{1}{3} + \frac{1}{4} > \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$, $\frac{1}{5} + \cdots + \frac{1}{8} > \frac{1}{8} \times 4 = \frac{1}{2}$ 등. 따라서 $N$번째 부분합은 $1 + N \cdot \frac{1}{2}$보다 크므로 $N \to \infty$에서 발산한다. 이는 $a_n \to 0$이어도 급수가 수렴하지 않을 수 있음을 보여주는 대표적 반례이다.
 
+---
 ## 예제
 
 **예제 1:** 첫 항이 3, 공차가 4인 등차수열의 10번째 항과 처음 10항의 합을 구하라.
@@ -113,6 +116,7 @@ $$\lim_{n\to\infty} a_n = \lim_{n\to\infty} \frac{2n}{n+1} = \lim_{n\to\infty} \
 
 수렴의 필요조건에 의해 $\lim a_n \neq 0$이므로 이 급수는 발산한다.
 
+---
 ## 연결
 
 - **[급수와 수렴](series-convergence.html)** : 다양한 수렴 판정법(비교판정법, 비율판정법, 적분판정법)과 테일러 급수를 본격적으로 다룬다.

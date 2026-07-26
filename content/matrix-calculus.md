@@ -13,6 +13,7 @@ slug: matrix-calculus
 
 행렬 미분은 최소제곱법, 선형 회귀, 물리 시뮬레이션, 최적화 이론에서 핵심 도구로 사용된다. 정규방정식(normal equation)의 유도, 그래디언트 기반 최적화 알고리즘의 설계 모두 행렬 미분 없이는 불가능하다.
 
+---
 ## 정의
 
 **스칼라-대-벡터 미분 (gradient):** 함수 $f: \mathbb{R}^n \to \mathbb{R}$가 주어졌을 때, $x \in \mathbb{R}^n$에서의 **그래디언트**는 열벡터(column vector) 규약을 따라 다음과 같이 정의된다:
@@ -45,6 +46,7 @@ $$\frac{\partial}{\partial W}\text{tr}(W^T W) = 2W$$
 
 **분모 표기법 vs 분자 표기법 (Denominator vs Numerator Layout):** 본 장에서는 **분모 표기법(denominator layout)** 을 사용한다. 즉, $\partial f / \partial x$는 $x$와 같은 크기의 열벡터이다. 이는 그래디언트 기반 최적화에 자연스럽다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: $\nabla_x (x^T A x) = (A + A^T)x$
@@ -138,6 +140,7 @@ $$\frac{\partial g}{\partial x_j} = \sum_i \frac{\partial f}{\partial y_i} \frac
 
 벡터 형태: $\nabla_x g = A^T \nabla_y f$.
 
+---
 ## 예제
 
 **예제 1:** $f(x) = x^T A x + b^T x$의 그래디언트를 구하라 ($A \in \mathbb{R}^{n \times n}$, $b \in \mathbb{R}^n$).
@@ -198,6 +201,7 @@ $$\nabla f(x) = \frac{3}{2} (x^T x)^{1/2} \cdot \nabla g(x) = \frac{3}{2} \|x\| 
 **풀이:** $y = Ax + b$라 하면 $f = y^T D y$. $\nabla_y f = 2Dy$ (정리 1, $D$ 대칭). 선형 변환의 연쇄법칙:
 $$\nabla_x f = A^T \nabla_y f = 2A^T D (Ax + b)$$
 
+---
 ## 연결
 
 - **[고유값·고유벡터](eigenvalues.html)** : $x^T A x$의 그래디언트는 $A$의 대칭 성분과 연결되며, 고유값은 이차형식의 최적화에서 중요한 역할을 한다.

@@ -13,6 +13,7 @@ slug: law-large-numbers
 
 **강한 대수의 법칙(Strong Law of Large Numbers, SLLN)**은 더 강한 주장을 한다: 표본평균이 모평균으로 **거의 확실하게(almost surely)** 수렴한다. 즉, 예외적인 경우(확률 0)를 제외하면 항상 수렴한다.
 
+---
 ## 정의
 
 **표본평균(sample mean):** i.i.d.(independent and identically distributed) 확률변수 $X_1, X_2, \ldots, X_n$에 대해
@@ -39,6 +40,7 @@ $$\bar{X}_n \xrightarrow{P} \mu$$
 
 $$\bar{X}_n \xrightarrow{a.s.} \mu$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 마르코프 부등식 (Markov's Inequality)
@@ -150,6 +152,7 @@ $$\bar{X}_n \xrightarrow{a.s.} \mathbb{E}[X_1]$$
 
 이 증명은 확률론에서 가장 우아한 증명 중 하나로 꼽힌다.
 
+---
 ## 예제
 
 **예제 1 (주사위 평균 수렴):** 공정한 주사위를 $n$번 던졌을 때 눈의 평균을 시뮬레이션해보자. $X_i$를 $i$번째 주사위 눈금이라 하면 $\mathbb{E}[X_i] = 3.5$, $\text{Var}(X_i) = 35/12 \approx 2.917$이다.
@@ -198,6 +201,7 @@ $n$명의 보험 가입자가 각각 연간 평균 10만 원의 보험금을 청
 
 **예: 파레토 분포** $f(x) = \frac{\alpha}{x^{\alpha+1}}$ ($x \geq 1$)에서 $\alpha > 2$면 분산이 유한하지만 $1 < \alpha \leq 2$면 분산이 무한대이고, $\alpha \leq 1$면 기댓값조차 존재하지 않는다. 이때 $\alpha > 1$이면 WLLN이 성립하고, $\alpha \leq 1$이면 성립하지 않는다.
 
+---
 ## 연결
 
 - **[기댓값·분산·공분산](expectation-variance.html)** : WLLN 증명은 표본평균의 기댓값과 분산을 사용한다. $\mathbb{E}[\bar{X}_n] = \mu$, $\text{Var}(\bar{X}_n) = \sigma^2/n$이 핵심 계산이다.

@@ -11,6 +11,7 @@ slug: second-derivatives
 
 1변수 함수 $f(x) = x^2$은 $f''(x) = 2 > 0$으로 항상 볼록하다. 2변수 함수 $f(x, y) = x^2 - y^2$는 $x$ 방향으로는 볼록하지만 $y$ 방향으로는 오목하며, 그 헤시안은 $\begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix}$로 부정부호이다 — 이것이 안장점의 전형이다.
 
+---
 ## 정의
 
 **2계 편도함수 (second-order partial derivative):** $f: \mathbb{R}^n \to \mathbb{R}$의 2계 편도함수:
@@ -38,6 +39,7 @@ $$\frac{d^2}{dt^2}\bigg|_{t=0} f(a + th) = h^T H(a) h$$
 
 **볼록성 (convexity):** $f$가 $\mathbb{R}^n$의 볼록집합 $\Omega$에서 $C^2$일 때, $f$가 $\Omega$에서 볼록(convex)할 필요충분조건은 모든 $x \in \Omega$에서 $H(x) \succeq 0$(헤시안이 양반정치, positive semidefinite)인 것이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 2계 도함수 판정법 (1변수) (Second Derivative Test, 1D)
@@ -117,6 +119,7 @@ $$\Delta f = \nabla^2 f = \sum_{i=1}^n \frac{\partial^2 f}{\partial x_i^2} = \te
 
 라플라시안은 함수의 "평균 곡률"을 나타내며, $\Delta f = 0$인 함수를 조화함수(harmonic function)라 부른다. 조화함수는 극대/극소가 없으며(최대 원리, maximum principle), 물리학에서 정상 상태(steady state)의 온도 분포, 전위(electric potential) 등을 기술한다.
 
+---
 ## 예제
 
 **예제 1:** $f(x, y) = x^3 - 3xy + y^3$의 임계점을 찾고 2계 판정법으로 분류하라.
@@ -197,6 +200,7 @@ $$\Delta f = \sum_{i=1}^3 \frac{\partial^2 f}{\partial x_i^2} = -\frac{3}{r^3} +
 
 따라서 $\Delta(1/r) = 0$ (원점 제외). $1/r$은 조화함수(harmonic function)이며, 이는 전기장이 없는 진공에서 전위가 라플라스 방정식 $\Delta \phi = 0$을 만족함을 의미한다.
 
+---
 ## 연결
 
 - **[야코비안·헤시안](jacobian-hessian.html)** : 헤시안의 정의와 대칭성(클레로 정리)을 자세히 다룬다.

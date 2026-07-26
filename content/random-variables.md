@@ -13,6 +13,7 @@ slug: random-variables
 
 두 경우 모두, **누적분포함수(cumulative distribution function, CDF)** $F(x) = P(X \leq x)$가 확률변수의 분포를 완전히 결정한다.
 
+---
 ## 정의
 
 **확률변수(random variable):** 확률공간 $(\Omega, \mathcal{F}, P)$에서 실수 $\mathbb{R}$로 가는 **가측함수(measurable function)** $X: \Omega \to \mathbb{R}$. 즉, 모든 보렐 집합 $B \subseteq \mathbb{R}$에 대해 $\{\omega: X(\omega) \in B\} \in \mathcal{F}$이다.
@@ -51,6 +52,7 @@ $$F_X(x) = \int_{-\infty}^x f_X(t)\,dt$$
 
 $$p_X(x) = \sum_y p_{X,Y}(x,y), \quad f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y)\,dy$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: PDF의 필요충분조건
@@ -104,6 +106,7 @@ $$\mathbb{E}[g(X)] = \int_{-\infty}^{\infty} g(x) f_X(x)\,dx$$
 
 이 공식은 $Y$의 분포를 직접 구하지 않고도 $Y$의 기댓값을 계산할 수 있게 해준다.
 
+---
 ## 예제
 
 **예제 1 (주사위 PMF):** 공정한 6면체 주사위의 눈금 $X$의 PMF는
@@ -208,6 +211,7 @@ $$F(x) = \begin{cases}
 
 CDF는 계단 함수(step function) 형태로, 각 PMF가 양수인 점에서 불연속이며 도약의 크기가 해당 PMF 값과 같다.
 
+---
 ## 연결
 
 - **[함수](functions.html)** : 확률변수는 함수의 일종이다. 정의역이 표본공간이고 공역이 실수인 특수한 함수로, 가측성(measurability)이라는 추가 조건을 만족해야 한다.

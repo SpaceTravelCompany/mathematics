@@ -13,6 +13,7 @@ slug: series-convergence
 
 **절대수렴(absolute convergence)** 은 급수의 각 항에 절댓값을 취한 급수가 수렴하는 경우이고, **조건수렴(conditional convergence)** 은 원래 급수는 수렴하지만 절댓값 급수는 발산하는 경우다. 조건수렴 급수는 항의 순서를 바꾸면 합이 달라질 수 있다는 놀라운 성질(리만 재배열 정리, Riemann rearrangement theorem)이 있다.
 
+---
 ## 정의
 
 **급수(series):** 수열 $\{a_n\}$에 대해 무한급수 $\sum_{n=0}^{\infty} a_n$은 부분합(partial sum) $S_N = \sum_{n=0}^N a_n$의 극한으로 정의된다.
@@ -51,6 +52,7 @@ $$R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!} (x - a)^{n+1}$$
 
 단, $c$는 $x$와 $a$ 사이에 존재하는 어떤 값이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 수렴의 필요조건 (Necessary Condition for Convergence)
@@ -175,6 +177,7 @@ $$\frac{1}{1 - x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + x^3 + \cdots, \quad 
 
 $$\ln(1 + x) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots, \quad R = 1$$
 
+---
 ## 예제
 
 **예제 1 (비교판정법):** 급수 $\sum_{n=1}^{\infty} \frac{1}{n^2}$의 수렴을 비교판정법으로 증명하라.
@@ -271,6 +274,7 @@ $$-\ln(1-x) = \sum_{n=1}^{\infty} \frac{x^n}{n} \quad\Rightarrow\quad \ln(1-x) =
 
 $x$ 대신 $-x$를 대입하면 $\ln(1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n-1} x^n}{n}$을 얻는다. 이는 앞서 제시한 $\ln(1+x)$의 전개와 일치한다.
 
+---
 ## 연결
 
 - **[수열과 급수 기초](sequences-series.html)** : 급수의 기본 개념(부분합, 등비급수, 조화급수, 수렴 필요조건)이 선행되어야 한다.

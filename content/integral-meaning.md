@@ -11,6 +11,7 @@ slug: integral-meaning
 
 **부정적분(indefinite integral, antiderivative)** $F(x)$는 $F'(x) = f(x)$를 만족하는 함수이고, **정적분(definite integral)** $\int_a^b f(x)\,dx$는 구간 $[a, b]$에서의 $f$의 누적량을 나타낸다. FTC는 이 둘이 본질적으로 같은 것임을 보여준다: $\int_a^b f = F(b) - F(a)$.
 
+---
 ## 정의
 
 **분할(partition):** 구간 $[a, b]$의 분할 $P = \{x_0, x_1, \ldots, x_n\}$은 $a = x_0 < x_1 < \cdots < x_n = b$를 만족하는 점들의 집합이다. $i$번째 하위구간의 길이는 $\Delta x_i = x_i - x_{i-1}$이다. 분할의 **세분(norm)** 은 $\|\Delta\| = \max_i \Delta x_i$이다.
@@ -52,6 +53,7 @@ $$\int f(g(x)) g'(x)\,dx = \int f(u)\,du$$
 
 정적분에서는 $\int_a^b f(g(x)) g'(x)\,dx = \int_{g(a)}^{g(b)} f(u)\,du$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 미적분학의 기본정리 1 (FTC1)
@@ -150,6 +152,7 @@ $$uv = \int v\,du + \int u\,dv$$
 
 (여기서 $du = u'\,dx$, $dv = v'\,dx$). 적분항을 정리하면 $\int u\,dv = uv - \int v\,du$를 얻는다. $\square$
 
+---
 ## 예제
 
 **예제 1 (리만 합으로 정적분 직접 계산):** $\int_0^1 x^2\,dx = \frac{1}{3}$임을 리만 합의 극한으로 직접 증명하라.
@@ -216,6 +219,7 @@ $1/\sqrt{x}$는 $x = 0$에서 무한대로 발산하지만, 그 적분은 유한
 
 $$\int_0^{\pi/2} \sin x \cos x\,dx = \int_0^1 u\,du = \left[ \frac{u^2}{2} \right]_0^1 = \frac{1}{2}$$
 
+---
 ## 연결
 
 - **[다중적분](multiple-integrals.html)** : 리만 적분을 2차원, 3차원으로 확장하여 부피와 질량을 계산한다. 반복적분(iterated integral)과 푸비니 정리(Fubini's theorem)가 핵심이다.

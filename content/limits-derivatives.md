@@ -11,6 +11,7 @@ slug: limits-derivatives
 
 **도함수(derivative)** 는 "순간 변화율 = 접선의 기울기"다. 평균 변화율 $\frac{f(a+h) - f(a)}{h}$의 극한값이 도함수 $f'(a)$이다. 위치-시간 그래프에서 도함수는 순간 속도(instantaneous velocity)가 되고, 비용-생산량 그래프에서 도함수는 한계 비용(marginal cost)이 된다.
 
+---
 ## 정의
 
 **극한(limit):** $f$가 $x = a$ 근처(단 $a$ 제외)에서 정의되었다고 하자. $\lim_{x \to a} f(x) = L$은 다음을 의미한다: 임의의 $\epsilon > 0$에 대해 어떤 $\delta > 0$이 존재하여 $0 < |x - a| < \delta$이면 $|f(x) - L| < \epsilon$이다. 이것이 $\epsilon$-$\delta$ 정의(epsilon-delta definition)다.
@@ -53,6 +54,7 @@ $$f'_-(a) = \lim_{h \to 0^-} \frac{f(a+h) - f(a)}{h}, \qquad f'_+(a) = \lim_{h \
 
 **고계 도함수(higher-order derivatives):** $f'(x)$의 도함수를 $f''(x)$(2계 도함수, second derivative), 일반적으로 $f^{(n)}(x)$(n계 도함수, nth derivative)로 표기한다. 2계 도함수는 곡률(curvature)과 볼록성(convexity)을 나타낸다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 극한의 유일성 (Uniqueness of Limits)
@@ -132,6 +134,7 @@ $\delta = \min(\delta_1, \delta_2)$라 하자. $0 < |x - a| < \delta$이면 $L -
 
 조임 정리는 직접 계산하기 어려운 극한을 다룰 때 유용하다. 특히 $\lim_{x \to 0} \frac{\sin x}{x} = 1$의 증명이 대표적 예시다.
 
+---
 ## 예제
 
 **예제 1 ($\epsilon$-$\delta$ 증명):** $\lim_{x \to 2} (3x - 1) = 5$임을 $\epsilon$-$\delta$ 정의로 증명하라.
@@ -204,6 +207,7 @@ $$\frac{|\sin b - \sin a|}{|b - a|} = |\cos c| \leq 1$$
 
 따라서 $|\sin b - \sin a| \leq |b - a|$가 성립한다. 이는 사인 함수가 립시츠 연속(Lipschitz continuous)임을 보여준다.
 
+---
 ## 연결
 
 - **[함수](functions.html)** : 극한과 도함수는 함수의 개념 위에 세워진다. 정의역·공역·치역, 합성함수·역함수를 이해하는 것이 선행되어야 한다.

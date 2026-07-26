@@ -11,6 +11,7 @@ slug: eigenvalues
 
 고유값은 진동 해석(고유진동수), 양자역학(에너지 준위), 주성분 분석(분산 방향), 페이지랭크(웹페이지 중요도), 미분방정식의 안정성 분석 등 과학과 공학 전반에서 가장 중요한 단일 개념이다. 거의 모든 행렬분해(SVD, 스펙트럼 정리, 대각화)의 출발점이기도 하다.
 
+---
 ## 정의
 
 **고유값과 고유벡터 (eigenvalue and eigenvector):** $n \times n$ 정사각행렬 $A$와 영벡터가 아닌 벡터 $v \in \mathbb{C}^n$에 대해
@@ -39,6 +40,7 @@ $$\text{tr}(A) = \lambda_1 + \lambda_2 + \cdots + \lambda_n \quad \text{(고유�
 
 **스펙트럼 (spectrum):** 행렬 $A$의 모든 고유값의 집합 $\sigma(A) = \{\lambda_1, \ldots, \lambda_n\}$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 고유값의 존재
@@ -118,6 +120,7 @@ $$= \det(P^{-1})\det(A - \lambda I)\det(P) = \det(A - \lambda I)$$
 
 따라서 특성다항식이 같고, 고유값도 같다.
 
+---
 ## 예제
 
 **예제 1:** $A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$의 고유값과 고유벡터를 구하라.
@@ -201,6 +204,7 @@ $\lambda = 2$에 대해 $(A - 2I) = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 
 $\lambda = 3$에 대해 $(A - 3I) = \begin{pmatrix} -1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 0 \end{pmatrix}$의 rank는 2이므로 $\dim(E_3) = 3 - 2 = 1$.
 따라서 이 행렬은 대각화 가능하다(이미 대각행렬).
 
+---
 ## 연결
 
 - **[행렬식의 기하학](determinant.html)** : 특성방정식 $\det(A - \lambda I) = 0$은 행렬식의 개념과 직접 연결된다.

@@ -15,6 +15,7 @@ slug: stokes-theorems
 
 물리학에서 이 정리들은 전자기학의 맥스웰 방정식을 적분 형태와 미분 형태로 변환하는 데 핵심적이다. 유체역학, 열역학, 양자역학에도 응용된다.
 
+---
 ## 정의
 
 **그린 정리 (Green's Theorem):** $D \subset \mathbb{R}^2$가 단순 닫힌 곡선(simple closed curve) $C = \partial D$로 둘러싸인 영역이고, $P, Q: D \to \mathbb{R}$가 $C^1$급이면
@@ -50,6 +51,7 @@ $$\int_{\partial\Omega} \omega = \int_\Omega d\omega$$
 | 스토크스 정리 | 2(곡면) | $S \subset \mathbb{R}^3$ | $\partial S$ (곡선) | $(\nabla \times F) \cdot dS$ |
 | 가우스 정리 | 3 | $V \subset \mathbb{R}^3$ | $\partial V$ (곡면) | $(\nabla \cdot F)\,dV$ |
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 그린 정리 (Green's Theorem) 증명
@@ -251,6 +253,7 @@ $$\int_{\partial\Omega} \omega = \int_\Omega d\omega$$
 | 스토크스 | $F \cdot dr$ (1-형식) | $(\nabla \times F) \cdot dS$ (2-형식) | $\oint F \cdot dr = \iint (\nabla \times F) \cdot dS$ |
 | 가우스 | $F \cdot dS$ (2-형식) | $\nabla \cdot F\,dV$ (3-형식) | $\oiint F \cdot dS = \iiint \nabla \cdot F\,dV$ |
 
+---
 ## 예제
 
 **예제 1 (그린 정리로 타원 넓이):** 타원 $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$의 넓이를 그린 정리로 구하라.
@@ -329,6 +332,7 @@ $\square$
 
 그린 정리가 없다면 세 조각의 경로(아래 직선 + 위 곡선 + 양 끝 수직선)를 각각 적분해야 했을 것이다.
 
+---
 ## 연결
 
 - **[발산·회전](div-curl.html)** : 그린·스토크스·가우스 정리는 발산과 회전이라는 국소적 미분 연산자를 대역적 적분과 연결한다. $\nabla \cdot (\nabla \times F) = 0$과 $\nabla \times (\nabla f) = 0$은 $d^2 = 0$의 표현이며, 이 정리들의 일관성을 보장한다.

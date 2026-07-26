@@ -15,6 +15,7 @@ $$\text{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j=1}^K e^{x_j}}$$
 
 소프트맥스의 미분(야코비안, Jacobian)은 $\frac{\partial s_i}{\partial x_j} = s_i(\delta_{ij} - s_j)$로, 시그모이드 미분의 행렬 일반화로 볼 수 있다.
 
+---
 ## 정의
 
 **시그모이드 함수 (sigmoid / logistic function):**
@@ -62,6 +63,7 @@ $$s_i = \frac{e^{x_i / T}}{\sum_j e^{x_j / T}}$$
 
 $T > 0$는 온도(temperature) 파라미터다. $T \to 0$이면 argmax(one-hot)에 수렴하고, $T \to \infty$이면 균등분포에 수렴한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 시그모이드 미분 공식 $\sigma'(x) = \sigma(x)(1-\sigma(x))$
@@ -146,6 +148,7 @@ $\square$
 
 **의미:** 소프트맥스는 입력의 절대적 크기가 아닌 상대적 차이에만 의존한다. 따라서 수치적으로 안정적인(numerically stable) 계산을 위해 $\tilde{x}_i = x_i - \max_j x_j$로 시프트해도 결과가 같다.
 
+---
 ## 예제
 
 **예제 1:** $\sigma'(0) = 1/4$를 검증하고, $\sigma'(2)$와 $\sigma'(-2)$를 계산하라.
@@ -247,6 +250,7 @@ $$\frac{\partial L}{\partial x_j} = -\frac{1}{s_k} \cdot \frac{\partial s_k}{\pa
 
 묶어 쓰면 $\frac{\partial L}{\partial x} = s - y$, 즉 그래디언트가 예측 $s$와 정답 $y$의 차이로 아주 단순해진다.
 
+---
 ## 연결
 
 - **[지수·로그 함수의 미분](exp-log-calculus.html)** : 시그모이드와 소프트맥스의 정의에 $e^x$가 핵심이다.

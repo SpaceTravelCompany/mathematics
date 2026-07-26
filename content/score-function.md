@@ -24,6 +24,7 @@ $$dX_t = \nabla \log p(X_t)\,dt + \sqrt{2}\,dW_t$$
 
 이 SDE의 정상분포(stationary distribution)가 $p$가 됨은 포커-플랑크 방정식(Fokker-Planck equation)으로 증명된다. 즉, 분포의 "로그 기울기"를 따라 이동하는 확률 과정은 결국 그 분포로 수렴한다.
 
+---
 ## 정의
 
 **스코어 함수 (score function) — 데이터 공간:**
@@ -55,6 +56,7 @@ $$dX_t = \nabla \log p(X_t)\,dt + \sqrt{2}\,dW_t$$
 **포커-플랑크 방정식 (Fokker-Planck equation):** 위 SDE에 대응하는 확률밀도 $p_t(x)$의 시간 진화:
 $$\frac{\partial p_t}{\partial t} = -\nabla \cdot (p_t \nabla \log p) + \nabla^2 p_t$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 스코어 함수의 기댓값 = 0
@@ -144,6 +146,7 @@ $$\frac{d}{dt} D_{KL}(p_t \| p) = -\int p_t(x) \|\nabla \log p_t(x) - \nabla \lo
 
 **의미:** 랭주뱅 동역학은 "스코어 함수를 따라 확률적으로 이동"하는 과정으로, 복잡한 분포 $p$에서 샘플링하는 도구다. 실제로는 시간 이산화(discretization)가 필요하며, 이로 인한 오차를 보정하는 메트로폴리스 조정 단계를 추가하면 메트로폴리스-조정 랭주뱅 알고리즘(MALA)이 된다.
 
+---
 ## 예제
 
 **예제 1 (정규분포의 스코어와 피셔 정보):** $X \sim \mathcal{N}(\mu, \sigma^2)$일 때 스코어 함수와 피셔 정보를 계산하라.
@@ -207,6 +210,7 @@ $$D_F(p_{\text{data}} \| p_\theta) = \mathbb{E}_{p_{\text{data}}}[\|\nabla \log 
 **예제 7 (확산 모델과 스코어):** 최근 확산 모델(diffusion model)은 스코어 함수를 사용하여 데이터 분포를 학습한다. 전방 확산 과정(forward diffusion)으로 데이터에 노이즈를 점진적으로 추가하고, 역방향 과정(reverse process)에서 스코어 함수(노이즈 제거 방향)를 학습한다. 역방향 SDE는 랭주뱅 동역학과 밀접한 관련이 있다:
 $$dX_t = [f(X_t, t) - g(t)^2 \nabla \log p_t(X_t)]\,dt + g(t)\,d\bar{W}_t$$
 
+---
 ## 연결
 
 - **[엔트로피·KL 발산](entropy-kl.html)** : 피셰 정보는 KL 발산의 2차 테일러 전개 계수로 나타난다. $D_{KL}(p_\theta \| p_{\theta+d\theta}) \approx \frac{1}{2} d\theta^T \mathcal{I}(\theta) d\theta$.

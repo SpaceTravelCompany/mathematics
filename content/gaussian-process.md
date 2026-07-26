@@ -15,6 +15,7 @@ GP의 사후(posterior)는 조건부 정규분포 공식으로 닫힌 형태(clo
 $$\mathbf{f}_* | \mathbf{X}, \mathbf{y}, \mathbf{X}_* \sim \mathcal{N}(\boldsymbol{\mu}_*, \Sigma_*)$$
 이며, 평균과 공분산이 모두 해석적으로 표현된다. 이는 GP가 비모수적(non-parametric)이지만 예측이 매우 효율적임을 의미한다.
 
+---
 ## 정의
 
 **가우시안 과정 (Gaussian Process):** 확률과정 $\{f(x)\}_{x \in \mathcal{X}}$이 모든 유한 부분집합 $\{x_1, \ldots, x_n\} \subset \mathcal{X}$에 대해
@@ -53,6 +54,7 @@ $$\Sigma_* = K_{**} - K_*^T (K + \sigma_n^2 I)^{-1} K_*$$
 - $K_* = k(\mathbf{X}, \mathbf{X}_*)$: $n \times n_*$ 학습-테스트 커널 행렬
 - $K_{**} = k(\mathbf{X}_*, \mathbf{X}_*)$: $n_* \times n_*$ 테스트 데이터 커널 행렬
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: GP 사후 분포 유도
@@ -107,6 +109,7 @@ $$\log p(\mathbf{y} | \mathbf{X}, \boldsymbol{\theta}) = -\frac{1}{2} \mathbf{y}
 
 하이퍼파라미터 최적화는 이 가능도를 $\boldsymbol{\theta}$에 대해 미분하여 수행한다(공액 그래디언트, L-BFGS 등). $\square$
 
+---
 ## 예제
 
 **예제 1 (1D GP 회귀 — 5개 점):** $x = (-4, -2, 0, 2, 4)$, $y = (-1.5, -0.8, 0.2, 0.9, 1.8)$의 5개 관측 데이터에 대해 GP 회귀를 수행하라. RBF 커널 $\sigma^2 = 1$, $\ell = 1$, $\sigma_n^2 = 0.01$을 사용한다.
@@ -155,6 +158,7 @@ $$k(x,x') = x^T x'$$
 
 **해결책:** (a) 희소 GP(sparse GP): $m \ll n$개의 유도 포인트(inducing points) 사용, (b) KISS-GP: 커널 행렬을 구조화된 행렬로 근사, (c) 확률적 경사 GP: 미니배치 학습.
 
+---
 ## 연결
 
 - **[베이즈 추론](bayesian-inference.html)** : GP 회귀는 베이즈 추론의 틀을 따른다 — 사전(prior) $f \sim \mathcal{GP}(0, k)$, 우도(likelihood) $y|f \sim \mathcal{N}(f, \sigma_n^2 I)$, 사후(posterior) $f|D$가 닫힌 형태로 주어진다.

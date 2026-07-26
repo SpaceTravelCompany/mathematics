@@ -19,6 +19,7 @@ $$\hat{I}_N = \frac{1}{N} \sum_{i=1}^N f(X_i), \quad X_i \sim p$$
 
 $$\hat{I}_{\text{IS}} = \frac{1}{N} \sum_{i=1}^N f(X_i) \frac{p(X_i)}{q(X_i)}, \quad X_i \sim q$$
 
+---
 ## 정의
 
 **몬테카를로 적분(Monte Carlo integration):** $X_1, \ldots, X_N \stackrel{\text{iid}}{\sim} p$일 때
@@ -35,6 +36,7 @@ $$\hat{I}_{\text{IS}} = \frac{1}{N} \sum_{i=1}^N f(X_i) w(X_i), \quad w(x) = \fr
 
 **조건:** $q(x) > 0$일 때마다 $p(x) > 0$이어야 한다($p \ll q$, 즉 $p$는 $q$에 절대연속, absolutely continuous). 또한 $\text{Var}_q[f(X)w(X)] < \infty$여야 추정량이 안정적이다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 몬테카를로 추정량의 비편향성
@@ -103,6 +105,7 @@ $$\hat{I}_N = \frac{1}{N}\sum_{i=1}^N f(X_i) \xrightarrow{\text{a.s.}} I$$
 
 **증명 (서술):** **강대수의 법칙(strong law of large numbers, SLLN)**에 의해 iid 확률변수의 표본평균은 기댓값으로 거의 확실히(almost surely) 수렴한다. 즉 $P(\lim_{N\to\infty} \hat{I}_N = I) = 1$이다. 이는 몬테카를로 방법의 이론적 근거를 제공한다. $\square$
 
+---
 ## 예제
 
 **예제 1 (몬테카를로로 $\pi$ 추정):** 단위원(unit circle)이 내접하는 정사각형 $[-1,1]^2$에 균등하게 점을 던진다. 원 안에 들어갈 확률은 $\pi/4$다.
@@ -151,6 +154,7 @@ $$N_{\text{eff}} = \frac{N}{1 + \text{Var}_q(w(X))} \approx \frac{N}{\sum w_i^2 
 
 가중치의 분산이 클수록 $N_{\text{eff}}$가 작아진다.
 
+---
 ## 연결
 
 - **[대수의 법칙](law-large-numbers.html)** : 몬테카를로 방법의 이론적 근거는 대수의 법칙이다. $N \to \infty$에서 $\frac{1}{N}\sum f(X_i) \to \mathbb{E}[f(X)]$가 거의 확실히 성립한다.

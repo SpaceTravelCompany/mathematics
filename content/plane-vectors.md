@@ -7,6 +7,7 @@ slug: plane-vectors
 
 **벡터(vector)** 는 "어디로 얼마나"라는 정보를 담은 객체다. 위치와 관계없이 방향(direction)과 크기(magnitude)만 같으면 같은 벡터로 본다. 이것은 벡터가 좌표에 묶여 있지 않은 자유로운 기하학적 객체임을 의미한다. 벡터는 힘, 속도, 변위 등 방향성을 가진 물리량을 표현하는 자연스러운 도구이며, 수학적으로는 벡터공간(vector space)이라는 추상 구조의 원형(prototype)이 된다. 두 벡터의 **내적(inner product, dot product)** 은 "두 벡터가 얼마나 같은 방향인가"를 수량화하며, 이 개념은 고차원 공간에서의 유사도(similarity)와 직교성(orthogonality)의 출발점이다.
 
+---
 ## 정의
 
 **벡터(vector):** 평면 위의 벡터 $\vec{v}$는 순서쌍 $(v_1, v_2)$으로 표현된다. 여기서 $v_1$을 $x$-성분(component), $v_2$를 $y$-성분이라 한다.
@@ -29,6 +30,7 @@ slug: plane-vectors
 
 여기서 $\theta$는 두 벡터 사이의 각(angle)이다 ($0 \leq \theta \leq \pi$).
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 코시-슈바르츠 부등식 (Cauchy-Schwarz Inequality)
@@ -77,6 +79,7 @@ $$(\vec{a} - t\vec{b}) \cdot \vec{b} = 0 \;\Longrightarrow\; \vec{a} \cdot \vec{
 
 **스칼라 투영(scalar projection):** $\text{comp}_{\vec{b}} \vec{a} = \|\vec{a}\| \cos\theta = \frac{\vec{a} \cdot \vec{b}}{\|\vec{b}\|}$는 투영 벡터의 길이(부호 포함)이다.
 
+---
 ## 예제
 
 **예제 1:** $\vec{a} = (3, -1)$, $\vec{b} = (2, 4)$에 대해 다음을 구하라.
@@ -101,6 +104,7 @@ $$\text{proj}_{\vec{b}} \vec{a} = \frac{10}{5}(1, 2) = 2(1, 2) = (2, 4)$$
 
 $$\text{넓이} = |3 \cdot 4 - 1 \cdot 2| = |12 - 2| = 10$$
 
+---
 ## 연결
 
 - **[내적과 노름](inner-product-norm.html)** : 평면벡터의 내적과 노름을 고차원 벡터공간으로 일반화한다.

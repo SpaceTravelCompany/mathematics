@@ -13,6 +13,7 @@ $$\nabla f = \lambda \nabla g$$
 
 여기서 $\lambda$가 **라그랑주 승수(Lagrange multiplier)** 다. 이 스칼라 $\lambda$는 제약이 최적값에 미치는 영향력, 즉 제약을 조금 완화했을 때 목적함수가 얼마나 변하는지를 나타낸다.
 
+---
 ## 정의
 
 **제약 최적화 문제 (constrained optimization problem):**
@@ -43,6 +44,7 @@ $$\mathcal{L}(x, \lambda_1, \ldots, \lambda_m) = f(x) - \sum_{i=1}^m \lambda_i g
 
 1차 조건: $\nabla f(x) = \sum_{i=1}^m \lambda_i \nabla g_i(x)$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 라그랑주 승수 정리 (Lagrange Multiplier Theorem)
@@ -93,6 +95,7 @@ $A$가 $n \times n$ 대칭행렬일 때, $f(x) = x^T A x$의 $\|x\| = 1$에서�
 
 따라서 최적점은 $A$의 고유벡터(eigenvector)이며, $\lambda$는 고유값(eigenvalue)이다. 최대/최소값은 각각 최대/최소 고유값이다. 이는 스펙트럼 정리(spectral theorem)의 핵심 내용이다.
 
+---
 ## 예제
 
 **예제 1:** $x^2 + y^2 = 1$ 위에서 $f(x, y) = x + y$의 최댓값과 최솟값을 구하라.
@@ -206,6 +209,7 @@ $x$가 $a$에 평행할 때 성립: $x = \pm a/\|a\|$. $\lambda = \|a\|^2$.
 
 최대 엔트로피: $H = -\sum (1/n) \ln(1/n) = \ln n$. 균등분포(uniform distribution)가 엔트로피를 최대화함을 보여준다.
 
+---
 ## 연결
 
 - **[양정치 행렬](positive-definite.html)** : 2차 충분 조건에서 헤시안의 제약 접공간 위 양정치성을 이해하는 데 필요하다.

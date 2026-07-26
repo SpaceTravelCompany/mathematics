@@ -15,6 +15,7 @@ $$p(\theta|D) = \frac{p(D|\theta)p(\theta)}{p(D)} \propto p(D|\theta)p(\theta)$$
 
 **공액 사전분포(conjugate prior)**는 사전분포와 사후분포가 같은 패밀리에 속하도록 하는 사전분포다. 계산이 크게 간편해진다. 예를 들어 베르누이 가능도의 공액 사전분포는 베타 분포다.
 
+---
 ## 정의
 
 **사전분포(prior distribution):** 데이터를 보기 전 모수 $\theta$에 대한 믿음. $p(\theta)$로 표기.
@@ -35,6 +36,7 @@ $$\hat{\theta}_{\text{MAP}} = \arg\max_\theta p(\theta|D) = \arg\max_\theta \lef
 
 $$p(x_{\text{new}} | D) = \int p(x_{\text{new}} | \theta) p(\theta | D)\,d\theta$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 베르누이-베타 공액
@@ -129,6 +131,7 @@ $$= \int p(x_{\text{new}} | \theta) p(\theta | D)\,d\theta$$
 
 $\square$
 
+---
 ## 예제
 
 **예제 1 (동전 던지기 베타-이항 업데이트):** 동전의 앞면 확률 $\theta$에 대한 사전분포를 $\text{Beta}(2, 2)$로 둔다(어느 쪽으로도 치우치지 않았다는 믿음). 동전을 10번 던져 7번 앞면이 나왔다. 사후분포를 구하라.
@@ -173,6 +176,7 @@ $$\mathbb{E}[\theta|D] = \frac{1+k}{1+k+1+n-k} = \frac{k+1}{n+2}$$
 
 $n$이 작을 때(예: $n=1$, $k=1$) 사후평균은 $2/3 \approx 0.667$으로, MLE($1.0$)보다 덜 극단적이다. $n$이 커질수록 사후평균은 $k/n$에 수렴한다.
 
+---
 ## 연결
 
 - **[확률·조건부확률·베이즈 정리](conditional-bayes.html)** : 베이지안 추론의 수학적 기반은 베이즈 정리 $P(\theta|D) \propto P(D|\theta)P(\theta)$다. 조건부확률의 연속적인 적용으로 사전→사후 갱신이 이루어진다.

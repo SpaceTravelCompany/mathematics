@@ -7,6 +7,7 @@ slug: exponentials-logarithms
 
 **지수(exponential)** 는 "반복된 곱셈의 압축 표현"이다. $2^5$는 $2$를 다섯 번 곱하라는 명령을 한 줄로 줄인 것에 불과하지만, 이 아이디어를 정수에서 실수로, 나아가 복소수로 확장하면 전혀 새로운 세계가 열린다. **로그(logarithm)** 는 그 역연산으로, "몇 번 곱해야 목표에 도달하는가"를 묻는다. 로그는 곱셈을 덧셈으로 바꾸는 마법 같은 성질을 가지고 있어, 과거에는 계산자(slide rule)의 원리였고 오늘날에는 정보이론(information theory)에서 놀라움의 양(entropy)을 측정하는 도구가 된다. 자연상수 $e$는 미적분학에서 가장 아름다운 발견 중 하나로, $e^x$는 미분해도 자기 자신인 유일한 함수(상수배 무시)이다.
 
+---
 ## 정의
 
 **자연수 지수:** $a^n = a \times a \times \cdots \times a$ ($n$번 곱함).
@@ -33,6 +34,7 @@ $$\log_a x = y \iff a^y = x$$
 
 **상용로그(common logarithm):** $\log_{10} x$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 지수법칙 (Laws of Exponents)
@@ -88,6 +90,7 @@ $$\lim_{t \to 0} \frac{t}{e^t - 1} = 1 \;\Longrightarrow\; \lim_{t \to 0} \frac{
 
 따라서 $f'(x) = e^x \cdot 1 = e^x$이다.
 
+---
 ## 예제
 
 **예제 1:** 지수방정식 $2^{x+1} = 8$을 풀어라.
@@ -116,6 +119,7 @@ $$\ln 2 = t \ln(1.05) \;\Rightarrow\; t = \frac{\ln 2}{\ln 1.05} \approx \frac{0
 
 약 14.2년 후에 원리금이 200만 원이 된다.
 
+---
 ## 연결
 
 - **[지수·로그 함수의 미분](exp-log-calculus.html)** : 미적분학에서 $e^x$와 $\ln x$의 미분과 적분을 본격적으로 다룬다.

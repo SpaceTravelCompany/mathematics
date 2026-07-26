@@ -11,6 +11,7 @@ slug: expectation-variance
 
 **공분산(covariance)**은 "두 확률변수가 함께 움직이는 정도"를 나타낸다. 양의 공분산은 한 변수가 클 때 다른 변수도 큰 경향을, 음의 공분산은 반대 경향을 의미한다. **상관계수(correlation coefficient)**는 공분산을 각각의 표준편차로 나누어 -1에서 1 사이로 정규화한 값으로, 단위에 무관하게 관계의 강도를 측정한다.
 
+---
 ## 정의
 
 **기댓값(expected value, mean):** 확률변수 $X$의 기댓값 $\mathbb{E}[X]$ (또는 $\mu_X$)는
@@ -34,6 +35,7 @@ $$\text{Cov}(X, Y) = \mathbb{E}[(X - \mu_X)(Y - \mu_Y)] = \mathbb{E}[XY] - \mu_X
 
 $$\rho_{XY} = \frac{\text{Cov}(X, Y)}{\sigma_X \sigma_Y}$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 0: 기댓값의 선형성 (Linearity of Expectation)
@@ -140,6 +142,7 @@ $\square$
 
 일반화: $n$개 확률변수에 대해 $\text{Var}\left(\sum_{i=1}^n a_i X_i\right) = \sum_{i=1}^n a_i^2 \text{Var}(X_i) + 2\sum_{i<j} a_i a_j \text{Cov}(X_i, X_j)$.
 
+---
 ## 예제
 
 **예제 1 (이항분포의 기댓값과 분산):** $X \sim \text{Bin}(n, p)$일 때 $\mathbb{E}[X] = np$, $\text{Var}(X) = np(1-p)$임을 보여라.
@@ -214,6 +217,7 @@ $$
 
 따라서 $\mathbb{E}[S^2] = \frac{1}{n-1} \cdot (n-1)\sigma^2 = \sigma^2$, 즉 $S^2$는 $\sigma^2$의 불편추정량(unbiased estimator)이다.
 
+---
 ## 연결
 
 - **[적분의 의미](integral-meaning.html)** : 연속 확률변수의 기댓값 $\int x f(x)\,dx$는 적분의 직접적인 응용이다. 가중평균(weighted average)으로서의 적분 해석이 확률로 확장된다.

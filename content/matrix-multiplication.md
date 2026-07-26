@@ -11,6 +11,7 @@ slug: matrix-multiplication
 
 행렬은 3D 그래픽스(회전·이동·확대 변환), 로봇 팔 제어(관절 변환의 합성), 양자역학(상태의 유니터리 변환), 경제학의 산업연관분석(레온티에프 투입-산출 모형), 구글의 페이지랭크(확률 행렬의 곱) 등 광범위한 분야에서 사용된다.
 
+---
 ## 정의
 
 **행렬(matrix):** $m \times n$ 행렬 $A$는 $m$개의 행(row)과 $n$개의 열(column)으로 배열된 수의 집합이다.
@@ -48,6 +49,7 @@ $$Ax = \begin{pmatrix} a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n \\ a_{21}x_1 +
 
 $$Ax = x_1 \begin{pmatrix} a_{11} \\ a_{21} \\ \vdots \\ a_{m1} \end{pmatrix} + x_2 \begin{pmatrix} a_{12} \\ a_{22} \\ \vdots \\ a_{m2} \end{pmatrix} + \cdots + x_n \begin{pmatrix} a_{1n} \\ a_{2n} \\ \vdots \\ a_{mn} \end{pmatrix}$$
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 행렬 ↔ 선형변환의 일대일대응
@@ -104,6 +106,7 @@ $(AB)^T = B^T A^T$
 
 **증명:** $(AB)^T$의 $(i,j)$ 원소는 $(AB)_{ji} = \sum_k a_{jk} b_{ki}$이다. 한편 $(B^T A^T)_{ij} = \sum_k (B^T)_{ik} (A^T)_{kj} = \sum_k b_{ki} a_{jk}$로 같다.
 
+---
 ## 예제
 
 **예제 1:** $A = \begin{pmatrix} 2 & -1 \\ 0 & 3 \end{pmatrix}$, $B = \begin{pmatrix} 1 & 4 \\ -2 & 1 \end{pmatrix}$에 대해 $AB$와 $BA$를 각각 계산하라.
@@ -134,6 +137,7 @@ $$SR = \begin{pmatrix} 2 & 0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} 0 & -1 \\ 1 
 
 $RS$는 "먼저 $x$축으로 2배 확대한 후 회전"이고, $SR$은 "먼저 회전한 후 $x$축으로 2배 확대"이다. 이 둘은 결과가 다르다. $RS$는 $y$축 방향으로만 2배 확대한 후 회전한 효과가 나타난다.
 
+---
 ## 연결
 
 - **[선형결합·span·일차독립](span-independence.html)** : 행렬의 열공간은 열벡터들의 span이며, 행렬의 rank는 일차독립인 열의 개수와 같다.

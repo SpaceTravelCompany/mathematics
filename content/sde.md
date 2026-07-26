@@ -15,6 +15,7 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 
 핵심 통찰: SDE에서 $dW_t$는 $dt$의 제곱근 크기($\sqrt{dt}$)로 움직인다. 이 때문에 $(dW_t)^2 = dt$가 성립하고, 이것이 이토 미적분(Itô calculus)이 일반 미적분과 다른 이유다. 연쇄법칙(chain rule)에 $f''$ 항이 추가로 등장하는 **이토 보조법(Itô's lemma)**이 그 결과다.
 
+---
 ## 정의
 
 **브라운 운동 / 위너 과정 (Brownian motion / Wiener process):** 확률과정 $\{W_t\}_{t \geq 0}$이 다음을 만족하면 위너 과정이라 한다:
@@ -48,6 +49,7 @@ $$\int_0^T \phi(s)\,dW_s := \lim_{n \to \infty} \sum_{i=0}^{n-1} \phi(t_i)(W_{t_
 
 **이차 변분 (quadratic variation):** $[W]_T = \lim_{\|\Delta\| \to 0} \sum_{i=0}^{n-1} (W_{t_{i+1}} - W_{t_i})^2 = T$ (확률 1 수렴). 즉, $(dW_t)^2 = dt$가 **제곱평균(mean-square)** 의미에서 성립한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: $(dW_t)^2 = dt$의 의미와 이차 변분
@@ -158,6 +160,7 @@ $t \to \infty$에서 $X_t$는 $\mathcal{N}(0, \sigma^2/2\theta)$에 수렴하며
 
 OU 과정은 평균으로 회귀(mean-reverting)하는 성질을 가진다: $X_t$가 0보다 크면 드리프트 $-\theta X_t$가 음수여서 $X_t$를 다시 0으로 끌어당긴다. 이자율 모형(Vasicek 모형), 신경 과학(뉴런 전위), 통계 물리(속도 과정) 등에广泛应用된다.
 
+---
 ## 예제
 
 **예제 1 (이토 보조법 직접 적용 — $\ln S_t$ 전개):** $dS = \mu S\,dt + \sigma S\,dW$에서 $d(\ln S)$를 계산하고, 이를 통해 해가 로그정규분포를 따름을 보여라.
@@ -234,6 +237,7 @@ $$\mathbb{E}\left[ \left( \int_0^t s\,dW_s \right)^2 \right] = \mathbb{E}\left[ 
 
 이는 이토 적분의 분산이 시간의 세제곱으로 증가함을 보여준다. 일반 리만 적분과 달리 이토 적분은 확률변수이며, 그 분산이 이 등장성으로 계산된다.
 
+---
 ## 연결
 
 - **[상미분방정식 기초](ode-basics.html)** : SDE는 ODE에 확산항 $g\,dW$를 추가한 확장이다.

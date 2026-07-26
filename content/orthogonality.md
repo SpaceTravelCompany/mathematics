@@ -13,6 +13,7 @@ slug: orthogonality
 
 이 개념들의 응용 범위는 넓다. 직교분해는 푸리에 급수에서 신호를 정현파 성분들로 분해하는 기초이며, 최소제곱법은 직교투영의 형태로 이해할 수 있다. QR 분해는 그람-슈미트 과정의 행렬 형태다.
 
+---
 ## 정의
 
 **직교 (orthogonality):** 내적공간 $V$의 두 벡터 $u, v$가
@@ -36,6 +37,7 @@ $$\text{proj}_W(v) = \sum_{i=1}^k \frac{\langle v, u_i \rangle}{\langle u_i, u_i
 
 **직교행렬 (orthogonal matrix):** $Q^T Q = Q Q^T = I$를 만족하는 정사각행렬 $Q$. 직교행렬의 열(또는 행)들은 정규직교집합을 이룬다. 직교행렬은 내적을 보존한다: $\langle Qx, Qy \rangle = \langle x, y \rangle$.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 피타고라스 정리 (Pythagorean Theorem)
@@ -131,6 +133,7 @@ $$a_k = \sum_{i=1}^k \langle a_k, q_i \rangle q_i$$
 
 로 표현된다. $r_{ik} = \langle a_k, q_i \rangle$ ($i \leq k$)라 정의하면 $A = QR$이 성립한다. $R$은 $i > k$일 때 $r_{ik} = 0$이므로 상삼각행렬이다. $r_{kk} = \|u_k\| > 0$이므로 대각 성분은 양수다.
 
+---
 ## 예제
 
 **예제 1:** $\{(1, 1, 0), (1, 0, 1), (0, 1, 1)\}$을 그람-슈미트 과정으로 정규직교기저로 변환하라.
@@ -217,6 +220,7 @@ $r_{11} = \sqrt{3}$, $r_{12} = \sqrt{3}$, $r_{22} = \sqrt{2}$.
 
 $$Q = \begin{pmatrix} 1/\sqrt{3} & -1/\sqrt{2} \\ 1/\sqrt{3} & 0 \\ 1/\sqrt{3} & 1/\sqrt{2} \end{pmatrix}, \quad R = \begin{pmatrix} \sqrt{3} & \sqrt{3} \\ 0 & \sqrt{2} \end{pmatrix}$$
 
+---
 ## 연결
 
 - **[내적·노름·코사인 유사도](inner-product-norm.html)** : 내적공간의 정의와 기본 성질을 학습한다.

@@ -13,6 +13,7 @@ slug: tensor-operations
 
 텐서 연산의 핵심은 **축 수축(contraction)** — 인덱스의 합 — 이다. 행렬곱 $C_{ik} = A_{ij} B_{jk}$는 두 텐서의 2축 수축이며, $\text{tr}(A) = A_{ii}$는 단일 텐서의 자기 수축이다. 아인슈타인 합 규약(Einstein summation convention)은 이러한 합 연산에서 $\sum$ 기호를 생략하여 표기를 간결하게 한다.
 
+---
 ## 정의
 
 **텐서의 대수적 정의 (algebraic definition):** 체 $\mathbb{F}$ 위의 벡터공간 $V$와 그 쌍대공간(dual space) $V^*$에 대해, $(p,q)$형 텐서는 다음 다중선형사상(multilinear map)이다:
@@ -51,6 +52,7 @@ $$(\text{Contraction}_{kl}(T))^{i_1 \ldots i_{k-1} i_{k+1} \ldots i_p}_{j_1 \ldo
 
 (아인슈타인 규약에 따라 $s$에 대해 합한다.)
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: 텐서 곱의 보편 성질 (Universal Property of Tensor Product)
@@ -128,6 +130,7 @@ T &= T_{pq} \varepsilon^p \otimes \varepsilon^q \\
 
 **의의:** 이 변환 법칙이 텐서를 단순한 다차원 배열과 구분 짓는 핵심이다. 같은 물리량이라도 좌표계에 따라 성분값이 이 법칙에 따라 변해야 텐서라 할 수 있다.
 
+---
 ## 예제
 
 **예제 1 (2차 텐서의 대칭·반대칭 분해):** 임의의 2차 텐서 $T_{ij}$는 대칭(symmetric) 부분과 반대칭(antisymmetric) 부분으로 유일하게 분해된다:
@@ -172,6 +175,7 @@ $$I_{ij} = \int_V \rho(r) (\delta_{ij} \|r\|^2 - r_i r_j) \, dV$$
 
 **풀이:** $\{e_1, \ldots, e_m\}$이 $V$의 기저, $\{f_1, \ldots, f_n\}$이 $W$의 기저라 하자. $\{e_i \otimes f_j \mid i=1,\ldots,m,\; j=1,\ldots,n\}$이 $V \otimes W$의 기저를 이룬다. 이 집합이 일차독립이고 $V \otimes W$를 생성함을 보일 수 있다. 기저 원소의 개수가 $mn$이므로 $\dim(V \otimes W) = mn$이다.
 
+---
 ## 연결
 
 - **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬곱은 2차 텐서의 축 수축이며, 텐서 개념의 가장 친숙한 예시다.

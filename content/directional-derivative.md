@@ -11,6 +11,7 @@ slug: directional-derivative
 
 이 공식은 방향 도함수가 "그래디언트의 방향 성분"임을 의미한다. $\nabla f$와 같은 방향이면 내적이 최대, 반대 방향이면 최소, 수직이면 0이다.
 
+---
 ## 정의
 
 **방향 도함수 (directional derivative):** 함수 $f: \mathbb{R}^n \to \mathbb{R}$의 점 $a \in \mathbb{R}^n$에서 단위벡터 $u$($\|u\| = 1$) 방향의 방향 도함수는:
@@ -35,6 +36,7 @@ $$D_v f(a) = \lim_{t \to 0} \frac{f(a + tv) - f(a)}{t}$$
 
 **좌표축 방향:** $u = e_i$($i$번째 표준기저벡터)이면 $D_{e_i} f(a) = \frac{\partial f}{\partial x_i}(a)$로 편도함수와 일치한다.
 
+---
 ## 주요 정리와 증명
 
 ### 정리 1: $D_u f = \nabla f \cdot u$ (Directional Derivative via Gradient)
@@ -131,6 +133,7 @@ $\square$
 
 **의미:** 이 정리는 방향 도함수가 0인 방향이 등고선의 방향임을 공식화한다. 국소적으로 함수가 변하지 않는 방향들의 집합이 바로 등위면의 접선 공간이다.
 
+---
 ## 예제
 
 **예제 1:** $f(x, y) = x^2 + xy + y^2$의 점 $(1, 1)$에서 방향 $u = (\cos\theta, \sin\theta)$의 방향 도함수를 $\theta$의 함수로 표현하고, 최대 증가 방향과 값을 구하라.
@@ -219,6 +222,7 @@ $D_v T(3, 2) = \nabla T \cdot v = (-6, -8) \cdot (1, -1) = -6 + 8 = 2$.
 
 도함수가 0이 되는 방향: $\nabla f \cdot u = 2u_1 = 0$, 즉 $u_1 = 0$인 방향 $u = (0, \pm 1)$($y$축 방향). 이는 $f$의 등고선 $x^2 - y^2 = c$가 $(1, 0)$에서 $y$축 방향으로 향함을 의미한다.
 
+---
 ## 연결
 
 - **[내적·노름·코사인 유사도](inner-product-norm.html)** : $D_u f = \nabla f \cdot u$는 내적의 기하학적 의미(투영)로 이해할 수 있다.
