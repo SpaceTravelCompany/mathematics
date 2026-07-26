@@ -9,8 +9,7 @@
   },
   "references": [
     { "label": "3Blue1Brown", "href": "https://www.youtube.com/@3blue1brown" },
-    { "label": "MIT OCW 18.06", "href": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
-    { "label": "Mathematics for Machine Learning", "href": "https://mml-book.github.io/" }
+    { "label": "MIT OCW 18.06", "href": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" }
   ],
   "sections": [
     {
@@ -25,14 +24,6 @@
         {         "slug": "sequences-series", "title": "수열과 급수 기초", "body": "등차·등비수열, 시그마, 수렴·발산", "icon": "Σ" },
         {         "slug": "plane-vectors", "title": "평면벡터 기초", "body": "벡터 성분, 연산, 크기, 내적 도입", "icon": "→" },
         {         "slug": "coordinate-geometry", "title": "좌표기하와 이차곡선", "body": "직선, 원, 포물선·타원·쌍곡선", "icon": "⊕" }
-      ]
-    },
-    {
-              "slug": "guide",
-      "title": "학습 가이드",
-      "topics": [
-        {         "slug": "learning-path", "title": "학습 순서", "body": "4단계 학습 루트", "icon": "🗺" },
-        {         "slug": "resources", "title": "추천 자원", "body": "영상·책·실습 자료 모음", "icon": "📚" }
       ]
     },
     {
