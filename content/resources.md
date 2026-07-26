@@ -1,0 +1,4 @@
+---
+title: resources
+slug: resources
+---

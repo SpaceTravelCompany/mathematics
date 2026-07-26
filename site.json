@@ -1,0 +1,176 @@
+{
+  "title": "Mathematics Roadmap",
+  "subtitle": "선형대수 · 미적분 · 확률통계",
+  "brandMark": "∑",
+  "storagePrefix": "math-roadmap",
+  "theme": {
+    "light": { "brand": "#1e3a8a", "accent": "#1e3a8a", "link": "#1d4ed8" },
+    "dark": { "brand": "#93b4f8", "accent": "#93b4f8", "link": "#7dd3fc" }
+  },
+  "references": [
+    { "label": "3Blue1Brown", "href": "https://www.youtube.com/@3blue1brown" },
+    { "label": "MIT OCW 18.06", "href": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" },
+    { "label": "Mathematics for Machine Learning", "href": "https://mml-book.github.io/" }
+  ],
+  "sections": [
+    {
+              "slug": "foundations",
+      "title": "기초 수학",
+      "topics": [
+        {         "slug": "sets-and-logic", "title": "집합과 논리", "body": "집합 연산, 명제, 증명 기법", "icon": "∩" },
+        {         "slug": "functions", "title": "함수", "body": "정의역·공역·치역, 합성·역함수", "icon": "ƒ" },
+        {         "slug": "polynomials-equations", "title": "다항식·방정식·부등식", "body": "인수분해, 이차방정식, 부등식", "icon": "≡" },
+        {         "slug": "exponentials-logarithms", "title": "지수와 로그", "body": "지수법칙, 로그 성질, 함수 그래프", "icon": "e" },
+        {         "slug": "trigonometric-functions", "title": "삼각함수", "body": "호도법, 삼각비, 덧셈정리", "icon": "∿" },
+        {         "slug": "sequences-series", "title": "수열과 급수 기초", "body": "등차·등비수열, 시그마, 수렴·발산", "icon": "Σ" },
+        {         "slug": "plane-vectors", "title": "평면벡터 기초", "body": "벡터 성분, 연산, 크기, 내적 도입", "icon": "→" },
+        {         "slug": "coordinate-geometry", "title": "좌표기하와 이차곡선", "body": "직선, 원, 포물선·타원·쌍곡선", "icon": "⊕" }
+      ]
+    },
+    {
+              "slug": "guide",
+      "title": "학습 가이드",
+      "topics": [
+        {         "slug": "learning-path", "title": "학습 순서", "body": "4단계 학습 루트", "icon": "🗺" },
+        {         "slug": "resources", "title": "추천 자원", "body": "영상·책·실습 자료 모음", "icon": "📚" }
+      ]
+    },
+    {
+              "slug": "la-transform",
+      "title": "행렬과 선형변환",
+      "topics": [
+        {         "slug": "matrix-multiplication", "title": "행렬곱과 선형변환", "body": "AB ≠ BA, 공간을 변환하는 함수", "icon": "▦" },
+        {         "slug": "span-independence", "title": "선형결합·span·일차독립", "body": "벡터를 섞어 도달하는 공간", "icon": "⊞" },
+        {         "slug": "rank-nullspace", "title": "rank·열공간·널공간", "body": "변환 후 살아남는 차원과 사라지는 차원", "icon": "◫" },
+        {         "slug": "gaussian-elimination", "title": "Ax = b·가우스 소거·RREF", "body": "연립방정식의 기본 알고리즘", "icon": "⊟" },
+        {         "slug": "determinant", "title": "행렬식의 기하학", "body": "부피 확대율과 방향 반전", "icon": "‖" },
+        {         "slug": "inverse-change-of-basis", "title": "역행렬과 기저 변환", "body": "변환 되돌리기, 좌표 바꾸기", "icon": "⇄" },
+        {         "slug": "vector-space-abstraction", "title": "벡터공간 추상화", "body": "함수·다항식·신호도 벡터다", "icon": "∞" }
+      ]
+    },
+    {
+              "slug": "la-inner",
+      "title": "내적공간과 직교성",
+      "topics": [
+        {         "slug": "inner-product-norm", "title": "내적·노름·코사인 유사도", "body": "두 벡터의 닮음과 길이", "icon": "·" },
+        {         "slug": "orthogonality", "title": "직교성·직교투영·그람-슈미트", "body": "성분을 수직으로 분리", "icon": "⊥" },
+        {         "slug": "least-squares", "title": "최소제곱법", "body": "오차 제곱합 최소화", "icon": "≈" }
+      ]
+    },
+    {
+              "slug": "la-eigen",
+      "title": "고유값과 행렬분해",
+      "topics": [
+        {         "slug": "eigenvalues", "title": "고유값·고유벡터", "body": "Av = λv, 변환해도 방향이 안 바뀌는 축", "icon": "λ" },
+        {         "slug": "spectral-theorem", "title": "대칭행렬·스펙트럼 정리", "body": "실수 고유값, 직교 대각화, 이차형식", "icon": "◈" },
+        {         "slug": "svd", "title": "SVD", "body": "A = UΣVᵀ, 회전→늘리기→회전", "icon": "◆" },
+        {         "slug": "positive-definite", "title": "양정치 행렬", "body": "xᵀAx > 0, 모든 방향에서 볼록", "icon": "∪" },
+        {         "slug": "change-of-basis", "title": "기저 변환", "body": "P⁻¹AP, 관점을 바꾸면 행렬이 단순해진다", "icon": "⟲" }
+      ]
+    },
+    {
+              "slug": "la-advanced",
+      "title": "미분과 고차원 구조",
+      "topics": [
+        {         "slug": "matrix-calculus", "title": "행렬 미분", "body": "∂L/∂W, 스칼라를 행렬로 미분", "icon": "∂" },
+        {         "slug": "jacobian-hessian", "title": "야코비안·헤시안", "body": "다변수의 기울기 행렬과 곡률 행렬", "icon": "∇" },
+        {         "slug": "tensor-operations", "title": "텐서 연산", "body": "행렬의 고차원 일반화", "icon": "⊗" },
+        {         "slug": "markov-chains", "title": "확률 행렬·마르코프 체인", "body": "행렬곱으로 상태 전이", "icon": "⟳" },
+        {         "slug": "embedding-geometry", "title": "임베딩 공간의 기하학", "body": "고차원에서의 거리·각도·밀도", "icon": "◎" }
+      ]
+    },
+    {
+              "slug": "calc-basic",
+      "title": "미분과 적분",
+      "topics": [
+        {         "slug": "limits-derivatives", "title": "극한·연속·도함수", "body": "순간 변화율과 접선", "icon": "δ" },
+        {         "slug": "differentiation-rules", "title": "미분 법칙·연쇄법칙", "body": "합성함수의 미분, 변화 전파", "icon": "∘" },
+        {         "slug": "exp-log-calculus", "title": "지수·로그 함수의 미분", "body": "eˣ는 미분해도 자기 자신", "icon": "e" },
+        {         "slug": "integral-meaning", "title": "적분의 의미", "body": "잘게 쪼개서 더하기, 미분의 역연산", "icon": "∫" },
+        {         "slug": "series-convergence", "title": "급수와 수렴", "body": "무한합의 유한 수렴, 테일러 급수", "icon": "Σ" }
+      ]
+    },
+    {
+              "slug": "calc-multi",
+      "title": "다변수 미분과 최적화",
+      "topics": [
+        {         "slug": "partial-derivatives", "title": "편도함수·기울기 벡터", "body": "∇f, 한 방향씩 미분", "icon": "∂" },
+        {         "slug": "gradient-geometry", "title": "등고선과 그래디언트", "body": "∇f는 등고선에 수직", "icon": "⛰" },
+        {         "slug": "directional-derivative", "title": "방향 도함수", "body": "임의 방향 변화율 = ∇f · u", "icon": "↗" },
+        {         "slug": "multivar-chain-rule", "title": "다변수 연쇄법칙", "body": "계산 그래프에서 기울기의 역전파", "icon": "⛓" },
+        {         "slug": "second-derivatives", "title": "2계 도함수·헤시안·곡률", "body": "기울기의 기울기, 곡면의 휨", "icon": "∪" },
+        {         "slug": "taylor-expansion", "title": "테일러 전개", "body": "현재 위치 + 기울기 + 곡률로 근사", "icon": "≈" },
+        {         "slug": "lagrange-multipliers", "title": "라그랑주 승수법", "body": "제약 조건 아래 최적점", "icon": "⊜" },
+        {         "slug": "extrema-saddle", "title": "극값·안장점", "body": "고차원에서는 안장점이 압도적", "icon": "⊙" },
+        {         "slug": "sigmoid-softmax", "title": "시그모이드·소프트맥스 미분", "body": "S자 곡선의 기울기", "icon": "∫" }
+      ]
+    },
+    {
+              "slug": "calc-fourier",
+      "title": "푸리에와 벡터 미적분",
+      "topics": [
+        {         "slug": "multiple-integrals", "title": "다중적분", "body": "2중·3중 적분, 부피·질량·확률", "icon": "∬" },
+        {         "slug": "fourier", "title": "푸리에 급수·푸리에 변환", "body": "신호를 주파수의 합으로 분해", "icon": "∿" },
+        {         "slug": "div-curl", "title": "발산·회전", "body": "퍼져나가는 정도, 소용돌이", "icon": "∇×" },
+        {         "slug": "line-surface-integrals", "title": "선적분·면적분", "body": "곡선을 따라, 면을 뚫고", "icon": "∮" },
+        {         "slug": "stokes-theorems", "title": "그린·스토크스·가우스 정리", "body": "적분 정리들의 통일", "icon": "∂Ω" }
+      ]
+    },
+    {
+              "slug": "calc-ode",
+      "title": "미분방정식과 변분",
+      "topics": [
+        {         "slug": "ode-basics", "title": "상미분방정식 기초", "body": "dx/dt = f(x), 세상의 동역학", "icon": "dx" },
+        {         "slug": "sde", "title": "확률미분방정식", "body": "ODE + 무작위 잡음", "icon": "dW" },
+        {         "slug": "calculus-of-variations", "title": "변분법", "body": "함수를 입력받는 범함수의 최적화", "icon": "δf" },
+        {         "slug": "dynamical-systems", "title": "미분방정식과 동역학", "body": "안정성, 카오스, 나비효과", "icon": "🦋" }
+      ]
+    },
+    {
+              "slug": "prob-basic",
+      "title": "확률과 분포",
+      "topics": [
+        {         "slug": "counting", "title": "경우의 수·순열·조합", "body": "몇 가지 경우가 있는가", "icon": "!" },
+        {         "slug": "conditional-bayes", "title": "확률·조건부확률·베이즈 정리", "body": "P(A|B), 증거로 믿음 업데이트", "icon": "P" },
+        {         "slug": "random-variables", "title": "확률변수·PMF/PDF", "body": "결과를 숫자로 옮기는 함수", "icon": "X" },
+        {         "slug": "expectation-variance", "title": "기댓값·분산·공분산", "body": "장기 평균, 퍼짐, 함께 움직임", "icon": "μ" },
+        {         "slug": "distributions", "title": "주요 분포", "body": "베르누이·이항·포아송·정규·지수", "icon": "𝒩" },
+        {         "slug": "law-large-numbers", "title": "대수의 법칙", "body": "반복하면 평균이 참값에 수렴", "icon": "∞" },
+        {         "slug": "clt", "title": "중심극한정리", "body": "많이 더하면 정규분포", "icon": "🔔" },
+        {         "slug": "conditional-traps", "title": "조건부확률의 함정", "body": "기저율 무시, 심슨의 역설", "icon": "⚠" }
+      ]
+    },
+    {
+              "slug": "prob-estimate",
+      "title": "추정과 정보이론",
+      "topics": [
+        {         "slug": "joint-marginal-conditional", "title": "결합·주변·조건부 분포", "body": "여러 확률변수의 동시 분포", "icon": "∑" },
+        {         "slug": "mle", "title": "최대가능도추정 MLE", "body": "데이터가 나올 확률을 최대화", "icon": "L̂" },
+        {         "slug": "bayesian-inference", "title": "베이지안 추론", "body": "사전 → 사후, 믿음의 업데이트", "icon": "π" },
+        {         "slug": "entropy-kl", "title": "엔트로피·KL발산", "body": "놀람의 평균, 두 분포의 거리", "icon": "H" },
+        {         "slug": "mcmc", "title": "마르코프 체인·MCMC", "body": "샘플링으로 분포 근사", "icon": "⟳" },
+        {         "slug": "monte-carlo", "title": "몬테카를로", "body": "무작위 샘플로 적분 근사", "icon": "🎲" }
+      ]
+    },
+    {
+              "slug": "prob-test",
+      "title": "검정과 회귀",
+      "topics": [
+        {         "slug": "hypothesis-testing", "title": "가설검정·p-value", "body": "p < 0.05 ≠ 효과가 있다", "icon": "α" },
+        {         "slug": "regression-analysis", "title": "회귀분석", "body": "인과와 상관의 경계", "icon": "β" }
+      ]
+    },
+    {
+              "slug": "prob-advanced",
+      "title": "확률과정과 인과",
+      "topics": [
+        {         "slug": "mdp", "title": "마르코프 결정과정", "body": "상태·행동·보상·전이확률", "icon": "π" },
+        {         "slug": "importance-sampling", "title": "중요도 샘플링·재파라미터 트릭", "body": "다른 분포로 우회 샘플링", "icon": "⤳" },
+        {         "slug": "gaussian-process", "title": "가우시안 과정", "body": "함수 위의 확률분포", "icon": "𝒢" },
+        {         "slug": "score-function", "title": "스코어 함수", "body": "∇log p(x), 밀도가 높은 방향", "icon": "∇" },
+        {         "slug": "information-geometry", "title": "정보기하·자연 그래디언트", "body": "확률분포 공간의 거리와 곡률", "icon": "𝐅" },
+        {         "slug": "causal-inference", "title": "인과추론", "body": "상관 너머, 개입과 반사실", "icon": "→" }
+      ]
+    }
+  ]
+}

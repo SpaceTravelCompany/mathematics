@@ -1,0 +1,4 @@
+---
+title: determinant
+slug: determinant
+---

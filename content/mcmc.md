@@ -1,0 +1,4 @@
+---
+title: mcmc
+slug: mcmc
+---
