@@ -76,7 +76,7 @@ $m \neq n$일 때:
 
 $$\int_{-\pi}^{\pi} \cos mx \cos nx\,dx = \frac{1}{2}\int_{-\pi}^{\pi} [\cos(m+n)x + \cos(m-n)x]\,dx$$
 
-$$\cos(m \pm n)x$의 $[-\pi, \pi]$에서의 적분은 0이므로(주기 $2\pi$의 정현파의 한 주기 적분은 0) 결과는 0이다.
+$\cos(m \pm n)x$의 $[-\pi, \pi]$에서의 적분은 0이므로(주기 $2\pi$의 정현파의 한 주기 적분은 0) 결과는 0이다.
 
 $m = n \neq 0$일 때:
 
