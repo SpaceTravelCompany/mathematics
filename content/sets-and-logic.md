@@ -26,11 +26,16 @@ slug: sets-and-logic
 **카디널리티(cardinality):** 유한집합 $A$의 크기 $|A|$는 원소의 개수.
 
 **명제 논리(propositional logic):** **명제(proposition)** 는 참(true) 또는 거짓(false)이 분명한 문장이다.
-- $\neg P$: 부정 (not $P$)
-- $P \land Q$: 논리곱 ($P$ 그리고 $Q$)
-- $P \lor Q$: 논리합 ($P$ 또는 $Q$)
-- $P \Rightarrow Q$: 함의 ($P$이면 $Q$이다)
-- $P \iff Q$: 동치 ($P$와 $Q$가 필요충분조건)
+
+**기본 논리 연산자:**
+- $\neg P$: **부정(negation, not)** — $P$가 거짓이면 참, $P$가 참이면 거짓
+- $P \land Q$: **논리곱(logical AND, conjunction)** — "$P$ **그리고** $Q$" — **둘 다 참일 때만 참**
+- $P \lor Q$: **논리합(logical OR, disjunction)** — "$P$ **또는** $Q$" — **둘 중 하나라도 참이면 참** (배타적 또는이 아님, 둘 다 참도 허용)
+- $P \oplus Q$ (또는 $P \veebar Q$): **배타적 논리합(exclusive OR, XOR)** — "$P$ **또는** $Q$ **중 하나만**" — **둘 중 정확히 하나만 참일 때 참** (둘 다 참이거나 둘 다 거짓이면 거짓)
+- $P \Rightarrow Q$: **함의(implication)** — "$P$이면 $Q$이다" — $P$가 참이고 $Q$가 거짓일 때만 거짓
+- $P \iff Q$: **동치(equivalence)** — "$P$와 $Q$가 필요충분조건" — $P$와 $Q$가 같은 진리값일 때 참
+
+> **참고:** $\oplus$ 기호는 벡터공간에서 직합(direct sum) 기호로도 쓰이므로 문맥에서 구별해야 한다. 집합론에서 **대칭 차집합(symmetric difference)** $A \triangle B = (A \setminus B) \cup (B \setminus A)$는 배타적 또는에 대응한다 ($x \in A \triangle B \iff x \in A \oplus x \in B$).
 
 **조건부(conditional) 용어:** $P \Rightarrow Q$에서 $P$는 **충분조건(sufficient condition)**, $Q$는 **필요조건(necessary condition)** 이라 부른다.
 
