@@ -7,6 +7,6 @@
     "build": "node node_modules/topic-pages/scripts/build.mjs"
   },
   "dependencies": {
-    "topic-pages": "file:../topic-pages"
+    "topic-pages": "github:SpaceTravelCompany/topic-pages#main"
   }
 }
