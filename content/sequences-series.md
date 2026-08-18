@@ -72,7 +72,7 @@ $$S_n(1 - r) = a_1(1 - r^n) \;\Longrightarrow\; S_n = a_1 \frac{1 - r^n}{1 - r}$
 
 $$\sum_{n=0}^{\infty} a_1 r^{\,n} = \lim_{n\to\infty} a_1 \frac{1 - r^{\,n}}{1 - r} = \frac{a_1}{1 - r}$$
 
-|$r| \geq 1$이면 급수는 발산한다 (수렴하지 않는다).
+$|r| \geq 1$이면 급수는 발산한다 (수렴하지 않는다).
 
 ### 정리 3: 수렴의 필요조건
 

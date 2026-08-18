@@ -67,7 +67,7 @@ $$\frac{\partial S}{\partial \boldsymbol{\beta}} = -2 X^T \mathbf{y} + 2 X^T X \
 
 따라서 $X^T X \boldsymbol{\beta} = X^T \mathbf{y}$를 얻는다. $X^T X$가 가역($X$의 열이 일차독립)이면 유일해 $\hat{\boldsymbol{\beta}} = (X^T X)^{-1} X^T \mathbf{y}$를 가진다.
 
-이 해가 실제로 최소값임을 확인하려면 헤세 행렬(2계 미분) $\partial^2 S / \partial \boldsymbol{\beta} \partial \boldsymbol{\beta}^T = 2 X^T X$이 양반정치(positive semidefinite)임을 확인하면 된다. $\square$
+이 해가 실제로 최소값임을 확인하려면 헤시안 행렬(2계 미분) $\partial^2 S / \partial \boldsymbol{\beta} \partial \boldsymbol{\beta}^T = 2 X^T X$이 양반정치(positive semidefinite)임을 확인하면 된다. $\square$
 
 ### 정리 2: 가우스-마르코프 정리 (Gauss-Markov Theorem)
 
@@ -150,15 +150,16 @@ $$R^2 = 1 - \frac{2.30}{10} = 0.770$$
 **예제 2 (다중회귀 행렬 계산):** $n = 4$, $p = 2$인 데이터:
 $$X = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \\ 1 & 4 \end{pmatrix}, \quad \mathbf{y} = \begin{pmatrix} 2 \\ 3 \\ 5 \\ 4 \end{pmatrix}$$
 
-(예제 1과 동일, $x_1$ 열은 절편)
-
+**풀이:** $X^T X$와 $X^T \mathbf{y}$를 계산한다.
 $$X^T X = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 4 \end{pmatrix} \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \\ 1 & 4 \end{pmatrix} = \begin{pmatrix} 4 & 10 \\ 10 & 30 \end{pmatrix}$$
 $$(X^T X)^{-1} = \frac{1}{4 \cdot 30 - 10^2} \begin{pmatrix} 30 & -10 \\ -10 & 4 \end{pmatrix} = \frac{1}{20} \begin{pmatrix} 30 & -10 \\ -10 & 4 \end{pmatrix}$$
-$$X^T \mathbf{y} = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 4 \end{pmatrix} \begin{pmatrix} 2 \\ 3 \\ 5 \\ 4 \end{pmatrix} = \begin{pmatrix} 14 \\ 41 \end{pmatrix}$$
+$$X^T \mathbf{y} = \begin{pmatrix} 1 & 1 & 1 & 1 \\ 1 & 2 & 3 & 4 \end{pmatrix} \begin{pmatrix} 2 \\ 3 \\ 5 \\ 4 \end{pmatrix} = \begin{pmatrix} 2+3+5+4 \\ 2+6+15+16 \end{pmatrix} = \begin{pmatrix} 14 \\ 39 \end{pmatrix}$$
 
-$$\hat{\boldsymbol{\beta}} = \frac{1}{20} \begin{pmatrix} 30 & -10 \\ -10 & 4 \end{pmatrix} \begin{pmatrix} 14 \\ 41 \end{pmatrix} = \frac{1}{20} \begin{pmatrix} 420 - 410 \\ -140 + 164 \end{pmatrix} = \frac{1}{20} \begin{pmatrix} 10 \\ 24 \end{pmatrix} = \begin{pmatrix} 0.5 \\ 1.2 \end{pmatrix}$$
+$$\hat{\boldsymbol{\beta}} = \frac{1}{20} \begin{pmatrix} 30 & -10 \\ -10 & 4 \end{pmatrix} \begin{pmatrix} 14 \\ 39 \end{pmatrix} = \frac{1}{20} \begin{pmatrix} 420 - 390 \\ -140 + 156 \end{pmatrix} = \frac{1}{20} \begin{pmatrix} 30 \\ 16 \end{pmatrix} = \begin{pmatrix} 1.5 \\ 0.8 \end{pmatrix}$$
 
-회귀선: $\hat{Y} = 0.5 + 1.2X$. (예제 1과 다른 이유는 절편을 포함한 계산 방식의 차이 때문)
+회귀선: $\hat{Y} = 1.5 + 0.8X$.
+
+검증: $x=1$에서 $\hat{y} = 2.3$, $x=2$에서 $3.1$, $x=3$에서 $3.9$, $x=4$에서 $4.7$. 이는 예제 1의 데이터를 다른 설계행렬(절편 없이 기울기만)로 적합한 결과다.
 
 **예제 3 (다중공선성 예시):** 두 설명변수 $X_1$과 $X_2$가 거의 같은 정보를 가질 때($\text{Cor}(X_1, X_2) \approx 1$), 분산팽창계수(VIF)는
 $$\text{VIF}_j = \frac{1}{1 - R_j^2}$$

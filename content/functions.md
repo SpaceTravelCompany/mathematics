@@ -67,12 +67,12 @@ $f: A \to B$에 대해 다음이 성립한다.
 
 $$f \circ \text{id}_A = f = \text{id}_B \circ f$$
 
-**증명:** 임의의 $x \in A$에 대해 $(f \circ \text{id}_A)(x) = f(\text{id}_A(x)) = f(x)$이고, 임의의 $y \in A$에 대해 $(\text{id}_B \circ f)(y) = \text{id}_B(f(y)) = f(y)$. 따라서 성립한다.
+**증명:** 임의의 $x \in A$에 대해 $(f \circ \text{id}_A)(x) = f(\text{id}_A(x)) = f(x)$이고, 임의의 $y \in B$에 대해 $(\text{id}_B \circ f)(y) = \text{id}_B(f(y)) = f(y)$. 따라서 성립한다.
 
 ---
 ## 예제
 
-**예제 1:** $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$과 $g: \mathbb{R} \to \mathbb{R}$, $g(x) = 2x + 1$에 대해 단사(surjectivity)와 전사(surjectivity)를 판정하라.
+**예제 1:** $f: \mathbb{R} \to \mathbb{R}$, $f(x) = x^2$과 $g: \mathbb{R} \to \mathbb{R}$, $g(x) = 2x + 1$에 대해 단사(injectivity)와 전사(surjectivity)를 판정하라.
 
 **풀이:**
 - $f(x) = x^2$: $f(1) = 1 = f(-1)$이므로 단사가 아니다. 또한 $y < 0$인 $y$에 대해 $f(x) = y$를 만족하는 실수 $x$가 없으므로 전사도 아니다.

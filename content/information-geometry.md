@@ -84,9 +84,12 @@ $v^T g(\theta) v = 0$이면 $\sum_i v_i \partial_i \log p_\theta = 0$ (almost ev
 
 **서술:** 2차원 모수 $\theta = (\mu, \sigma^2)$에 대한 피셔 정보 행렬과 계량은
 $$g(\mu, \sigma^2) = \begin{pmatrix} \frac{1}{\sigma^2} & 0 \\ 0 & \frac{1}{2\sigma^4} \end{pmatrix}$$
-$$ds^2 = \frac{d\mu^2}{\sigma^2} + \frac{d\sigma^4}{2\sigma^4} = \frac{d\mu^2}{\sigma^2} + \frac{2 d\sigma^2}{\sigma^2}$$
+$$ds^2 = \frac{(d\mu)^2}{\sigma^2} + \frac{(d\sigma^2)^2}{2\sigma^4}$$
 
-(마지막 등식은 $d\sigma^4 = 4\sigma^2 d\sigma^2$와 정리 후 $d\sigma^2$로 표현한 것)
+여기서 $d\sigma^2$는 $\sigma^2$라는 모수 성분의 미소 변화 $d(\sigma^2)$를 뜻한다. $\sigma$ 자체를 변수로 쓰면 $d(\sigma^2) = 2\sigma\,d\sigma$이므로
+$$ds^2 = \frac{(d\mu)^2}{\sigma^2} + \frac{2(d\sigma)^2}{\sigma^2}$$
+
+로도 표현된다.
 
 **증명:** $\log p(x|\mu,\sigma^2) = -\frac{1}{2}\log(2\pi\sigma^2) - \frac{(x-\mu)^2}{2\sigma^2}$
 
@@ -106,7 +109,7 @@ $$= \frac{1}{4\sigma^4} - \frac{1}{2\sigma^4} + \frac{1}{4\sigma^8} \cdot 3\sigm
 
 $\square$
 
-**계량의 해석:** $ds^2 = d\mu^2/\sigma^2 + d\sigma^4/(2\sigma^4)$에서 $\sigma$가 클수록 $\mu$ 방향의 거리가 짧게 측정된다 — 분산이 클수록 평균의 차이를 구분하기 어렵다는 직관과 일치한다.
+**계량의 해석:** $ds^2 = (d\mu)^2/\sigma^2 + (d\sigma^2)^2/(2\sigma^4)$에서 $\sigma$가 클수록 $\mu$ 방향의 거리가 짧게 측정된다 — 분산이 클수록 평균의 차이를 구분하기 어렵다는 직관과 일치한다.
 
 ### 정리 4: 자연 그래디언트의 좌표 불변성
 
@@ -115,7 +118,7 @@ $\square$
 **증명 (스케치):** $\phi$ 좌표계에서 손실함수 $\mathcal{L}'(\phi) = \mathcal{L}(\theta(\phi))$를 고려하자. 연쇄법칙에 의해
 $$\nabla_\phi \mathcal{L}' = \frac{\partial\theta}{\partial\phi}^T \nabla_\theta \mathcal{L}$$
 
-피셰 정보는 좌표 변환 아래 2차 텐서로 변환된다:
+피셔 정보는 좌표 변환 아래 2차 텐서로 변환된다:
 $$g_\phi = \frac{\partial\theta}{\partial\phi}^T g_\theta \frac{\partial\theta}{\partial\phi}$$
 
 따라서 $\phi$ 좌표계의 자연 그래디언트는
@@ -164,7 +167,7 @@ $$\tilde{\nabla}\mathcal{L} = g^{-1}\nabla\mathcal{L} = \begin{pmatrix} \sigma^2
 **예제 4 (지수족의 피셔 계량):** 지수족(exponential family) $p(x|\theta) = h(x)\exp(\theta^T T(x) - A(\theta))$의 피셔 계량은
 $$g_{ij}(\theta) = \frac{\partial^2 A(\theta)}{\partial\theta_i\partial\theta_j}$$
 
-즉, 로그 정규화 함수(log-partition function) $A(\theta)$의 헤세 행렬( Hessian )이다. 이는 지수족에서 피셔 정보의 계산이 특히 간단해짐을 의미한다.
+즉, 로그 정규화 함수(log-partition function) $A(\theta)$의 헤시안 행렬(Hessian)이다. 이는 지수족에서 피셔 정보의 계산이 특히 간단해짐을 의미한다.
 
 예: 베르누이 분포를 지수족으로 표현하면 $\theta = \log(p/(1-p))$, $A(\theta) = \log(1+e^\theta)$, $g(\theta) = A''(\theta) = e^\theta/(1+e^\theta)^2 = p(1-p)$.
 

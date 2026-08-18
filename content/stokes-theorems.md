@@ -56,138 +56,64 @@ $$\int_{\partial\Omega} \omega = \int_\Omega d\omega$$
 
 ### 정리 1: 그린 정리 (Green's Theorem) 증명
 
-$D$가 $x$-단순 영역($a \leq x \leq b$, $g_1(x) \leq y \leq g_2(x)$)이고 $y$-단순 영역($c \leq y \leq d$, $h_1(y) \leq x \leq h_2(y)$)이라고 가정한다. 다음 두 등식을 각각 증명한다:
+영역 $D$가 $x$-단순(type I)이면서 동시에 $y$-단순(type II)이라고 가정한다. 즉,
 
-$$\oint_{\partial D} P\,dx = -\iint_D \frac{\partial P}{\partial y}\,dA, \quad \oint_{\partial D} Q\,dy = \iint_D \frac{\partial Q}{\partial x}\,dA$$
+$$D = \{(x,y) : a \le x \le b,\; g_1(x) \le y \le g_2(x)\} = \{(x,y) : c \le y \le d,\; h_1(y) \le x \le h_2(y)\}$$
 
-**$Q$ 부분 증명:** $D$를 $x$-단순 영역으로 표현하면
+경계 $\partial D$는 반시계 방향(counterclockwise)으로 향한다. 다음 두 등식을 각각 증명하면 그린 정리가 완성된다.
 
-$$\iint_D \frac{\partial Q}{\partial x}\,dA = \int_a^b \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}\,dy\,dx = \int_a^b \left[ Q(x, g_2(x)) - Q(x, g_1(x)) \right] dx$$
+$$\oint_{\partial D} Q\,dy = \iint_D \frac{\partial Q}{\partial x}\,dA, \qquad \oint_{\partial D} P\,dx = -\iint_D \frac{\partial P}{\partial y}\,dA$$
 
-한편 $\partial D$는 네 조각으로 구성된다:
-- $C_1$: 아래쪽 곡선 $y = g_1(x)$, $x: a \to b$
-- $C_2$: 오른쪽 수직선 $x = b$, $y: g_1(b) \to g_2(b)$
-- $C_3$: 위쪽 곡선 $y = g_2(x)$, $x: b \to a$ (역방향)
-- $C_4$: 왼쪽 수직선 $x = a$, $y: g_2(a) \to g_1(a)$ (역방향)
+**$Q$ 부분 증명 ($x$-단순 영역):** $D$를 $x$-단순 영역으로 표현하자. 이중적분을 반복적분으로 바꾸고 미적분학의 기본정리(FTC)를 적용하면
 
-$\oint Q\,dy$를 각 조각에서 계산한다. $C_2$와 $C_4$에서는 $dx = 0$이므로 기여가 없다. $C_1$에서 $dy = g_1'(x)dx$이므로 $\int_{C_1} Q\,dy = \int_a^b Q(x, g_1(x)) g_1'(x)\,dx$. $C_3$은 역방향이므로 $\int_{C_3} Q\,dy = -\int_a^b Q(x, g_2(x)) g_2'(x)\,dx$. 그러나 $C_3$에서 $y = g_2(x)$이므로 $dy = g_2'(x)dx$를 대입한다:
+$$\iint_D \frac{\partial Q}{\partial x}\,dA = \int_a^b \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}(x,y)\,dy\,dx = \int_a^b \left[ Q(x, g_2(x)) - Q(x, g_1(x)) \right] dx$$
 
-$$\oint_{\partial D} Q\,dy = \int_a^b Q(x, g_1(x))\,dx + \int_a^b Q(x, g_2(x))(-dx) = \int_a^b [Q(x, g_1(x)) - Q(x, g_2(x))]\,dx$$
+한편 경계 $\partial D$는 반시계 방향으로 다음 네 조각으로 나뉜다.
 
-근데 이렇게 하면 $\iint \frac{\partial Q}{\partial x}$와 부호가 반대다... 
+- $C_1$ (아래): $y = g_1(x)$, $x$가 $a \to b$
+- $C_2$ (오른쪽): $x = b$, $y$가 $g_1(b) \to g_2(b)$
+- $C_3$ (위): $y = g_2(x)$, $x$가 $b \to a$ (역방향)
+- $C_4$ (왼쪽): $x = a$, $y$가 $g_2(a) \to g_1(a)$ (역방향)
 
-올바른 접근: $C_1$은 $y = g_1(x)$, $a \leq x \leq b$ (좌에서 우), $dy = g_1'(x)dx$:
+$\oint_{\partial D} Q\,dy$를 각 조각에서 계산한다.
 
-$$\int_{C_1} Q\,dy = \int_a^b Q(x, g_1(x)) g_1'(x)\,dx = \int_a^b \frac{d}{dx} \left( \int_0^{g_1(x)} \frac{\partial Q}{\partial y}\,dy \right) \cdots$$
+$$\oint_{\partial D} Q\,dy = \int_a^b Q(x, g_1(x)) g_1'(x)\,dx - \int_a^b Q(x, g_2(x)) g_2'(x)\,dx + \int_{g_1(b)}^{g_2(b)} Q(b,y)\,dy - \int_{g_1(a)}^{g_2(a)} Q(a,y)\,dy$$
 
-사실 더 직접적인 방법: 경계 적분을 $x$를 파라미터로 표현한다. $Q\,dy$ 항의 경계 적분:
+이제 라이프니츠 적분 규칙(Leibniz integral rule)을 적용한다.
 
-$$\oint_{\partial D} Q\,dy = \int_{\partial D} Q(x,y)\,dy$$
+$$\frac{d}{dx}\int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy = \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}\,dy + Q(x, g_2(x)) g_2'(x) - Q(x, g_1(x)) g_1'(x)$$
 
-$C_1$: $y = g_1(x)$, $x$ 증가, $dy = g_1'(x)dx$ → $\int_{x=a}^b Q(x, g_1(x)) g_1'(x) dx$
-$C_3$: $y = g_2(x)$, $x$ 감소($b \to a$), $dy = g_2'(x)dx$ → $\int_{x=b}^a Q(x, g_2(x)) g_2'(x) dx = -\int_a^b Q(x, g_2(x)) g_2'(x) dx$
+양변을 $a$부터 $b$까지 적분하고 FTC를 쓰면
 
-직선 $C_2, C_4$에서는 $dy = 0$ 또는 수직이므로 $dy = 0$이 아니다. $C_2$: $x = b$, $y: g_1(b) \to g_2(b)$, $dy = dy$ → $\int_{y=g_1(b)}^{g_2(b)} Q(b, y) dy$. $C_4$: $x = a$, $y: g_2(a) \to g_1(a)$ → $\int_{y=g_2(a)}^{g_1(a)} Q(a, y) dy = -\int_{g_1(a)}^{g_2(a)} Q(a, y) dy$.
+$$\int_{g_1(b)}^{g_2(b)} Q(b,y)\,dy - \int_{g_1(a)}^{g_2(a)} Q(a,y)\,dy = \iint_D \frac{\partial Q}{\partial x}\,dA + \int_a^b \left[ Q(x, g_2(x)) g_2'(x) - Q(x, g_1(x)) g_1'(x) \right] dx$$
 
-이렇게 계산해도 위 $\iint \frac{\partial Q}{\partial x}$와 같음을 보여야 한다. 좀 더 우아한 방법:
+항을 재배열하면
 
-$Q$ 부분을 $y$-단순 영역으로 증명하자. $D$를 $y$-단순 영역 $c \leq y \leq d$, $h_1(y) \leq x \leq h_2(y)$로 표현:
+$$\iint_D \frac{\partial Q}{\partial x}\,dA = \int_a^b \left[ Q(x, g_1(x)) g_1'(x) - Q(x, g_2(x)) g_2'(x) \right] dx + \int_{g_1(b)}^{g_2(b)} Q(b,y)\,dy - \int_{g_1(a)}^{g_2(a)} Q(a,y)\,dy$$
 
-$$\iint_D \frac{\partial Q}{\partial x}\,dA = \int_c^d \int_{h_1(y)}^{h_2(y)} \frac{\partial Q}{\partial x}\,dx\,dy = \int_c^d [Q(h_2(y), y) - Q(h_1(y), y)]\,dy$$
+우변은 위에서 구한 $\oint_{\partial D} Q\,dy$와 정확히 일치한다. 따라서 $\oint_{\partial D} Q\,dy = \iint_D \frac{\partial Q}{\partial x}\,dA$이다. ✓
 
-경계 적분 $\oint Q\,dy$: 경계를 $y$로 매개변수화한다.
-- $C_1$: $x = h_1(y)$, $y: c \to d$, $dy = dy$ → $\int_c^d Q(h_1(y), y)\,dy$
-- $C_2$: $x = h_2(y)$, $y: d \to c$ (역방향), $dy = dy$ → $\int_d^c Q(h_2(y), y)\,dy = -\int_c^d Q(h_2(y), y)\,dy$
-
-$$\oint Q\,dy = \int_c^d [Q(h_1(y), y) - Q(h_2(y), y)]\,dy = -\int_c^d [Q(h_2(y), y) - Q(h_1(y), y)]\,dy = -\iint_D \frac{\partial Q}{\partial x}\,dA$$
-
-아, 이렇게 하면 부호가 반대다. 그린 정리는 $\oint P\,dx + Q\,dy = \iint (\partial Q/\partial x - \partial P/\partial y) dA$인데, $Q\,dy$ 항이 $+\iint \partial Q/\partial x$가 되어야 한다. 잘못된 건 경계의 방향이다. 표준 그린 정리에서 경계는 반시계 방향이다.
-
-올바른 증명:
-
-**$P$ 부분 ($P\,dx$):** $D$를 $y$-단순 영역 $c \leq y \leq d$, $h_1(y) \leq x \leq h_2(y)$로 표현:
-
-$$\iint_D \frac{\partial P}{\partial y}\,dA = \int_c^d \int_{h_1(y)}^{h_2(y)} \frac{\partial P}{\partial y}\,dx\,dy = \int_c^d [P(h_2(y), y) - P(h_1(y), y)]\,dy$$
-
-$\oint_{\partial D} P\,dx$를 반시계 방향 경계에서 계산:
-- 아래변 $C_1$: $y = c$, $x: h_1(c) \to h_2(c)$, $dx > 0$ → $\int_{h_1(c)}^{h_2(c)} P(x, c)\,dx$
-- 오른변 $C_2$: $x = h_2(y)$, $y: c \to d$, $dx = h_2'(y)dy$ → $\int_c^d P(h_2(y), y) h_2'(y)\,dy$
-- 위변 $C_3$: $y = d$, $x: h_2(d) \to h_1(d)$ (역방향), $dx < 0$ → $-\int_{h_1(d)}^{h_2(d)} P(x, d)\,dx$
-- 왼변 $C_4$: $x = h_1(y)$, $y: d \to c$, $dx = h_1'(y)dy$ → $\int_d^c P(h_1(y), y) h_1'(y)\,dy = -\int_c^d P(h_1(y), y) h_1'(y)\,dy$
-
-적분 $\int P\,dx$:
-
-$$\oint_{\partial D} P\,dx = \underbrace{\int_{h_1(c)}^{h_2(c)} P(x,c)\,dx}_{C_1} \underbrace{- \int_{h_1(d)}^{h_2(d)} P(x,d)\,dx}_{C_3} + \int_c^d [P(h_2(y), y)h_2'(y) - P(h_1(y), y)h_1'(y)]\,dy$$
-
-처음 두 항은 $\int_c^d \frac{\partial}{\partial y}\left( \int_{h_1(y)}^{h_2(y)} P(x,y)\,dx \right) dy$의 결과로부터 나오고...
-
-복잡하다. 더 깔끔한 증명을 쓰자.
-
-그린 정리의 올바른 증명: $P$ 부분은 $x$-단순 영역으로, $Q$ 부분은 $y$-단순 영역으로 증명한다.
-
-**$Q$ 부분 ($Q\,dy$):** $D$를 $x$-단순 영역 $a \leq x \leq b$, $g_1(x) \leq y \leq g_2(x)$로 표현:
-
-$$\iint_D \frac{\partial Q}{\partial x}\,dA = \int_a^b \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}(x,y)\,dy\,dx = \int_a^b \frac{d}{dx} \left( \int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy \right) dx - \int_a^b \left[ Q(x, g_2(x))g_2'(x) - Q(x, g_1(x))g_1'(x) \right] dx$$
-
-라이프니츠 규칙(Leibniz rule) $\frac{d}{dx} \int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy = \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}\,dy + Q(x, g_2(x))g_2'(x) - Q(x, g_1(x))g_1'(x)$에서
-
-$$\int_a^b \int_{g_1(x)}^{g_2(x)} \frac{\partial Q}{\partial x}(x,y)\,dy\,dx = \int_a^b \frac{d}{dx} \left( \int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy \right) dx - \int_a^b [Q(x, g_2(x))g_2'(x) - Q(x, g_1(x))g_1'(x)] dx$$
-
-첫째 항: $\left[ \int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy \right]_{x=a}^{x=b}$.
-
-둘째 항: $-\int_a^b Q(x, g_2(x))g_2'(x)dx + \int_a^b Q(x, g_1(x))g_1'(x)dx$.
-
-경계 적분 $\oint Q\,dy$를 $x$-단순 영역 경계에서 계산:
-
-아래쪽 $C_1$: $y = g_1(x)$, $a \to b$, $dy = g_1'(x)dx$: $\int_a^b Q(x, g_1(x))g_1'(x)dx$.
-
-위쪽 $C_2$: $y = g_2(x)$, $b \to a$ (역방향), $dy = g_2'(x)dx$: $\int_b^a Q(x, g_2(x))g_2'(x)dx = -\int_a^b Q(x, g_2(x))g_2'(x)dx$.
-
-양쪽 수직선 $C_3$($x = b$), $C_4$($x = a$)에서 $dy$ 적분: $\int_{g_1(b)}^{g_2(b)} Q(b,y)dy + \int_{g_2(a)}^{g_1(a)} Q(a,y)dy = \int_{g_1(b)}^{g_2(b)} Q(b,y)dy - \int_{g_1(a)}^{g_2(a)} Q(a,y)dy$.
-
-그런데 $\left[ \int_{g_1(x)}^{g_2(x)} Q(x,y)\,dy \right]_{x=a}^{x=b} = \int_{g_1(b)}^{g_2(b)} Q(b,y)dy - \int_{g_1(a)}^{g_2(a)} Q(a,y)dy$이므로...
-
-이 접근은 너무 복잡하다. 간단한 증명을 쓰자.
-
-**올바른 증명 (간명):**
-
-$D$가 $x$-단순(type I) 영역과 $y$-단순(type II) 영역을 동시에 만족한다고 가정한다.
-
-**1단계: $\oint_{\partial D} P\,dx = -\iint_D \frac{\partial P}{\partial y}\,dA$**
-
-$D$를 $y$-단순 영역 $c \leq y \leq d$, $h_1(y) \leq x \leq h_2(y)$로 표현한다.
+**$P$ 부분 증명 ($y$-단순 영역):** 완전히 대칭적인 논법으로, $D$를 $y$-단순 영역 $c \le y \le d$, $h_1(y) \le x \le h_2(y)$로 표현한다. FTC에 의해
 
 $$\iint_D \frac{\partial P}{\partial y}\,dA = \int_c^d \int_{h_1(y)}^{h_2(y)} \frac{\partial P}{\partial y}\,dx\,dy = \int_c^d \left[ P(h_2(y), y) - P(h_1(y), y) \right] dy$$
 
-이제 $\oint_{\partial D} P\,dx$를 반시계 방향으로 계산한다. 경계는 다음 네 부분으로 구성된다:
-- $C_1$: $x = h_1(y)$, $y: c \to d$ (왼쪽)
-- $C_2$: $x = h_2(y)$, $y: d \to c$ (오른쪽, 역방향)
-- $C_3$: $y = c$, $x: h_1(c) \to h_2(c)$ (아래)
-- $C_4$: $y = d$, $x: h_2(d) \to h_1(d)$ (위, 역방향)
+경계 $\partial D$를 반시계 방향으로 아래변($y=c$, $x$: $h_1(c)\to h_2(c)$), 오른변($x=h_2(y)$, $y$: $c\to d$), 위변($y=d$, $x$: $h_2(d)\to h_1(d)$), 왼변($x=h_1(y)$, $y$: $d\to c$)으로 나눈다. $\oint_{\partial D} P\,dx$를 계산하면
 
-$P\,dx$에서 $C_1$: $dx = h_1'(y)dy$ → $\int_c^d P(h_1(y), y)h_1'(y)dy$.
-$C_2$: $dx = h_2'(y)dy$, $y: d \to c$ → $\int_d^c P(h_2(y), y)h_2'(y)dy = -\int_c^d P(h_2(y), y)h_2'(y)dy$.
-$C_3$, $C_4$에서는 $dy = 0$이므로 $y$가 상수, $dx$만 남는다: $\int_{h_1(c)}^{h_2(c)} P(x,c)dx - \int_{h_1(d)}^{h_2(d)} P(x,d)dx$.
+$$\oint_{\partial D} P\,dx = \int_{h_1(c)}^{h_2(c)} P(x,c)\,dx - \int_{h_1(d)}^{h_2(d)} P(x,d)\,dx + \int_c^d \left[ P(h_2(y), y) h_2'(y) - P(h_1(y), y) h_1'(y) \right] dy$$
 
-이것들을 합치면 $\oint P\,dx = \int_c^d [P(h_1(y), y)h_1'(y) - P(h_2(y), y)h_2'(y)] dy + \int_{h_1(c)}^{h_2(c)} P(x,c)dx - \int_{h_1(d)}^{h_2(d)} P(x,d)dx$.
+라이프니츠 규칙을 $\frac{d}{dy}\int_{h_1(y)}^{h_2(y)} P(x,y)\,dx$에 적용하고 $Q$ 부분과 동일하게 정리하면
 
-부분적분(integration by parts)을 사용한다:
+$$\oint_{\partial D} P\,dx = -\iint_D \frac{\partial P}{\partial y}\,dA$$
 
-$$\int_c^d P(h_i(y), y)h_i'(y)dy = [P(h_i(y), y) \cdot h_i(y)]_c^d - \int_c^d \frac{d}{dy}[P(h_i(y), y)] \cdot h_i(y) dy$$
+를 얻는다. ✓
 
-이걸 대입하고 정리하면 $-\int_c^d [P(h_2(y), y) - P(h_1(y), y)] dy = -\iint_D \frac{\partial P}{\partial y} dA$를 얻는다. 자세한 전개는 생략한다.
-
-**2단계: $\oint_{\partial D} Q\,dy = \iint_D \frac{\partial Q}{\partial x}\,dA$**
-
-$D$를 $x$-단순 영역 $a \leq x \leq b$, $g_1(x) \leq y \leq g_2(x)$로 표현하여 같은 방법으로 증명한다.
-
-**3단계:** 두 결과를 더하면 그린 정리를 얻는다.
+두 결과를 더하면 그린 정리가 성립한다.
 
 $$\oint_{\partial D} (P\,dx + Q\,dy) = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dA$$
 
 $\square$
 
-그린 정리는 모든 유한한 합집합의 단순 영역(모서리가 유한개인 영역)으로 확장할 수 있다.
+그린 정리는 유한 개의 단순 영역의 합집합(경계가 유한 개의 조각으로 이루어진 영역)으로 확장할 수 있다. 인접 영역 사이의 공유 경계에서 선적분이 서로 상쇄되기 때문이다.
 
 ### 정리 2: 가우스 발산 정리 (Gauss Divergence Theorem)
 

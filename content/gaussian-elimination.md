@@ -1,5 +1,5 @@
 ---
-title: 가우스 소거와 RREF
+title: Ax = b·가우스 소거·RREF
 slug: gaussian-elimination
 ---
 

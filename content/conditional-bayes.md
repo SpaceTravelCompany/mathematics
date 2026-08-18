@@ -112,13 +112,13 @@ $$
 
 (d) $A \cup B = A \cup (B \setminus A)$이고 $A \cap (B \setminus A) = \emptyset$이므로 $P(A \cup B) = P(A) + P(B \setminus A)$. 한편 $B = (A \cap B) \cup (B \setminus A)$이므로 $P(B) = P(A \cap B) + P(B \setminus A)$. 두 식에서 $P(B \setminus A) = P(B) - P(A \cap B)$를 대입하면 $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. $\square$
 
-### 정리 5: 체비셰프 부등식의 확률 버전
+### 정리 5: 마르코프 부등식 (Markov's Inequality)
 
 확률측도 $P$에 대해 $X$가 확률변수이고 $g: \mathbb{R} \to [0, \infty)$일 때
 
 $$P(g(X) \geq \epsilon) \leq \frac{\mathbb{E}[g(X)]}{\epsilon}$$
 
-**증명 (마르코프 부등식, Markov's inequality):** 사건 $A = \{X : g(X) \geq \epsilon\}$의 지표함수 $\mathbf{1}_A$를 생각하자. $g(X) \geq \epsilon$이므로 $\mathbf{1}_A \leq g(X)/\epsilon$이다. 양변의 기댓값을 취하면
+**증명:** 사건 $A = \{X : g(X) \geq \epsilon\}$의 지표함수 $\mathbf{1}_A$를 생각하자. $g(X) \geq \epsilon$이므로 $\mathbf{1}_A \leq g(X)/\epsilon$이다. 양변의 기댓값을 취하면
 
 $$P(g(X) \geq \epsilon) = \mathbb{E}[\mathbf{1}_A] \leq \mathbb{E}\left[\frac{g(X)}{\epsilon}\right] = \frac{\mathbb{E}[g(X)]}{\epsilon}$$
 

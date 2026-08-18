@@ -108,16 +108,8 @@ $$\|A\|_F = \sqrt{\sum_{i=1}^r \sigma_i^2}, \quad \|A\|_2 = \sigma_1$$
 
 **예제 1:** $A = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \end{pmatrix}$의 SVD를 계산하라.
 
-**풀이:** $A$는 $2 \times 3$ 행렬.
-$$A^T A = \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \\ 1 & 1 & 2 \end{pmatrix}$$
-
-$A^T A$의 고유값:
-$$\det\begin{pmatrix} 1-\lambda & 0 & 1 \\ 0 & 1-\lambda & 1 \\ 1 & 1 & 2-\lambda \end{pmatrix} = (1-\lambda)((1-\lambda)(2-\lambda)-1) - 1(0-(1-\lambda))$$
-$$= (1-\lambda)((1-\lambda)(2-\lambda)-1) + (1-\lambda) = (1-\lambda)((1-\lambda)(2-\lambda))$$
-$$= (1-\lambda)^2 (2-\lambda) - (1-\lambda) + (1-\lambda) = (1-\lambda)((1-\lambda)(2-\lambda)) \quad \text{— 재계산 필요}$$
-
-행렬을 다시 계산하자.
-$A A^T = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$.
+**풀이:** $A$는 $2 \times 3$ 행렬이다. 특이값을 구하기 위해 (더 작은) $A A^T$를 먼저 계산하자.
+$$A A^T = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 1 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
 $A A^T$의 고유값: $\det\begin{pmatrix} 2-\lambda & 1 \\ 1 & 2-\lambda \end{pmatrix} = (2-\lambda)^2 - 1 = \lambda^2 - 4\lambda + 3 = (\lambda-1)(\lambda-3)$.
 따라서 $\lambda_1 = 3$, $\lambda_2 = 1$.

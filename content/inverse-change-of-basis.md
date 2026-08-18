@@ -35,19 +35,19 @@ $$v = \alpha_1 b_1 + \cdots + \alpha_n b_n$$
 
 **좌표 벡터(coordinate vector):** $v$의 기저 $\mathcal{B}$에 대한 좌표벡터 $[v]_{\mathcal{B}}$는 위 표현의 계수들로 이루어진 열벡터 $(\alpha_1, \dots, \alpha_n)^T$이다.
 
-**기저 변환 행렬(change-of-basis matrix):** $\mathcal{B} = \{b_1, \dots, b_n\}$과 $\mathcal{C} = \{c_1, \dots, c_n\}$이 $V$의 두 기저일 때, $\mathcal{C}$-좌표를 $\mathcal{B}$-좌표로 변환하는 행렬 $P_{\mathcal{C} \to \mathcal{B}}$는
+**기저 변환 행렬(change-of-basis matrix):** $\mathcal{B} = \{b_1, \dots, b_n\}$과 $\mathcal{C} = \{c_1, \dots, c_n\}$이 $V$의 두 기저일 때, $\mathcal{C}$-좌표를 $\mathcal{B}$-좌표로 변환하는 행렬 $P_{\mathcal{B} \leftarrow \mathcal{C}}$는
 
-$$P_{\mathcal{C} \to \mathcal{B}} = \begin{pmatrix} [c_1]_{\mathcal{B}} & [c_2]_{\mathcal{B}} & \cdots & [c_n]_{\mathcal{B}} \end{pmatrix}$$
+$$P_{\mathcal{B} \leftarrow \mathcal{C}} = \begin{pmatrix} [c_1]_{\mathcal{B}} & [c_2]_{\mathcal{B}} & \cdots & [c_n]_{\mathcal{B}} \end{pmatrix}$$
 
 즉, $\mathcal{C}$의 각 기저 벡터를 $\mathcal{B}$로 표현한 좌표벡터를 열로 하는 행렬이다. 임의의 벡터 $v$에 대해
 
-$$[v]_{\mathcal{B}} = P_{\mathcal{C} \to \mathcal{B}} [v]_{\mathcal{C}}$$
+$$[v]_{\mathcal{B}} = P_{\mathcal{B} \leftarrow \mathcal{C}} [v]_{\mathcal{C}}$$
 
 **유사변환(similarity transformation):** 선형변환 $T: V \to V$가 기저 $\mathcal{B}$에 대해 행렬 $A$로 표현된다고 하자. 같은 변환을 기저 $\mathcal{C}$로 표현한 행렬 $B$는
 
 $$B = P^{-1} A P$$
 
-여기서 $P = P_{\mathcal{C} \to \mathcal{B}}$ (또는 $P = P_{\mathcal{B} \to \mathcal{C}}$, 정의에 따라 다를 수 있으므로 일관성이 중요하다).
+여기서 $P = P_{\mathcal{B} \leftarrow \mathcal{C}}$이다.
 
 ---
 ## 주요 정리와 증명
@@ -100,11 +100,11 @@ $A, B$가 모두 가역일 때 $(AB)^{-1} = B^{-1} A^{-1}$이다.
 
 ### 정리 5: 기저 변환의 성질
 
-벡터공간 $V$의 두 기저 $\mathcal{B}$와 $\mathcal{C}$에 대해, 기저 변환 행렬 $P = P_{\mathcal{C} \to \mathcal{B}}$는 가역이며 $P^{-1} = P_{\mathcal{B} \to \mathcal{C}}$이다.
+벡터공간 $V$의 두 기저 $\mathcal{B}$와 $\mathcal{C}$에 대해, 기저 변환 행렬 $P = P_{\mathcal{B} \leftarrow \mathcal{C}}$는 가역이며 $P^{-1} = P_{\mathcal{C} \leftarrow \mathcal{B}}$이다.
 
 **증명:** $P$는 $\mathcal{C}$의 각 기저 벡터를 $\mathcal{B}$의 선형결합으로 표현한 열들로 구성된다. $\mathcal{C}$의 벡터들은 일차독립이므로 $P$의 열들도 일차독립이다. 따라서 $\det P \neq 0$이고 $P$는 가역이다.
 
-$P^{-1}$의 열들은 $\mathcal{B}$의 각 기저 벡터를 $\mathcal{C}$로 표현한 좌표이므로 $P^{-1} = P_{\mathcal{B} \to \mathcal{C}}$이다.
+$P^{-1}$의 열들은 $\mathcal{B}$의 각 기저 벡터를 $\mathcal{C}$로 표현한 좌표이므로 $P^{-1} = P_{\mathcal{C} \leftarrow \mathcal{B}}$이다.
 
 ### 정리 6: 유사변환
 
@@ -112,7 +112,7 @@ $A$가 기저 $\mathcal{B}$에 대한 선형변환 $T$의 행렬 표현이라면
 
 $$A' = P^{-1} A P$$
 
-여기서 $P = P_{\mathcal{C} \to \mathcal{B}}$이다. 즉, $P$는 $\mathcal{C}$-좌표를 $\mathcal{B}$-좌표로 변환한다.
+여기서 $P = P_{\mathcal{B} \leftarrow \mathcal{C}}$이다. 즉, $P$는 $\mathcal{C}$-좌표를 $\mathcal{B}$-좌표로 변환한다.
 
 **증명:** 임의의 $v \in V$에 대해 $w = T(v)$라 하자. $[w]_{\mathcal{B}} = A [v]_{\mathcal{B}}$이다. $P[v]_{\mathcal{C}} = [v]_{\mathcal{B}}$이므로
 
@@ -165,9 +165,9 @@ $$\left(\begin{array}{ccc|ccc}
 
 **예제 3:** $\mathbb{R}^2$에서 표준기저 $\mathcal{S} = \{e_1 = (1,0), e_2 = (0,1)\}$와 다른 기저 $\mathcal{B} = \{b_1 = (1,1), b_2 = (1,-1)\}$를 고려하자. $v = (3, 1)$의 $\mathcal{B}$-좌표를 구하라.
 
-**풀이:** $P_{\mathcal{B} \to \mathcal{S}} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ (즉, $\mathcal{B}$의 벡터들을 표준기저로 표현한 열들). $[v]_{\mathcal{S}} = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
+**풀이:** $P_{\mathcal{S} \leftarrow \mathcal{B}} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ (즉, $\mathcal{B}$의 벡터들을 표준기저로 표현한 열들). $[v]_{\mathcal{S}} = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$.
 
-$$[v]_{\mathcal{B}} = P_{\mathcal{B} \to \mathcal{S}}^{-1} [v]_{\mathcal{S}}$$
+$$[v]_{\mathcal{B}} = P_{\mathcal{S} \leftarrow \mathcal{B}}^{-1} [v]_{\mathcal{S}}$$
 
 $P^{-1}$를 구한다: $\det P = 1\cdot(-1) - 1\cdot1 = -2$, $P^{-1} = -\frac{1}{2} \begin{pmatrix} -1 & -1 \\ -1 & 1 \end{pmatrix} = \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix}$.
 
@@ -177,7 +177,7 @@ $$[v]_{\mathcal{B}} = \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} &
 
 **예제 4:** $\mathbb{R}^2$에서 반시계 $90^\circ$ 회전 변환 $T$가 표준기저에서 $A = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$로 표현된다. 기저 $\mathcal{B} = \{b_1 = (1,1), b_2 = (1,-1)\}$에서 $T$의 행렬 표현 $A'$을 구하라.
 
-**풀이:** $P = P_{\mathcal{B} \to \mathcal{S}} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ ($\mathcal{B}$-좌표를 표준좌표로 변환). $P^{-1}$은 예제 3에서 구한 대로 $\begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix}$.
+**풀이:** $P = P_{\mathcal{S} \leftarrow \mathcal{B}} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$ ($\mathcal{B}$-좌표를 표준좌표로 변환). $P^{-1}$은 예제 3에서 구한 대로 $\begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix}$.
 
 $$A' = P^{-1} A P = \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$$
 
@@ -185,7 +185,7 @@ $$A' = P^{-1} A P = \begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -
 
 $P^{-1}(AP)$: $\begin{pmatrix} \frac{1}{2} & \frac{1}{2} \\ \frac{1}{2} & -\frac{1}{2} \end{pmatrix} \begin{pmatrix} -1 & 1 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} \frac{-1+1}{2} & \frac{1+1}{2} \\ \frac{-1-1}{2} & \frac{1-1}{2} \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$
 
-$\mathcal{B}$-기저에서 회전 변환은 $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$로 표현된다. 이는 표준기저에서의 표현과 같은 형태(반시계 $90^\circ$)이지만, 기저가 다르므로 같은 행렬이 아님에 주의하라.
+$\mathcal{B}$-기저에서 회전 변환은 $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$로 표현된다. 흥미롭게도 이는 표준기저에서의 시계방향 $90^\circ$ 회전 행렬과 같은 형태다. 그 이유는 기저 $\mathcal{B}$의 두 벡터 $b_1=(1,1)$, $b_2=(1,-1)$가 표준기저 $e_1=(1,0)$, $e_2=(0,1)$에 대해 **방향(orientation)을 뒤집는** 순서로 놓여 있기 때문이다. 실제로 $T(b_1) = (-1,1) = -b_2$이고 $T(b_2) = (1,1) = b_1$이므로, 변환 $T$ 자체는 여전히 반시계 $90^\circ$ 회전이지만 $\mathcal{B}$ 좌표계에서는 좌표 성분이 "거울상"으로 나타난다.
 
 ---
 ## 연결
@@ -193,6 +193,7 @@ $\mathcal{B}$-기저에서 회전 변환은 $\begin{pmatrix} 0 & 1 \\ -1 & 0 \en
 - **[행렬식의 기하학](determinant.html)** : $\det A \neq 0$이 역행렬 존재의 필요충분조건이며, $A^{-1} = \frac{1}{\det A} C^T$로 계산된다.
 - **[가우스 소거와 RREF](gaussian-elimination.html)** : 가우스-조르단 소거는 역행렬을 계산하는 실용적인 알고리즘이다.
 - **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬과 선형변환의 관계는 기저 변환의 개념적 기초다.
+- **[기저 변환](change-of-basis.html)** : 닮음 변환과 기저 변환의 심화(닮음불변량, 직교 기저변환 등)를 다룬다. 이 문서는 역행렬과 기저 변환의 입문에 해당한다.
 - **[rank·열공간·널공간](rank-nullspace.html)** : $A$가 가역일 때 $\text{rank}(A) = n$이고 $\text{Null}(A) = \{0\}$이다.
 - **[고유값·고유벡터](eigenvalues.html)** : $P^{-1}AP$를 대각행렬로 만드는 기저 변환을 대각화(diagonalization)라고 한다.
 - **[SVD](svd.html)** : 특이값 분해는 서로 다른 두 기저(입력/출력)에서의 변환을 대각화한다.

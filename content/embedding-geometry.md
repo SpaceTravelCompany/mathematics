@@ -95,7 +95,7 @@ $$\begin{aligned}
 &= \sum_i \frac{1}{n} \cdot \frac{1}{n} + 0 = n \cdot \frac{1}{n^2} = \frac{1}{n}
 \end{aligned}$$
 
-체비쇼프 부등식(Chebyshev's inequality)에 의해, 임의의 $\epsilon > 0$에 대해:
+체비셰프 부등식(Chebyshev's inequality)에 의해, 임의의 $\epsilon > 0$에 대해:
 $$P(|X \cdot Y| > \epsilon) \leq \frac{1}{n \epsilon^2} \to 0 \quad \text{as } n \to \infty$$
 
 따라서 고차원에서는 거의 모든 벡터 쌍이 서로 직교(orthogonal)에 가깝다. 이는 고차원 공간의 "놀라운 직교성(blessing of dimensionality)"으로, 유사도 검색과 차원 축소의 이론적 기초다.

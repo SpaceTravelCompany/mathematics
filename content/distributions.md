@@ -52,6 +52,10 @@ $\mathbb{E}[X] = \mu$, $\text{Var}(X) = \sigma^2$.
 
 **지수 분포 $\text{Exp}(\lambda)$:** 비율 $\lambda > 0$인 사건의 대기 시간.
 
+$$f(x) = \lambda e^{-\lambda x},\quad x \geq 0$$
+
+$F(x) = 1 - e^{-\lambda x}$ ($x \geq 0$). $\mathbb{E}[X] = 1/\lambda$, $\text{Var}(X) = 1/\lambda^2$.
+
 **감마 분포 $\text{Gamma}(\alpha, \beta)$:** $\alpha$번의 지수분포 사건이 발생할 때까지의 대기 시간.
 
 $$f(x) = \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1} e^{-\beta x},\quad x \geq 0$$
@@ -63,10 +67,6 @@ $\mathbb{E}[X] = \alpha/\beta$, $\text{Var}(X) = \alpha/\beta^2$. $\alpha = 1$�
 $$f(x) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha,\beta)},\quad 0 \leq x \leq 1$$
 
 여기서 $B(\alpha,\beta) = \frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$는 베타 함수다. $\mathbb{E}[X] = \alpha/(\alpha+\beta)$.
-
-$$f(x) = \lambda e^{-\lambda x},\quad x \geq 0$$
-
-$F(x) = 1 - e^{-\lambda x}$ ($x \geq 0$). $\mathbb{E}[X] = 1/\lambda$, $\text{Var}(X) = 1/\lambda^2$.
 
 ---
 ## 주요 정리와 증명

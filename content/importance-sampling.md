@@ -81,7 +81,7 @@ $$q^*(x) = \frac{|f(x)| p(x)}{\int |f(t)| p(t)\,dt}$$
 
 **증명:** 분산 공식에서 $I^2$는 $q$에 무관한 상수이므로, $\mathbb{E}_q[f(X)^2 w(X)^2] = \int f(x)^2 p(x)^2 / q(x)\,dx$를 $q$에 대해 최소화하면 된다. 제약 조건 $\int q(x)\,dx = 1$, $q(x) \geq 0$ 하에서 라그랑주 승수법을 적용한다.
 
-$$\mathcal{L}[q] = \int \frac{f(x)^2 p(x)^2}{q(x)}\,dx + \lambda \left( \int q(x)\,dx - 1 \right)**
+$$\mathcal{L}[q] = \int \frac{f(x)^2 p(x)^2}{q(x)}\,dx + \lambda \left( \int q(x)\,dx - 1 \right)$$
 
 함수 $q$에 대한 변분 도함수(variational derivative)를 취한다:
 $$\frac{\delta \mathcal{L}}{\delta q(x)} = -\frac{f(x)^2 p(x)^2}{q(x)^2} + \lambda = 0$$

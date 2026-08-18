@@ -55,16 +55,11 @@ $$\frac{\partial}{\partial W}\text{tr}(W^T W) = 2W$$
 
 $$x^T A x = \sum_{i=1}^n \sum_{j=1}^n x_i A_{ij} x_j$$
 
-$k$번째 성분 $\partial (x^T A x) / \partial x_k$를 계산하자. $x_k$가 포함된 항만 골라내기 위해 $i=k$ 또는 $j=k$인 경우를 분리한다:
+$x_k$로 편미분하면, 곱의 미분법칙에 의해 각 항은 $\delta_{ik} A_{ij} x_j + x_i A_{ij} \delta_{jk}$가 된다($\delta$는 크로네커 델타). 따라서
 
-$$\frac{\partial}{\partial x_k} \left( \sum_{i=1}^n \sum_{j=1}^n x_i A_{ij} x_j \right) = \frac{\partial}{\partial x_k} \left( \sum_{j=1}^n x_k A_{kj} x_j + \sum_{i=1}^n x_i A_{ik} x_k - x_k A_{kk} x_k \right)$$
+$$\frac{\partial}{\partial x_k} (x^T A x) = \sum_{i=1}^n \sum_{j=1}^n \delta_{ik} A_{ij} x_j + \sum_{i=1}^n \sum_{j=1}^n x_i A_{ij} \delta_{jk}$$
 
-(단, $i=k, j=k$인 항이 두 번 더해졌으므로 $x_k A_{kk} x_k$를 한 번 빼준다.)
-
-각 항을 미분하면:
-$$\sum_{j=1}^n A_{kj} x_j + \sum_{i=1}^n x_i A_{ik} - 2A_{kk} x_k + 2A_{kk} x_k$$
-
-첫 번째 합은 $(Ax)_k$, 두 번째 합은 $(A^T x)_k$이므로:
+첫 번째 합은 $i=k$ 항만 살아남아 $\sum_{j=1}^n A_{kj} x_j = (Ax)_k$, 두 번째 합은 $j=k$ 항만 살아남아 $\sum_{i=1}^n x_i A_{ik} = (A^T x)_k$이다. 따라서
 
 $$\frac{\partial}{\partial x_k} (x^T A x) = (Ax)_k + (A^T x)_k$$
 

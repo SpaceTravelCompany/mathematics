@@ -156,7 +156,7 @@ $$\binom{n}{n_1, n_2, \ldots, n_k} = \frac{n!}{n_1! n_2! \cdots n_k!}$$
 
 $$(x_1 + x_2 + \cdots + x_k)^n = \sum_{n_1 + \cdots + n_k = n} \binom{n}{n_1, \ldots, n_k} x_1^{n_1} \cdots x_k^{n_k}$$
 
-### 정리 6: 야코브슈탈-칸델의 항등식 (간단한 버전)
+### 정리 6: 조합의 재귀 관계
 
 $$\binom{n}{k} = \frac{n}{k}\binom{n-1}{k-1}$$
 

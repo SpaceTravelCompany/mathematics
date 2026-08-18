@@ -92,7 +92,7 @@ $$dF = \frac{\partial F}{\partial t} dt + \frac{\partial F}{\partial x} (f\,dt +
 
 항을 모으면 위의 결과를 얻는다. $\square$
 
-이토 보조법의 핵심: 일반 미적분의 연쇄법칙 $dF = F'(X)dX$와 달리 $\frac{1}{2} g^2 F'' dt$ 항이 추가된다. 이는 확률过程的의 2차 변분이 0이 아니기 때문이다.
+이토 보조법의 핵심: 일반 미적분의 연쇄법칙 $dF = F'(X)dX$와 달리 $\frac{1}{2} g^2 F'' dt$ 항이 추가된다. 이는 확률 과정의 2차 변분이 0이 아니기 때문이다.
 
 ### 정리 3: 기하 브라운 운동 (Geometric Brownian Motion)
 
@@ -158,7 +158,7 @@ $$\text{Var}(X_t) = \sigma^2 \int_0^t e^{-2\theta(t-s)} ds = \sigma^2 \cdot \fra
 
 $t \to \infty$에서 $X_t$는 $\mathcal{N}(0, \sigma^2/2\theta)$에 수렴하며, 이는 OU 과정의 정상분포이다. $\square$
 
-OU 과정은 평균으로 회귀(mean-reverting)하는 성질을 가진다: $X_t$가 0보다 크면 드리프트 $-\theta X_t$가 음수여서 $X_t$를 다시 0으로 끌어당긴다. 이자율 모형(Vasicek 모형), 신경 과학(뉴런 전위), 통계 물리(속도 과정) 등에广泛应用된다.
+OU 과정은 평균으로 회귀(mean-reverting)하는 성질을 가진다: $X_t$가 0보다 크면 드리프트 $-\theta X_t$가 음수여서 $X_t$를 다시 0으로 끌어당긴다. 이자율 모형(Vasicek 모형), 신경 과학(뉴런 전위), 통계 물리(속도 과정) 등에 널리 응용된다.
 
 ---
 ## 예제
