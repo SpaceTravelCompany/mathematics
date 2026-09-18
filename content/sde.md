@@ -3,6 +3,26 @@ title: 확률미분방정식
 slug: sde
 ---
 
+> 학습 순서 68 / 75 · [처음부터 읽기](math-language.html)
+
+## 작은 예제로 시작하기
+
+**앞에서 가져올 것:** ODE는 변화율로 경로를 정하고, 정규분포의 둘째 모수는 분산이다.
+
+짧은 시간 $\Delta t$ 동안 일정 속도 $a$로 움직이면서 무작위 흔들림을 받는다면 한 단계 근사를
+
+$$\Delta X\approx a\Delta t+b\sqrt{\Delta t}\,Z,\qquad Z\sim\mathcal N(0,1)$$
+
+로 쓴다. $a=2,b=1,\Delta t=0.01$이면 규칙적인 이동은 0.02, 잡음의 표준편차는 0.1이다. 잡음은 $\Delta t$가 아니라 그 제곱근 크기로 들어간다. 독립인 시간 조각의 **분산**이 시간 길이에 비례해 더해져야 하기 때문이다.
+
+이를 연속시간으로 나타낸 것이 $dX_t=a\,dt+b\,dW_t$다. 브라운 운동의 증분은 $W_{t+h}-W_t\sim\mathcal N(0,h)$이고 과거와 독립이다. 경로는 연속이지만 보통의 속도처럼 미분할 수 없다. 따라서 $dW_t/dt$를 평범한 함수로 다루지 않는다.
+
+$X=W_t$에 $f(X)=X^2$를 적용하면 이토 공식은 $d(X^2)=2X\,dW_t+dt$를 준다. 마지막 $dt$가 일반 연쇄법칙과 다른 보정이다. 작은 잡음의 제곱들을 누적하면 사라지지 않고 시간만큼 남기 때문이다.
+
+**본문으로 이어 읽기:** $(dW_t)^2=dt$는 개별 무작위 증분의 제곱이 시간과 정확히 같다는 말이 아니다. 잘게 나눈 증분 제곱들의 합에 관한 극한을 압축한 계산 규칙이다. $L^2$ 수렴은 오차 제곱의 기댓값이 0으로 감을 뜻하고, 적응된 과정은 그 시각까지의 정보만 쓴다는 뜻이다. 이토 적분은 이런 확률적 극한으로 정의한다.
+
+---
+
 ## 직관적 설명
 
 **확률미분방정식(stochastic differential equation, SDE)**은 상미분방정식(ODE)에 무작위적인 잡음(random noise)을 추가한 것이다. 현실의 시스템은 항상 외부적 교란, 측정 오차, 또는 근본적인 확률성에 노출되어 있다. SDE는 이러한 현상을 수학적으로 포착한다.
@@ -13,7 +33,7 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 
 와 같이 쓴다. 여기서 $dt$ 항은 **드리프트(drift)** — 결정론적 추세 — 를 나타내고, $dW_t$ 항은 **확산(diffusion)** — 무작위적 변동 — 을 나타낸다. $W_t$는 **브라운 운동(Brownian motion)** 또는 **위너 과정(Wiener process)** 으로, 연속적인 불규칙 보행(continuous random walk)이다.
 
-핵심 통찰: SDE에서 $dW_t$는 $dt$의 제곱근 크기($\sqrt{dt}$)로 움직인다. 이 때문에 $(dW_t)^2 = dt$가 성립하고, 이것이 이토 미적분(Itô calculus)이 일반 미적분과 다른 이유다. 연쇄법칙(chain rule)에 $f''$ 항이 추가로 등장하는 **이토 보조법(Itô's lemma)**이 그 결과다.
+핵심 통찰: SDE에서 $dW_t$는 $dt$의 제곱근 크기($\sqrt{dt}$)로 움직인다. 이 증분들의 제곱을 누적한 극한이 시간 길이가 된다는 사실을 $(dW_t)^2=dt$로 압축해 쓴다. 개별 증분의 등식이 아니라 이차 변분의 계산 규칙이며, 이것이 이토 미적분이 일반 미적분과 다른 이유다. 연쇄법칙(chain rule)에 $f''$ 항이 추가로 등장하는 **이토 보조법(Itô's lemma)**이 그 결과다.
 
 ---
 ## 정의
@@ -25,7 +45,7 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 3. **독립 증분(independent increments):** $0 \leq s < t$에 대해 $W_t - W_s$는 $\{W_u\}_{u \leq s}$와 독립
 4. **정규 증분(normal increments):** $W_t - W_s \sim \mathcal{N}(0, t-s)$
 
-위너 과정은 거의 모든 궤적이 어디에서도 미분가능하지 않다(nowhere differentiable). $dB_t/dt$는 존재하지 않으며, $dW_t$는 형식적인 표기법이다.
+위너 과정은 거의 모든 궤적이 어디에서도 미분가능하지 않다(nowhere differentiable). $dW_t/dt$는 보통의 경로별 미분으로 존재하지 않으며, $dW_t$는 형식적인 표기법이다.
 
 **확률미분방정식 (stochastic differential equation, SDE):**
 
@@ -39,15 +59,15 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 
 $$X_t = X_0 + \int_0^t f(X_s, s)\,ds + \int_0^t g(X_s, s)\,dW_s$$
 
-첫 번째 적분은 일반 리만 적분, 두 번째 적분은 **이토 적분(Itô integral)** 이다.
+첫 번째 적분은 시간에 대한 보통의 적분(연속적인 피적분함수에서는 리만 적분), 두 번째는 **이토 적분(Itô integral)**이다.
 
-**이토 적분 (Itô integral):** 피적분 함수 $\phi(t, \omega)$가 $\mathcal{F}_t$-가측(non-anticipative, 미래를 보지 않음)이고 $\mathbb{E}[\int_0^T \phi^2\,ds] < \infty$를 만족할 때,
+**이토 적분 (Itô integral):** 피적분 과정이 예측가능하고 $\mathbb E[\int_0^T\phi^2ds]<\infty$이면, 과거 정보만 쓰는 계단과정으로 근사한 적분의 $L^2$ 극한으로 정의한다. 예측가능성은 대략 각 구간의 잡음이 생기기 전에 적분 계수가 정해지는 조건이다. 연속인 적응 과정 등에서는 다음 왼쪽 끝점 합으로 나타낼 수 있다.
 
 $$\int_0^T \phi(s)\,dW_s := \lim_{n \to \infty} \sum_{i=0}^{n-1} \phi(t_i)(W_{t_{i+1}} - W_{t_i})$$
 
 극한은 $L^2$ 수렴(mean-square convergence)이다. 중요한 점: 이토 적분은 왼쪽 끝점(left endpoint) $t_i$에서 평가하므로, 적분과 피적분 함수 사이에 미래 정보가 흘러들지 않는다(non-anticipating). 이는 마팅게일(martingale) 성질을 유지하게 해준다.
 
-**이차 변분 (quadratic variation):** $[W]_T = \lim_{\|\Delta\| \to 0} \sum_{i=0}^{n-1} (W_{t_{i+1}} - W_{t_i})^2 = T$ (확률 1 수렴). 즉, $(dW_t)^2 = dt$가 **제곱평균(mean-square)** 의미에서 성립한다.
+**이차 변분 (quadratic variation):** $[W]_T = \lim_{\|\Delta\| \to 0} \sum_{i=0}^{n-1} (W_{t_{i+1}} - W_{t_i})^2 = T$ ($L^2$ 수렴). 일반적인 결정론적 분할의 망 크기가 0으로 갈 때 이 합은 $L^2$로 수렴한다. 거의 확실한 수렴은 이진 등분처럼 적절히 선택한 분할열에서 성립한다. 개별 증분의 제곱이 $dt$와 동일하다는 뜻은 아니다.
 
 ---
 ## 주요 정리와 증명
@@ -56,7 +76,7 @@ $$\int_0^T \phi(s)\,dW_s := \lim_{n \to \infty} \sum_{i=0}^{n-1} \phi(t_i)(W_{t_
 
 **서술:** 위너 과정 $W_t$의 구간 $[0, T]$에서의 이차 변분(quadratic variation)은 $T$이다:
 
-$$[W]_T = \lim_{\|\Delta\| \to 0} \sum_{i=0}^{n-1} (W_{t_{i+1}} - W_{t_i})^2 = T \quad \text{(확률 1로)}$$
+$$[W]_T = \lim_{\|\Delta\| \to 0} \sum_{i=0}^{n-1} (W_{t_{i+1}} - W_{t_i})^2 = T \quad (L^2\text{ 수렴})$$
 
 **증명 (개요):** 분할 $\Delta: 0 = t_0 < t_1 < \cdots < t_n = T$, $\|\Delta\| = \max_i \Delta t_i$. 증분 $\Delta W_i = W_{t_{i+1}} - W_{t_i}$는 $\mathcal{N}(0, \Delta t_i)$를 따른다.
 
@@ -68,7 +88,7 @@ $$\text{Var}[(\Delta W_i)^2] = \mathbb{E}[(\Delta W_i)^4] - (\mathbb{E}[(\Delta 
 
 $$\text{Var}[V_n] = \sum_{i=0}^{n-1} 2(\Delta t_i)^2 \leq 2\|\Delta\| \sum \Delta t_i = 2\|\Delta\| T \to 0$$
 
-따라서 $\|\Delta\| \to 0$에서 $V_n \to T$ (확률 수렴). 더 강하게, 거의 확실한 수렴도 성립한다. $\square$
+따라서 $\mathbb E[(V_n-T)^2]=\operatorname{Var}(V_n)\to0$으로 $L^2$ 수렴하며, 확률 수렴도 따른다. 위 계산만으로 임의의 분할열에서 거의 확실한 수렴까지 증명한 것은 아니다. 예를 들어 이진 등분을 반복하는 분할열에서는 분산 상한들의 합이 유한하므로 체비쇼프 부등식과 보렐-칸텔리 보조정리로 거의 확실한 수렴도 얻는다. 이 보조정리는 사건 확률들의 합이 유한하면 그 사건들이 무한히 반복될 확률은 0이라는 뜻이다. $\square$
 
 **의미:** $(dW_t)^2 = dt$라는 형식적 관계는 이토 미적분의 근간이다. 일반 함수 $f(W_t)$의 미분을 계산할 때 $(dW_t)^2$가 $dt$로 대체되면서 2계 도함수 항이 발생한다.
 
@@ -244,3 +264,7 @@ $$\mathbb{E}\left[ \left( \int_0^t s\,dW_s \right)^2 \right] = \mathbb{E}\left[ 
 드리프트 $f$는 ODE의 우변과 동일한 역할을 한다.
 - **[마르코프 체인](markov-chains.html)** : SDE의 해 $X_t$는 마르코프 성질을 만족한다 — 미래의 분포는 오직 현재 $X_t$에만 의존한다. 연속 시간·연속 공간의 마르코프 과정으로 볼 수 있다.
 - **[몬테카를로](monte-carlo.html)** : SDE의 해는 해석적으로 구할 수 없는 경우가 많다. 몬테카를로 시뮬레이션(오일러-마루야마 이산화)으로 수치적 근사를 구한다.
+
+---
+
+[← 이전: 마르코프 체인·MCMC](mcmc.html) · [다음: 마르코프 결정과정 →](mdp.html)
