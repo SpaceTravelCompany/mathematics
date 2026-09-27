@@ -3,11 +3,9 @@ title: 행렬 미분
 slug: matrix-calculus
 ---
 
-> 학습 순서 41 / 75 · [처음부터 읽기](math-language.html)
-
 ## 작은 예제로 시작하기
 
-**앞에서 가져올 것:** 편도함수를 각 입력 자리별로 모으면 그래디언트가 된다. 이제 입력을 행렬로 정리한다.
+편도함수를 각 입력 자리별로 모으면 그래디언트가 된다. 이제 입력을 행렬로 정리한다.
 
 $x=(2,1)^T$, $W=(a\ b)$, 목표값 $y=5$라 하자. 예측은 $Wx=2a+b$, 손실은 $L=\frac12(2a+b-5)^2$다. 연쇄법칙으로
 
@@ -17,7 +15,7 @@ $a=b=1$이면 예측은 3, 오차는 -2, 그래디언트는 $(-4,-2)$다. 작은
 
 일반식 $L=\frac12\|Wx-y\|^2$의 그래디언트는 $(Wx-y)x^T$다. $W$가 $m\times n$이면 오차는 $m\times1$, $x^T$는 $1\times n$이므로 결과도 $m\times n$이다. 각 자리의 미분값은 원래 변수 자리와 대응한다.
 
-**증명으로 이어 읽기:** 미분 $dL$은 작은 변화 $dW$에 대해 $dL=\sum_{ij}(\partial L/\partial W_{ij})dW_{ij}$로 쓴다. trace는 대각선 성분을 더하는 연산이며, $\operatorname{tr}((\nabla_WL)^TdW)$는 이 합을 짧게 쓴 것이다. 새로운 미분 규칙이 추가된 것이 아니다.
+미분 $dL$은 작은 변화 $dW$에 대해 $dL=\sum_{ij}(\partial L/\partial W_{ij})dW_{ij}$로 쓴다. trace는 대각선 성분을 더하는 연산이며, $\operatorname{tr}((\nabla_WL)^TdW)$는 이 합을 짧게 쓴 것이다. 새로운 미분 규칙이 추가된 것이 아니다.
 
 ---
 
@@ -221,7 +219,3 @@ $$\nabla_x f = A^T \nabla_y f = 2A^T D (Ax + b)$$
 - **[야코비안·헤시안](jacobian-hessian.html)** : 행렬 미분의 자연스러운 확장 — 야코비안은 벡터-대-벡터 미분, 헤시안은 2계 미분 행렬이다.
 - **[최소제곱법](least-squares.html)** : 예제 2의 정규방정식 유도는 최소제곱법의 수학적 기초다.
 - **[다변수 연쇄법칙](multivar-chain-rule.html)** : 행렬 미분의 연쇄법칙은 다변수 연쇄법칙의 행렬 표현이다.
-
----
-
-[← 이전: 시그모이드·소프트맥스 미분](sigmoid-softmax.html) · [다음: 텐서 연산 →](tensor-operations.html)

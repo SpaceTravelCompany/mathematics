@@ -3,11 +3,9 @@ title: 삼각함수
 slug: trigonometric-functions
 ---
 
-> 학습 순서 6 / 75 · [처음부터 읽기](math-language.html)
-
 ## 작은 예제로 시작하기
 
-**앞에서 가져올 것:** 좌표 $(x,y)$와 함수다. 반지름은 원 중심에서 원 위 점까지의 거리다.
+좌표 $(x,y)$와 함수가 바탕이다. 반지름은 원 중심에서 원 위 점까지의 거리다.
 
 반지름 1인 원의 오른쪽 끝 $(1,0)$에서 시작해 반시계 방향으로 돌자. 회전각이 $\theta$일 때 가로 좌표가 $\cos\theta$, 세로 좌표가 $\sin\theta$다. 90도 돌면 $(0,1)$이므로 $\cos90^\circ=0$, $\sin90^\circ=1$이다. 다시 90도 돌면 $(-1,0)$이다.
 
@@ -15,7 +13,7 @@ slug: trigonometric-functions
 
 직각삼각형의 두 직각변이 $a,b$, 빗변이 $c$이면 피타고라스 정리는 $a^2+b^2=c^2$다. 단위원 위 좌표는 빗변이 1인 삼각형을 만들므로 $\cos^2\theta+\sin^2\theta=1$이다. $\cos^2\theta$는 $(\cos\theta)^2$라는 뜻이다. 탄젠트는 가로 좌표가 0이 아닐 때 $\tan\theta=\sin\theta/\cos\theta$로 정의한다.
 
-**증명으로 이어 읽기:** 덧셈정리는 각도 $\alpha$만큼 돌고 다시 $\beta$만큼 돌린 결과를 한 번에 쓰는 공식이다. 삼각함수의 값 자체를 더하는 것이 아니다. 두 각을 같게 놓으면 배각공식이 나오므로 새 공식을 따로 외우기 전에 덧셈정리와 연결해 보자.
+덧셈정리는 각도 $\alpha$만큼 돌고 다시 $\beta$만큼 돌린 결과를 한 번에 쓰는 공식이다. 삼각함수의 값 자체를 더하는 것이 아니다. 두 각을 같게 놓으면 배각공식이 나오므로 새 공식을 따로 외우기 전에 덧셈정리와 연결해 보자.
 
 ---
 
@@ -132,7 +130,3 @@ $$= \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} - \frac{\sqrt{2}}{2} \cdot \frac
 - **[푸리에 급수](fourier.html)** : 모든 주기함수는 삼각함수의 무한급수로 분해된다.
 - **[평면벡터 기초](plane-vectors.html)** : 단위원 위의 점 $(\cos\theta, \sin\theta)$는 벡터이며, 덧셈정리는 벡터 회전과 연결된다.
 - **[극한과 도함수](limits-derivatives.html)** : 삼각함수의 미분 $\frac{d}{dx}\sin x = \cos x$는 극한 $\lim_{x\to 0} \frac{\sin x}{x} = 1$에서 출발한다.
-
----
-
-[← 이전: 지수와 로그](exponentials-logarithms.html) · [다음: 수열과 급수 기초 →](sequences-series.html)
