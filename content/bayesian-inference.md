@@ -21,7 +21,7 @@ slug: bayesian-inference
 
 ## 직관적 설명
 
-**베이지안 추론(Bayesian inference)**은 "새로운 데이터가 들어오면 믿음(belief)을 업데이트한다"는 원칙에 기반한다. 빈도주의(Frequentist) 통계가 "모수는 고정된 상수"라고 보는 반면, 베이지안은 "모수도 확률변수"라고 본다. 즉, 모수에 대한 불확실성을 확률분포로 표현한다.
+**베이지안 추론(Bayesian inference)** 은 "새로운 데이터가 들어오면 믿음(belief)을 업데이트한다"는 원칙에 기반한다. 빈도주의(Frequentist) 통계가 "모수는 고정된 상수"라고 보는 반면, 베이지안은 "모수도 확률변수"라고 본다. 즉, 모수에 대한 불확실성을 확률분포로 표현한다.
 
 처음에는 모수 $\theta$에 대한 **사전 믿음(prior)** $p(\theta)$이 있다. 데이터 $D$를 관측한 후에는 이 믿음이 **사후 믿음(posterior)** $p(\theta|D)$으로 갱신된다. 베이즈 정리가 이 갱신 과정을 수학적으로 정확히 기술한다.
 
@@ -29,7 +29,7 @@ $$p(\theta|D) = \frac{p(D|\theta)p(\theta)}{p(D)} \propto p(D|\theta)p(\theta)$$
 
 **MAP(maximum a posteriori) 추정**은 사후분포를 최대화하는 점추정이다. MLE가 $p(D|\theta)$만 최대화했다면, MAP는 $p(D|\theta)p(\theta)$를 최대화하여 사전정보를 반영한다.
 
-**공액 사전분포(conjugate prior)**는 사전분포와 사후분포가 같은 패밀리에 속하도록 하는 사전분포다. 계산이 크게 간편해진다. 예를 들어 베르누이 가능도의 공액 사전분포는 베타 분포다.
+**공액 사전분포(conjugate prior)** 는 사전분포와 사후분포가 같은 패밀리에 속하도록 하는 사전분포다. 계산이 크게 간편해진다. 예를 들어 베르누이 가능도의 공액 사전분포는 베타 분포다.
 
 ---
 ## 정의
@@ -119,7 +119,7 @@ $$\mu_n = \frac{B}{A} = \frac{\frac{\mu_0}{\tau^2} + \frac{n\bar{x}}{\sigma^2}}{
 
 $\square$
 
-사후평균 $\mu_n$은 사전평균 $\mu_0$와 표본평균 $\bar{x}$의 **정밀도 가중 평균(precision-weighted average)**이다. 정밀도(precision)는 분산의 역수 $1/\tau^2$, $n/\sigma^2$으로 정의된다. 데이터가 많을수록($n$이 클수록) $\bar{x}$의 가중치가 커진다.
+사후평균 $\mu_n$은 사전평균 $\mu_0$와 표본평균 $\bar{x}$의 **정밀도 가중 평균(precision-weighted average)** 이다. 정밀도(precision)는 분산의 역수 $1/\tau^2$, $n/\sigma^2$으로 정의된다. 데이터가 많을수록($n$이 클수록) $\bar{x}$의 가중치가 커진다.
 
 ### 정리 3: MAP vs MLE — 점근적 동등성
 

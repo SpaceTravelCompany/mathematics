@@ -21,7 +21,7 @@ $I=\int_0^1 x^2dx=1/3$을 모른다고 하자. $[0,1]$에서 균등하게 뽑은
 
 ## 직관적 설명
 
-**몬테카를로 방법(Monte Carlo method)**은 무작위 샘플을 사용하여 적분이나 기댓값을 근사하는 기법이다. "원주율 $\pi$를 다트로 계산한다"는 유명한 비유가 있다: 정사각형에 내접하는 원을 그리고, 정사각형 영역에 무작위로 점을 던지면 원 안에 들어가는 점의 비율이 $\pi/4$에 수렴한다.
+**몬테카를로 방법(Monte Carlo method)** 은 무작위 샘플을 사용하여 적분이나 기댓값을 근사하는 기법이다. "원주율 $\pi$를 다트로 계산한다"는 유명한 비유가 있다: 정사각형에 내접하는 원을 그리고, 정사각형 영역에 무작위로 점을 던지면 원 안에 들어가는 점의 비율이 $\pi/4$에 수렴한다.
 
 수학적으로는 다음 적분(기댓값)을 근사하는 것이 핵심이다.
 
@@ -31,7 +31,7 @@ $$I = \int f(x) p(x)\,dx = \mathbb{E}_p[f(X)]$$
 
 $$\hat{I}_N = \frac{1}{N} \sum_{i=1}^N f(X_i), \quad X_i \sim p$$
 
-**중요도 샘플링(importance sampling)**은 샘플링이 어려운 분포 $p$ 대신 샘플링이 쉬운 분포 $q$에서 샘플을 추출하고, 가중치 $p(x)/q(x)$를 곱해 보정하는 방법이다.
+**중요도 샘플링(importance sampling)** 은 샘플링이 어려운 분포 $p$ 대신 샘플링이 쉬운 분포 $q$에서 샘플을 추출하고, 가중치 $p(x)/q(x)$를 곱해 보정하는 방법이다.
 
 $$\hat{I}_{\text{IS}} = \frac{1}{N} \sum_{i=1}^N f(X_i) \frac{p(X_i)}{q(X_i)}, \quad X_i \sim q$$
 
@@ -48,7 +48,7 @@ $$\hat{I}_N = \frac{1}{N} \sum_{i=1}^N f(X_i)$$
 
 $$\hat{I}_{\text{IS}} = \frac{1}{N} \sum_{i=1}^N f(X_i) w(X_i), \quad w(x) = \frac{p(x)}{q(x)}$$
 
-여기서 $w(x)$를 **중요도 가중치(importance weight)**라 한다. $q$는 **제안분포(proposal distribution)** 또는 중요도 분포(importance distribution)라 부른다.
+여기서 $w(x)$를 **중요도 가중치(importance weight)** 라 한다. $q$는 **제안분포(proposal distribution)** 또는 중요도 분포(importance distribution)라 부른다.
 
 **조건:** $q(x) > 0$일 때마다 $p(x) > 0$이어야 한다($p \ll q$, 즉 $p$는 $q$에 절대연속, absolutely continuous). 또한 $\text{Var}_q[f(X)w(X)] < \infty$여야 추정량이 안정적이다.
 
@@ -91,7 +91,7 @@ $$= \mathbb{E}_q\left[f(X)\frac{p(X)}{q(X)}\right] = \int f(x)\frac{p(x)}{q(x)} 
 
 $\square$
 
-중요도 샘플링은 분포 가중치 $w(x) = p(x)/q(x)$를 통해 분포를 "우회"하는 방법이다. $q(x)$를 현명하게 선택하면 분산을 원래 몬테카를로보다 줄일 수도 있다.
+중요도 샘플링은 가중치 $w(x) = p(x)/q(x)$를 곱해 목표 분포 $p$ 대신 제안분포 $q$에서 기댓값을 계산하는 방법이다. 제안분포를 적절히 설계하면 일반 MC보다 분산을 크게 줄일 수 있다.
 
 ### 정리 4: 중요도 샘플링의 분산
 
@@ -119,7 +119,7 @@ $X_1, X_2, \ldots$가 iid이고 $\mathbb{E}[|f(X_1)|] < \infty$이면
 
 $$\hat{I}_N = \frac{1}{N}\sum_{i=1}^N f(X_i) \xrightarrow{\text{a.s.}} I$$
 
-**증명 (서술):** **강대수의 법칙(strong law of large numbers, SLLN)**에 의해 iid 확률변수의 표본평균은 기댓값으로 거의 확실히(almost surely) 수렴한다. 즉 $P(\lim_{N\to\infty} \hat{I}_N = I) = 1$이다. 이는 몬테카를로 방법의 이론적 근거를 제공한다. $\square$
+**증명 (서술):** **강대수의 법칙(strong law of large numbers, SLLN)** 에 의해 iid 확률변수의 표본평균은 기댓값으로 거의 확실히(almost surely) 수렴한다. 즉 $P(\lim_{N\to\infty} \hat{I}_N = I) = 1$이다. 이는 몬테카를로 방법의 이론적 근거를 제공한다. $\square$
 
 ---
 ## 예제
@@ -156,7 +156,7 @@ $$\hat{P} = \frac{1}{N}\sum_{i=1}^N \mathbf{1}(X_i > 5) \frac{\phi(X_i)}{\phi(X_
 
 여기서 $\phi$는 표준정규분포의 PDF다. $q$에서 추출된 샘플의 대부분이 $X > 5$ 영역에 있으므로, 가중치로 보정하더라도 훨씬 적은 샘플로 정확한 추정이 가능하다.
 
-**예제 4 (몬테카를로 적분의 차원 무관성):** $d$차원 단위 초입방체 $[0,1]^d$에서 적분 $I = \int_{[0,1]^d} g(\mathbf{x})\,d\mathbf{x}$를 근사한다고 하자. 몬테카를로 오차는 $O(1/\sqrt{N})$로 $d$와 무관하다. 반면 결정론적 수치적분(직사각형 격자)의 오차는 $O(N^{-1/d})$로, $d$가 커지면 급격히 나빠진다. $d=10$에서 $N=10^6$개의 격자점을 쓰면 각 차원당 간격이 $N^{-1/d} = 10^{-0.6} \approx 0.25$로 매우 거칠다. 이 현상을 **차원의 저주(curse of dimensionality)**라 한다.
+**예제 4 (몬테카를로 적분의 차원 무관성):** $d$차원 단위 초입방체 $[0,1]^d$에서 적분 $I = \int_{[0,1]^d} g(\mathbf{x})\,d\mathbf{x}$를 근사한다고 하자. 몬테카를로 오차는 $O(1/\sqrt{N})$로 $d$와 무관하다. 반면 결정론적 수치적분(직사각형 격자)의 오차는 $O(N^{-1/d})$로, $d$가 커지면 급격히 나빠진다. $d=10$에서 $N=10^6$개의 격자점을 쓰면 각 차원당 간격이 $N^{-1/d} = 10^{-0.6} \approx 0.25$로 매우 거칠다. 이 현상을 **차원의 저주(curse of dimensionality)** 라 한다.
 
 **예제 5 (분산 비교 — 중요도 샘플링의 효율):** $I = \int_0^1 \frac{1}{1+x^2}\,dx = \pi/4 \approx 0.7854$를 추정한다.
 
@@ -164,7 +164,7 @@ $$\hat{P} = \frac{1}{N}\sum_{i=1}^N \mathbf{1}(X_i > 5) \frac{\phi(X_i)}{\phi(X_
 
 (b) 중요도 샘플링: $g(x) \propto 1/(1+x^2)$에 비례하는 제안을 사용한다면(정규화 상수를 알고 있다고 가정), 분산이 0이 된다. 실제로는 근사적으로 $q(x) = \text{Beta}(0.5, 0.5)$를 사용할 수 있다(이 분포는 $x=0$과 $x=1$에서 밀도가 높아 $1/(1+x^2)$의 형태와 유사하다).
 
-중요도 샘플링의 효율은 **유효 표본 크기(effective sample size, ESS)**로 측정한다.
+중요도 샘플링의 효율은 **유효 표본 크기(effective sample size, ESS)** 로 측정한다.
 
 $$N_{\text{eff}} = \frac{N}{1 + \text{Var}_q(w(X))} \approx \frac{N}{\sum w_i^2 / (\sum w_i)^2}$$
 

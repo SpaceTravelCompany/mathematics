@@ -30,12 +30,12 @@ $$\mathcal{I}(\theta) = \mathbb{E}[(\nabla_\theta \log p(X|\theta))(\nabla_\thet
 
 피셔 정보는 데이터가 모수 $\theta$에 대해 제공하는 정보의 양을 측정한다. 기울기가 클수록(스코어가 $\theta$에 민감할수록) 한 번의 관측으로 더 많은 정보를 얻는다.
 
-**크라메르-라오 하한(Cramér-Rao Lower Bound, CRLB)**은 추정량의 분산에 대한 이론적 하한을 제공한다:
+**크라메르-라오 하한(Cramér-Rao Lower Bound, CRLB)** 은 추정량의 분산에 대한 이론적 하한을 제공한다:
 $$\text{Var}(\hat{\theta}) \geq \frac{1}{\mathcal{I}(\theta)}$$
 
 이는 정규성 조건과 양의 유한한 정보량 아래 불편 추정량의 분산에 적용되는 하한이다. 여기서 정보량은 사용한 전체 표본의 정보량이다. 독립 관측 $n$개이면 $\mathcal I_n=n\mathcal I_1$이다. MLE의 점근적 효율성에도 식별가능성·매끄러움·내부 모수 같은 추가 조건이 필요하다.
 
-**랭주뱅 동역학(Langevin dynamics)**은 스코어 함수를 사용하여 복잡한 분포에서 샘플링하는 방법이다:
+**랭주뱅 동역학(Langevin dynamics)** 은 스코어 함수를 사용하여 복잡한 분포에서 샘플링하는 방법이다:
 $$dX_t = \nabla \log p(X_t)\,dt + \sqrt{2}\,dW_t$$
 
 이 SDE의 정상분포(stationary distribution)가 $p$가 됨은 포커-플랑크 방정식(Fokker-Planck equation)으로 증명된다. 다만 정상분포라는 사실만으로 임의의 초기분포에서의 수렴까지 따라오지는 않는다. 과정의 존재와 경계조건, 에르고드성 등 수렴에 필요한 조건을 별도로 가정한다.
@@ -218,7 +218,7 @@ $$dX_t = \nabla\log p(X_t)\,dt + \sqrt{2}\,dW_t = -X_t\,dt + \sqrt{2}\,dW_t$$
 
 이것은 바로 오른슈타인-울렌벡(Ornstein-Uhlenbeck) 과정이다. 위 정리 4에서 보인 대로, 이 SDE의 정상분포는 $\mathcal{N}(0, 1)$이다.
 
-**예제 6 (스코어 매칭 — 개념):** 데이터의 스코어 함수 $\nabla \log p_{\text{data}}(x)$를 직접 추정하는 것이 **스코어 매칭(score matching)**이다. $p_\theta(x)$의 스코어와 데이터의 스코어 사이의 피셔 발산(Fisher divergence)을 최소화한다:
+**예제 6 (스코어 매칭 — 개념):** 데이터의 스코어 함수 $\nabla \log p_{\text{data}}(x)$를 직접 추정하는 것이 **스코어 매칭(score matching)** 이다. $p_\theta(x)$의 스코어와 데이터의 스코어 사이의 피셔 발산(Fisher divergence)을 최소화한다:
 $$D_F(p_{\text{data}} \| p_\theta) = \mathbb{E}_{p_{\text{data}}}[\|\nabla \log p_{\text{data}}(X) - \nabla \log p_\theta(X)\|^2]$$
 
 스코어 매칭의 장점: 데이터 변수 $x$와 무관한 정규화 상수(계산하기 어려울 수 있는 적분값)를 계산할 필요 없이, 스코어 함수(로그 기울기)만으로 밀도 추정이 가능하다.

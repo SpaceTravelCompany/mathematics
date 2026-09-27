@@ -21,11 +21,11 @@ $\log L=2\log p+\log(1-p)$를 최대화해도 같은 답이다. 로그는 증가
 
 ## 직관적 설명
 
-**최대가능도추정(maximum likelihood estimation, MLE)**은 "지금 관측된 데이터가 나올 확률을 가장 높게 만드는 모수(parameter)를 찾는 방법"이다. 동전을 10번 던져 7번 앞면이 나왔다면, "이런 결과가 가장 자연스러운" 앞면 확률 $p$는 얼마일까? 직관적으로 $p=0.7$이 가장 합리적으로 보인다. MLE는 이 직관을 엄밀한 수학으로 만든 것이다.
+**최대가능도추정(maximum likelihood estimation, MLE)** 은 "지금 관측된 데이터가 나올 확률을 가장 높게 만드는 모수(parameter)를 찾는 방법"이다. 동전을 10번 던져 7번 앞면이 나왔다면, "이런 결과가 가장 자연스러운" 앞면 확률 $p$는 얼마일까? 직관적으로 $p=0.7$이 가장 합리적으로 보인다. MLE는 이 직관을 엄밀한 수학으로 만든 것이다.
 
 가능도(likelihood)는 관측값에서의 확률질량 또는 확률밀도 식을 **모수의 함수**로 읽은 것이다. 모수에 대한 확률분포 자체는 아니다. 확률은 모수가 고정되고 데이터가 변하는 관점 $P(\text{data}|\theta)$라면, 가능도는 데이터가 고정되고 모수가 변하는 관점 $L(\theta|\text{data})$이다. 즉 "데이터는 이미 주어졌고, 어떤 $\theta$가 이 데이터를 가장 잘 설명하는가"를 묻는다.
 
-**점추정(point estimation)**은 모수를 하나의 값으로 추정하는 것이고, **구간추정(interval estimation)**은 신뢰구간(confidence interval)으로 추정의 불확실성을 함께 제시한다. MLE는 점추정의 대표적인 방법이다.
+**점추정(point estimation)** 은 모수를 하나의 값으로 추정하는 것이고, **구간추정(interval estimation)** 은 신뢰구간(confidence interval)으로 추정의 불확실성을 함께 제시한다. MLE는 점추정의 대표적인 방법이다.
 
 ---
 ## 정의
@@ -139,7 +139,7 @@ $$\widehat{g(\theta)}_{\text{MLE}} = g(\hat{\theta}_{\text{MLE}})$$
 
 $$\sqrt{n}(\hat{\theta}_n - \theta_0) \xrightarrow{d} \mathcal{N}\left(0, \frac{1}{I(\theta_0)}\right)$$
 
-여기서 $\theta_0$는 참값(true parameter)이고, $I(\theta_0)$는 **피셔 정보량(Fisher information)**이다.
+여기서 $\theta_0$는 참값(true parameter)이고, $I(\theta_0)$는 **피셔 정보량(Fisher information)** 이다.
 
 $$I(\theta) = \mathbb{E}\left[\left(\frac{\partial}{\partial\theta} \ln f(X|\theta)\right)^2\right] = -\mathbb{E}\left[\frac{\partial^2}{\partial\theta^2} \ln f(X|\theta)\right]$$
 

@@ -21,7 +21,7 @@ slug: information-geometry
 
 ## 직관적 설명
 
-**정보기하(information geometry)**는 확률분포들의 공간을 기하학적으로 연구하는 학문이다. 확률분포 $p_\theta$를 하나의 점(point)으로, 모수 $\theta$의 변화를 그 공간 위의 곡선(curve)으로 본다. 이 공간은 **통계 다양체(statistical manifold)**라 불리며, 자연스러운 리만 계량(Riemannian metric)을 가진다.
+**정보기하(information geometry)** 는 확률분포들의 공간을 기하학적으로 연구하는 학문이다. 확률분포 $p_\theta$를 하나의 점(point)으로, 모수 $\theta$의 변화를 그 공간 위의 곡선(curve)으로 본다. 이 공간은 **통계 다양체(statistical manifold)** 라 불리며, 자연스러운 리만 계량(Riemannian metric)을 가진다.
 
 핵심 통찰: 모수 좌표의 유클리드 거리만으로는 분포의 구별 가능성을 일관되게 재기 어렵다. 평균을 1만큼 옮겨도 표준편차 1인 정규분포와 표준편차 100인 정규분포가 받는 영향은 다르다. 측정 단위를 바꾸면 같은 분포를 표현하는 모수의 숫자 차이도 달라진다. **KL 발산(Kullback-Leibler divergence)** $D_{KL}(p \| q)$는 확률분포 사이의 "정보적 거리"에 가깝다.
 
@@ -31,7 +31,7 @@ $$g_{ij}(\theta) = \mathbb{E}\left[\frac{\partial \log p}{\partial \theta_i} \cd
 KL 발산을 2차 테일러 전개하면 피셔 정보가 유도된다:
 $$D_{KL}(p_\theta \| p_{\theta+d\theta}) \approx \frac{1}{2} d\theta^T g(\theta) d\theta$$
 
-**자연 그래디언트(natural gradient)**는 이 리만 계량을 고려한 최적화 방향이다. 일반 그래디언트 $\nabla \mathcal{L}(\theta)$는 유클리드 계량에서의 상승 방향이며, 자연 그래디언트 $\tilde{\nabla}\mathcal L=g^{-1}\nabla\mathcal L$는 피셔 계량에서의 상승 방향이다. 최소화를 위한 **하강 방향은 각각 그 음수**다. 자연 그래디언트의 방향장은 매끄러운 가역 재매개변수화 아래 일관되게 변환된다. 이는 모수화에 따른 불필요한 차이를 줄이지만, 유한 보폭 알고리즘의 경로나 계산 효율이 항상 같거나 더 좋다는 보장은 아니다.
+**자연 그래디언트(natural gradient)** 는 이 리만 계량을 고려한 최적화 방향이다. 일반 그래디언트 $\nabla \mathcal{L}(\theta)$는 유클리드 계량에서의 상승 방향이며, 자연 그래디언트 $\tilde{\nabla}\mathcal L=g^{-1}\nabla\mathcal L$는 피셔 계량에서의 상승 방향이다. 최소화를 위한 **하강 방향은 각각 그 음수**다. 자연 그래디언트의 방향장은 매끄러운 가역 재매개변수화 아래 일관되게 변환된다. 이는 모수화에 따른 불필요한 차이를 줄이지만, 유한 보폭 알고리즘의 경로나 계산 효율이 항상 같거나 더 좋다는 보장은 아니다.
 
 ---
 ## 정의

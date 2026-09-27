@@ -21,18 +21,18 @@ A 주머니를 고를 확률이 $1/2$, B도 $1/2$이고 빨간 공 비율이 각
 
 ## 직관적 설명
 
-**확률(probability)**은 불확실성을 숫자로 측정하는 도구다. "내일 비가 올 확률 70%"라는 말은 10번 중 7번꼴로 비가 온다는 경험적 해석(빈도주의, frequentist)일 수도 있고, "비가 온다는 믿음의 강도가 0.7"이라는 주관적 해석(베이지안, Bayesian)일 수도 있다. 어느 쪽이든 확률은 0에서 1 사이의 숫자로 표현된다.
+**확률(probability)** 은 불확실성을 숫자로 측정하는 도구다. "내일 비가 올 확률 70%"라는 말은 10번 중 7번꼴로 비가 온다는 경험적 해석(빈도주의, frequentist)일 수도 있고, "비가 온다는 믿음의 강도가 0.7"이라는 주관적 해석(베이지안, Bayesian)일 수도 있다. 어느 쪽이든 확률은 0에서 1 사이의 숫자로 표현된다.
 
 **조건부확률(conditional probability)** $P(A|B)$는 "사건 $B$가 발생했다는 정보를 알게 되었을 때, 사건 $A$의 확률"이다. 이는 우리가 새로운 정보를 얻었을 때 믿음을 어떻게 갱신해야 하는지를 수량화한다.
 
-**베이즈 정리(Bayes' theorem)**는 이 조건부확률을 뒤집는 공식이다. $P(B|A)$(증거를 본 후 가설의 확률)를 $P(A|B)$(가설 하에서 증거가 관측될 확률)로 표현한다. 이는 의료 진단, 법정 증거 해석, 기계의 고장 진단 등 불확실한 상황에서 추론하는 모든 영역의 핵심이다.
+**베이즈 정리(Bayes' theorem)** 는 이 조건부확률을 뒤집는 공식이다. $P(B|A)$(증거를 본 후 가설의 확률)를 $P(A|B)$(가설 하에서 증거가 관측될 확률)로 표현한다. 이는 의료 진단, 법정 증거 해석, 기계의 고장 진단 등 불확실한 상황에서 추론하는 모든 영역의 핵심이다.
 
 ---
 ## 정의
 
 **확률 공간(probability space)** $(\Omega, \mathcal{F}, P)$는 다음 세 요소로 구성된다.
 - **표본공간(sample space)** $\Omega$: 가능한 모든 결과의 집합.
-- **사건(event)**들의 $\sigma$-대수 $\mathcal{F}$: $\Omega$의 부분집합들로, 확률을 할당할 대상.
+- **사건(event)** 들의 $\sigma$-대수 $\mathcal{F}$: $\Omega$의 부분집합들로, 확률을 할당할 대상.
 - **확률측도(probability measure)** $P: \mathcal{F} \to [0, 1]$: 다음 세 공리를 만족하는 함수.
 
 **콜모고로프 공리(Kolmogorov axioms):**
@@ -44,13 +44,13 @@ A 주머니를 고를 확률이 $1/2$, B도 $1/2$이고 빨간 공 비율이 각
 
 $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 
-**쌍대독립(pairwise independence) vs 상호독립(mutual independence):** 사건 $A_1, \ldots, A_n$이 **상호독립(mutually independent)**이라는 것은 임의의 부분집합 $I \subseteq \{1,\ldots,n\}$에 대해
+**쌍대독립(pairwise independence) vs 상호독립(mutual independence):** 사건 $A_1, \ldots, A_n$이 **상호독립(mutually independent)** 이라는 것은 임의의 부분집합 $I \subseteq \{1,\ldots,n\}$에 대해
 
 $$P\left(\bigcap_{i \in I} A_i\right) = \prod_{i \in I} P(A_i)$$
 
 이다. 쌍대독립은 $|I| = 2$인 경우만 만족하는 것으로, 상호독립보다 약한 조건이다.
 
-**독립(independence):** 두 사건 $A$와 $B$가 **독립(independent)**이라는 것은
+**독립(independence):** 두 사건 $A$와 $B$가 **독립(independent)** 이라는 것은
 
 $$P(A \cap B) = P(A)P(B)$$
 

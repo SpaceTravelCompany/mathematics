@@ -28,9 +28,9 @@ $f(x)=x+1$, $g(x)=2x$이면 $(g\circ f)(3)=g(4)=8$이다. 오른쪽 규칙부터
 
 **함수(function)** $f: A \to B$는 집합 $A$의 각 원소 $x$에 집합 $B$의 **유일한(unique)** 원소 $f(x)$를 대응시키는 규칙이다.
 
-- $A$를 **정의역(domain)**, $B$를 **공역(codomain)**이라 부른다.
-- $f(A) = \{f(x) \mid x \in A\} \subseteq B$를 **치역(range 또는 image)**이라 부른다.
-- $x$를 **독립변수(independent variable)**, $y = f(x)$를 **종속변수(dependent variable)**라 한다.
+- $A$를 **정의역(domain)**, $B$를 **공역(codomain)** 이라 부른다.
+- $f(A) = \{f(x) \mid x \in A\} \subseteq B$를 **치역(range 또는 image)** 이라 부른다.
+- $x$를 **독립변수(independent variable)**, $y = f(x)$를 **종속변수(dependent variable)** 라 한다.
 
 **단사(injection, one-to-one):** $\forall x_1, x_2 \in A,\; x_1 \neq x_2 \Rightarrow f(x_1) \neq f(x_2)$. 즉, 서로 다른 입력이 같은 출력을 내지 않는다. 동치 조건은 $f(x_1) = f(x_2) \Rightarrow x_1 = x_2$이다.
 

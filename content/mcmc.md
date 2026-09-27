@@ -21,13 +21,13 @@ slug: mcmc
 
 ## 직관적 설명
 
-**MCMC(Markov Chain Monte Carlo)**는 직접 샘플링하기 어려운 확률분포에서 표본을 추출하는 방법이다. 핵심 아이디어는 "목표 분포(target distribution)를 정상분포(stationary distribution)로 가지는 마르코프 체인을 설계하고, 체인이 수렴할 때까지 기다린 후 샘플을 수집한다"는 것이다.
+**MCMC(Markov Chain Monte Carlo)** 는 직접 샘플링하기 어려운 확률분포에서 표본을 추출하는 방법이다. 핵심 아이디어는 "목표 분포(target distribution)를 정상분포(stationary distribution)로 가지는 마르코프 체인을 설계하고, 체인이 수렴할 때까지 기다린 후 샘플을 수집한다"는 것이다.
 
-**마르코프 성질(Markov property)**은 "다음 상태는 오직 현재 상태에만 의존한다"는 조건이다. $P(X_{n+1} | X_n, X_{n-1}, \ldots) = P(X_{n+1} | X_n)$. 이 성질 덕분에 체인의 장기적 거동을 분석하기 쉬워진다.
+**마르코프 성질(Markov property)** 은 "다음 상태는 오직 현재 상태에만 의존한다"는 조건이다. $P(X_{n+1} | X_n, X_{n-1}, \ldots) = P(X_{n+1} | X_n)$. 이 성질 덕분에 체인의 장기적 거동을 분석하기 쉬워진다.
 
-**메트로폴리스-헤이스팅스(Metropolis-Hastings, MH)**는 가장 널리 쓰이는 MCMC 알고리즘이다. 제안 분포(proposal distribution) $q(x'|x)$에서 후보를 생성하고, 이를 수락할지 결정하는 방식으로 체인이 목표 분포를 탐색하게 한다.
+**메트로폴리스-헤이스팅스(Metropolis-Hastings, MH)** 는 가장 널리 쓰이는 MCMC 알고리즘이다. 제안 분포(proposal distribution) $q(x'|x)$에서 후보를 생성하고, 이를 수락할지 결정하는 방식으로 체인이 목표 분포를 탐색하게 한다.
 
-**깁스 샘플링(Gibbs sampling)**은 MH의 특수한 경우로, 조건부 분포에서 한 번에 한 변수씩 샘플링한다. 모든 조건부 분포에서 샘플링이 가능할 때 효과적이다.
+**깁스 샘플링(Gibbs sampling)** 은 MH의 특수한 경우로, 조건부 분포에서 한 번에 한 변수씩 샘플링한다. 모든 조건부 분포에서 샘플링이 가능할 때 효과적이다.
 
 ---
 ## 정의
@@ -75,7 +75,7 @@ $$\sum_x \pi(x) T(x \to x') = \sum_x \pi(x') T(x' \to x) = \pi(x') \sum_x T(x' \
 
 첫 번째 등식은 상세 균형, 두 번째는 $\pi(x')$가 합 기호 밖으로 나옴, 세 번째는 전이확률의 합이 1(stochastic matrix의 성질)임을 이용했다. 이는 정상분포의 정의 $\sum_x \pi(x) T(x \to x') = \pi(x')$와 정확히 일치한다. $\square$
 
-상세 균형은 정상분포의 **충분조건(sufficient condition)**이지 필요조건은 아니다. 즉 상세 균형을 만족하지 않아도 정상분포는 존재할 수 있지만, 많은 MCMC 알고리즘은 상세 균형을 설계 원칙으로 사용한다.
+상세 균형은 정상분포의 **충분조건(sufficient condition)** 이지 필요조건은 아니다. 즉 상세 균형을 만족하지 않아도 정상분포는 존재할 수 있지만, 많은 MCMC 알고리즘은 상세 균형을 설계 원칙으로 사용한다.
 
 ### 정리 2: MH 알고리즘이 상세 균형을 만족
 
@@ -105,7 +105,7 @@ $\square$
 
 $$\alpha(x, x') = \min\left(1, \frac{\pi(x')}{\pi(x)}\right)$$
 
-이 된다. 이를 **메트로폴리스 알고리즘(Metropolis algorithm)**이라 부른다.
+이 된다. 이를 **메트로폴리스 알고리즘(Metropolis algorithm)** 이라 부른다.
 
 ### 정리 3: 깁스 샘플링은 MH의 특수한 경우
 

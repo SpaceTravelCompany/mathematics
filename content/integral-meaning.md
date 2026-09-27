@@ -30,7 +30,7 @@ $f(x)=x$의 0부터 2까지 그래프 아래는 밑변 2, 높이 2인 삼각형�
 ---
 ## 정의
 
-**분할(partition):** 구간 $[a, b]$의 분할 $P = \{x_0, x_1, \ldots, x_n\}$은 $a = x_0 < x_1 < \cdots < x_n = b$를 만족하는 점들의 집합이다. $i$번째 하위구간의 길이는 $\Delta x_i = x_i - x_{i-1}$이다. 분할의 **세분(norm)** 은 $\|\Delta\| = \max_i \Delta x_i$이다.
+**분할(partition):** 구간 $[a, b]$의 분할 $P = \{x_0, x_1, \ldots, x_n\}$은 $a = x_0 < x_1 < \cdots < x_n = b$를 만족하는 점들의 집합이다. $i$번째 하위구간의 길이는 $\Delta x_i = x_i - x_{i-1}$이다. 분할의 **노름(norm, 최대 간격)** 은 $\|\Delta\| = \max_i \Delta x_i$이다.
 
 **리만 합(Riemann sum):** 분할 $P$와 각 하위구간에서 선택점(sample point) $c_i \in [x_{i-1}, x_i]$에 대해
 

@@ -52,7 +52,7 @@ $\{x\mid x\in A\text{이고 }x\in B\}$에서 세로줄은 ‘다음 조건을 �
 - $P \Rightarrow Q$: **함의(implication)** — "$P$이면 $Q$이다" — $P$가 참이고 $Q$가 거짓일 때만 거짓
 - $P \iff Q$: **동치(equivalence)** — "$P$와 $Q$가 필요충분조건" — $P$와 $Q$가 같은 진리값일 때 참
 
-> **참고:** $\oplus$ 기호는 벡터공간에서 직합(direct sum) 기호로도 쓰이므로 문맥에서 구별해야 한다. 집합론에서 **대칭 차집합(symmetric difference)** $A \triangle B = (A \setminus B) \cup (B \setminus A)$는 배타적 또는에 대응한다 ($x \in A \triangle B \iff x \in A \oplus x \in B$).
+> **참고:** $\oplus$ 기호는 벡터공간에서 직합(direct sum) 기호로도 쓰이므로 문맥에서 구별해야 한다. 집합론에서 **대칭 차집합(symmetric difference)** $A \triangle B = (A \setminus B) \cup (B \setminus A)$는 배타적 또는에 대응한다 ($x \in A \triangle B \iff (x \in A) \oplus (x \in B)$).
 
 **조건부(conditional) 용어:** $P \Rightarrow Q$에서 $P$는 **충분조건(sufficient condition)**, $Q$는 **필요조건(necessary condition)** 이라 부른다.
 

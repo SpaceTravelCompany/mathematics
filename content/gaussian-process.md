@@ -21,9 +21,9 @@ slug: gaussian-process
 
 ## 직관적 설명
 
-**가우시안 과정(Gaussian Process, GP)**은 "함수 위의 확률분포"다. 일반적인 확률분포가 벡터(유한 차원)에 대한 분포라면, GP는 함수(무한 차원)에 대한 분포다. 유한 개의 점에서 함수값을 관찰하면 그 값들은 **다변량 정규분포(multivariate normal distribution)**를 따른다.
+**가우시안 과정(Gaussian Process, GP)** 은 "함수 위의 확률분포"다. 일반적인 확률분포가 벡터(유한 차원)에 대한 분포라면, GP는 함수(무한 차원)에 대한 분포다. 유한 개의 점에서 함수값을 관찰하면 그 값들은 **다변량 정규분포(multivariate normal distribution)** 를 따른다.
 
-GP의 핵심 아이디어: 데이터 포인트 $x$와 $x'$이 가까울수록 $f(x)$와 $f(x')$도 비슷할 것이라는 **공분산 구조(covariance structure)**를 커널(kernel) 함수 $k(x,x')$로 인코딩한다. RBF 커널 $k(x,x') = \sigma^2 \exp(-\|x-x'\|^2/(2\ell^2))$은 이 직관을 가장 잘 구현한다: 두 점이 멀어질수록 공분산이 지수적으로 감소한다.
+GP의 핵심 아이디어: 데이터 포인트 $x$와 $x'$이 가까울수록 $f(x)$와 $f(x')$도 비슷할 것이라는 **공분산 구조(covariance structure)** 를 커널(kernel) 함수 $k(x,x')$로 인코딩한다. RBF 커널 $k(x,x') = \sigma^2 \exp(-\|x-x'\|^2/(2\ell^2))$은 이 직관을 가장 잘 구현한다: 두 점이 멀어질수록 공분산이 지수적으로 감소한다.
 
 GP 회귀(GP regression)의 강점은 **데이터가 적은 곳에서 불확실성(uncertainty)을 정량화**한다는 점이다. 관측은 보통 함수값에 대한 사후분산을 줄인다. RBF처럼 먼 거리에서 공분산이 줄어드는 커널에서는 관측에서 멀어질수록 사전 불확실성에 가까워진다. 그 정도는 커널·잡음·자료 배치에 달려 있다. 회귀분석에서도 확률모형을 두면 불확실성을 추정할 수 있다.
 
@@ -45,7 +45,7 @@ $$f \sim \mathcal{GP}(m(x), k(x,x'))$$
 
 **공분산함수 / 커널 (covariance function / kernel):** $k(x,x') = \mathbb{E}[(f(x)-m(x))(f(x')-m(x'))]$.
 
-커널은 **양반정치(positive semidefinite)**여야 한다: 임의의 $n$, $\{x_i\}$, $\{c_i\}$에 대해
+커널은 **양반정치(positive semidefinite)** 여야 한다: 임의의 $n$, $\{x_i\}$, $\{c_i\}$에 대해
 $$\sum_{i=1}^n \sum_{j=1}^n c_i c_j k(x_i, x_j) \geq 0$$
 
 **RBF 커널 (Radial Basis Function kernel, squared exponential):**

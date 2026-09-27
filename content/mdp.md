@@ -21,7 +21,7 @@ slug: mdp
 
 ## 직관적 설명
 
-**마르코프 결정과정(Markov Decision Process, MDP)**은 순차적 의사결정(sequential decision making) 문제를 수학적으로 형식화한 틀이다. 에이전트(agent)는 환경(environment)의 상태(state)를 관찰하고, 행동(action)을 선택하며, 그 결과로 보상(reward)을 받고 새로운 상태로 전이된다. 목표는 **누적 기대 보상의 합을 최대화하는 정책(policy)** 을 찾는 것이다.
+**마르코프 결정과정(Markov Decision Process, MDP)** 은 순차적 의사결정(sequential decision making) 문제를 수학적으로 형식화한 틀이다. 에이전트(agent)는 환경(environment)의 상태(state)를 관찰하고, 행동(action)을 선택하며, 그 결과로 보상(reward)을 받고 새로운 상태로 전이된다. 목표는 **누적 기대 보상의 합을 최대화하는 정책(policy)** 을 찾는 것이다.
 
 MDP의 핵심은 마르코프 성질(Markov property) — "미래는 오직 현재에만 의존한다" — 이다. 현재 상태 $s$와 행동 $a$가 주어지면, 다음 상태 $s'$로의 전이확률 $\Pr(s'|s,a)$은 과거의 모든 이력을 무시한다. 이 가정이 문제를 다루기 쉽게 만든다.
 

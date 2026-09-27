@@ -131,7 +131,7 @@ $$f(a+h) - f(a) = \nabla f(a)^T h + \epsilon(h)\|h\|, \quad \epsilon(h) \to 0 \t
 
 $$\lim_{h \to 0} \frac{|f(a+h) - f(a) - \nabla f(a)^T h|}{\|h\|} = 0$$
 
-이 성질은 국소적 선형 근사의 정확도를 정량화하며, 뉴턴법(Newton's method), 테일러 전개(Taylor expansion), 최적화 알고리즘의 수렴 분석에서 핵심적인 역할을 한다.
+이 성질은 국소 선형 근사의 오차가 $\|h\|$보다 훨씬 빠르게 0으로 사라짐을 뜻하며, 뉴턴법(Newton's method)·경사하강법 같은 수치 최적화 알고리즘의 수렴 증명과 테일러 전개(Taylor expansion)의 이론적 바탕이 된다.
 
 ### 정리 5: 미분가능성과 연속성 (Differentiability Implies Continuity)
 

@@ -23,7 +23,7 @@ $f(x,y)=x^2-y^2$는 헤시안의 대각선이 2와 -2다. 가로로는 증가하
 
 **2계 도함수(second derivative)** 는 "도함수의 도함수"로, 함수의 변화율 자체가 어떻게 변하는지를 측정한다. 1변수에서 $f''(a) > 0$은 함수가 $a$ 근처에서 아래로 볼록(convex, ∪ 모양)함을, $f''(a) < 0$은 위로 볼록(concave, ∩ 모양)함을 의미한다.
 
-다변수에서는 **헤시안 행렬(Hessian matrix)** $H$가 이 역할을 한다. $H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$는 함수의 2차 변화율을 모든 방향에 대해 기록한 곡률 행렬(curvature matrix)이다. 함수가 주변에서 두 번 연속 미분 가능하고 그 점의 그래디언트가 0일 때, 헤시안이 양정치(positive definite)이면 엄격한 극소, 음정치(negative definite)이면 엄격한 극대, 부정부호(indefinite)이면 안장점(saddle point)이다. 그래디언트가 0이라는 조건 없이 극값을 결론 내릴 수 없다.
+다변수에서는 2계 편도함수들을 모은 **헤시안 행렬(Hessian matrix)** $H$가 곡률을 나타낸다. $H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$는 함수의 2차 변화율을 모든 방향에 대해 기록한 곡률 행렬(curvature matrix)이다. 함수가 주변에서 두 번 연속 미분 가능하고 임계점($\nabla f = 0$)일 때, 헤시안이 양정치(positive definite)이면 엄격한 극소점, 음정치(negative definite)이면 엄격한 극대점, 부정부호(indefinite)이면 안장점(saddle point)으로 판정된다.
 
 1변수 함수 $f(x) = x^2$은 $f''(x) = 2 > 0$으로 항상 볼록하다. 2변수 함수 $f(x, y) = x^2 - y^2$는 $x$ 방향으로는 볼록하지만 $y$ 방향으로는 오목하며, 그 헤시안은 $\begin{pmatrix} 2 & 0 \\ 0 & -2 \end{pmatrix}$로 부정부호이다 — 이것이 안장점의 전형이다.
 

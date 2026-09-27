@@ -21,7 +21,7 @@ slug: trigonometric-functions
 
 ## 직관적 설명
 
-**삼각함수(trigonometric functions)** 는 각도를 입력하면 좌표를 출력하는 함수다. 단위원(unit circle) 위를 회전하는 점의 $x$좌표와 $y$좌표가 각각 코사인(cosine)과 사인(sine)이다. 이 관점은 삼각형의 비율이라는 기하학적 기원을 훨씬 넘어서, 주기적인 현상(periodic phenomena)을 기술하는 가장 강력한 언어로 확장된다. 파동(wave), 진동(oscillation), 회전(rotation), 그리고 원운동(circular motion)은 모두 삼각함수로 표현된다. 푸리에 해석(Fourier analysis)은 적절한 조건 아래 주기 신호를 삼각함수의 합으로 다루며, 이는 신호처리와 양자역학의 초석이다.
+**삼각함수(trigonometric functions)** 는 각도를 입력받아 평면 위의 좌표를 출력하는 함수다. 단위원(unit circle) 위를 회전하는 점의 $x$좌표가 코사인(cosine), $y$좌표가 사인(sine)이다. 이 관점은 삼각형의 변 길이 비율이라는 기하학적 출발점을 넘어 주기 현상(periodic phenomena)을 기술하는 보편적 도구로 확장된다. 파동(wave), 진동(oscillation), 회전(rotation) 같은 주기적 운동은 모두 삼각함수로 표현할 수 있다. 나아가 푸리에 해석(Fourier analysis)을 통해 적절한 조건을 만족하는 주기 신호는 기본 삼각함수들의 합으로 분해할 수 있으며, 이는 신호처리와 양자역학을 다루는 기본 바탕이 된다.
 
 ---
 ## 정의

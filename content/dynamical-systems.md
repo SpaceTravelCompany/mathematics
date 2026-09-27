@@ -21,7 +21,7 @@ $x'=-x$의 해는 $x(t)=x(0)e^{-t}$다. 처음 값이 조금 양수든 음수든
 
 ## 직관적 설명
 
-**동역학계(dynamical system)**는 시간에 따라 변하는 계(system)의 진화 법칙을 연구하는 학문이다. 자연 법칙의 대부분은 미분방정식으로 표현되며, 동역학계 이론은 "해를 구하는 것"을 넘어 "해가 장기적으로 어떻게 행동하는지"를 이해하는 데 초점을 맞춘다.
+**동역학계(dynamical system)** 는 시간에 따라 변하는 계(system)의 진화 법칙을 연구하는 학문이다. 자연 법칙의 대부분은 미분방정식으로 표현되며, 동역학계 이론은 "해를 구하는 것"을 넘어 "해가 장기적으로 어떻게 행동하는지"를 이해하는 데 초점을 맞춘다.
 
 핵심 질문들:
 - 계가 평형 상태(equilibrium)에 도달하는가?
@@ -29,9 +29,9 @@ $x'=-x$의 해는 $x(t)=x(0)e^{-t}$다. 처음 값이 조금 양수든 음수든
 - 계가 주기적으로 진동하는가?
 - 초기 조건의 아주 작은 차이가 장기적으로 엄청난 차이를 만드는가? (카오스, chaos)
 
-**위상 공간(phase space)**은 계의 모든 가능한 상태를 나타내는 공간이다. 예를 들어 단진자(simple pendulum)의 위상 공간은 각도 $\theta$와 각속도 $\dot{\theta}$로 구성된 2차원 평면이다. 각 점 $(\theta, \dot{\theta})$는 진자의 완전한 상태를 결정하며, 미분방정식은 이 공간 위의 흐름(flow)을 정의한다.
+**위상 공간(phase space)** 은 계의 모든 가능한 상태를 나타내는 공간이다. 예를 들어 단진자(simple pendulum)의 위상 공간은 각도 $\theta$와 각속도 $\dot{\theta}$로 구성된 2차원 평면이다. 각 점 $(\theta, \dot{\theta})$는 진자의 완전한 상태를 결정하며, 미분방정식은 이 공간 위의 흐름(flow)을 정의한다.
 
-**카오스 이론(chaos theory)**은 20세기 가장 중요한 발견 중 하나로, 결정론적(deterministic) 방정식이 예측 불가능한 행동을 만들어낼 수 있음을 보여준다. 이를 **나비 효과(butterfly effect)** — 초기 조건의 작은 차이가 장기적 예측을 불가능하게 만드는 현상 — 라고 부른다.
+**카오스 이론(chaos theory)** 은 20세기 가장 중요한 발견 중 하나로, 결정론적(deterministic) 방정식이 예측 불가능한 행동을 만들어낼 수 있음을 보여준다. 이를 **나비 효과(butterfly effect)** — 초기 조건의 작은 차이가 장기적 예측을 불가능하게 만드는 현상 — 라고 부른다.
 
 ---
 ## 정의
@@ -53,7 +53,7 @@ $$\dot{x} = f(x), \quad x \in \Omega \subseteq \mathbb{R}^n$$
 
 $$\dot{x} \approx Df(x^*)(x - x^*)$$
 
-여기서 $Df(x^*)$는 $f$의 야코비 행렬(Jacobian matrix) $J_{ij} = \partial f_i / \partial x_j$을 $x^*$에서 평가한 것이다.
+여기서 $Df(x^*)$는 $f$의 야코비안 행렬(Jacobian matrix) $J_{ij} = \partial f_i / \partial x_j$을 $x^*$에서 평가한 것이다.
 
 **한계 순환 (limit cycle):** 위상 공간에서 고립된 폐쇄 궤도(isolated closed trajectory). 근처의 모든 궤도가 이 주기적 궤도로 수렴하거나 발산한다.
 
@@ -94,9 +94,9 @@ $\lambda_i = a_i + ib_i$라 하면 $|e^{\lambda_i t}| = e^{a_i t}$이다.
 
 ### 정리 2: 하트만-그롭만 정리 (Hartman–Grobman Theorem)
 
-**서술:** $f: \mathbb{R}^n \to \mathbb{R}^n$이 $C^1$ 함수이고 $x^*$가 **쌍곡 고정점(hyperbolic fixed point)**이라고 하자. 즉, $Df(x^*)$의 모든 고유값이 실수부가 0이 아니다($\text{Re}(\lambda_i) \neq 0$ $\forall i$). 그러면 $x^*$의 충분히 작은 근방에서 비선형계 $\dot{x} = f(x)$는 선형화된 계 $\dot{x} = Df(x^*)(x - x^*)$와 **위상적으로 동등(topologically equivalent)**하다. 즉, 두 계 사이에 연속적인 좌표 변환(위상 동형사상, homeomorphism)이 존재하여 궤도의 구조가 보존된다.
+**서술:** $f: \mathbb{R}^n \to \mathbb{R}^n$이 $C^1$ 함수이고 $x^*$가 **쌍곡 고정점(hyperbolic fixed point)** 이라고 하자. 즉, $Df(x^*)$의 모든 고유값이 실수부가 0이 아니다($\text{Re}(\lambda_i) \neq 0$ $\forall i$). 그러면 $x^*$의 충분히 작은 근방에서 비선형계 $\dot{x} = f(x)$는 선형화된 계 $\dot{x} = Df(x^*)(x - x^*)$와 **위상적으로 동등(topologically equivalent)** 하다. 즉, 두 계 사이에 연속적인 좌표 변환(위상 동형사상, homeomorphism)이 존재하여 궤도의 구조가 보존된다.
 
-**의의:** 이 정리는 쌍곡 고정점 근처에서 비선형 효과가 위상적 구조를 바꾸지 않음을 보장한다. 따라서 선형화를 통해 안정성 판정을 내리는 것이 정당화된다. 단, 비쌍곡 고정점(non-hyperbolic, $\text{Re}(\lambda_i) = 0$인 고유값 존재)에서는 선형화만으로 충분하지 않으며, 중심 다양체(center manifold) 이론이 필요하다.
+**의의:** 이 정리는 쌍곡 고정점 근처에서 비선형 효과가 위상적 궤적 구조를 왜곡하지 않음을 보장한다. 따라서 국소 선형화로 안정성을 판정하는 엄밀한 수학적 근거가 된다. 다만 고유값 실수부가 0인 비쌍곡 고정점(non-hyperbolic)에서는 선형화만으로 부족하며 고계 비선형 항을 다루는 중심 다양체(center manifold) 이론이 필요하다.
 
 ### 정리 3: 리아푸노프 안정성 정리 (Lyapunov's Stability Theorem)
 
@@ -119,7 +119,7 @@ $\lambda_i = a_i + ib_i$라 하면 $|e^{\lambda_i t}| = e^{a_i t}$이다.
 
 ### 정리 4: 카오스의 정의적 특성 (Defining Properties of Chaos)
 
-**서술 (Devaney의 정의):** 컴팩트 집합 $\Omega$ 위에서 연속 사상 $f: \Omega \to \Omega$가 다음 세 조건을 만족하면 **카오스(chaotic)**라 한다:
+**서술 (Devaney의 정의):** 컴팩트 집합 $\Omega$ 위에서 연속 사상 $f: \Omega \to \Omega$가 다음 세 조건을 만족하면 **카오스(chaotic)** 라 한다:
 
 1. **초기 조건에 대한 민감 의존성 (sensitive dependence on initial conditions):** $\delta > 0$이 존재하여, 임의의 $x \in \Omega$와 임의의 $\epsilon > 0$에 대해 $|x - y| < \epsilon$이고 $\limsup_{n\to\infty} |f^n(x) - f^n(y)| \geq \delta$인 $y \in \Omega$가 존재한다. 즉, 아무리 가까운 두 점도 시간이 지나면 일정 거리 이상 벌어진다.
 
@@ -135,7 +135,7 @@ $$\begin{aligned}
 \dot{z} &= xy - \beta z
 \end{aligned}$$
 
-$\sigma = 10$, $\beta = 8/3$, $\rho = 28$에서 유명한 **로렌츠 어트랙터(Lorenz attractor)**가 나타난다. 이 계는 결정론적이지만 예측 불가능한 카오스 행동을 보이며, **나비 효과**라는 이름으로 유명해졌다.
+$\sigma = 10$, $\beta = 8/3$, $\rho = 28$에서 유명한 **로렌츠 어트랙터(Lorenz attractor)** 가 나타난다. 이 계는 결정론적이지만 예측 불가능한 카오스 행동을 보이며, **나비 효과**라는 이름으로 유명해졌다.
 
 **의의:** 카오스는 무작위성(randomness)이 아니라 결정론적 규칙에서 발생하는 복잡성이다. 카오스계는 단기적으로는 예측 가능하지만(기상 예보가 며칠까지는 유효), 장기적 예측은 초기 조건의 미세한 차이로 인해 불가능하다.
 
@@ -161,7 +161,7 @@ $$\begin{pmatrix} \dot{x}_1 \\ \dot{x}_2 \end{pmatrix} = \begin{pmatrix} x_2 \\ 
 
 고정점: $x_2 = 0$, $\sin x_1 = 0$ → $x_1 = n\pi$ ($n \in \mathbb{Z}$). ($x_1, x_2) = (0, 0), (\pi, 0), (-\pi, 0), \ldots$
 
-야코비 행렬:
+야코비안 행렬:
 
 $$Df = \begin{pmatrix} 0 & 1 \\ -\cos x_1 & -b \end{pmatrix}$$
 
@@ -177,7 +177,7 @@ $\lambda = \frac{-b \pm \sqrt{b^2 - 4}}{2}$. $b > 0$이므로 모든 $b$에 대�
 
 **예제 3 (로렌츠 계의 기본 특성):** 로렌츠 계에서 $\rho < 1$일 때 원점의 안정성을 분석하라.
 
-**풀이:** $\dot{x} = \sigma(y-x)$, $\dot{y} = x(\rho - z) - y$, $\dot{z} = xy - \beta z$에서 원점 $(0, 0, 0)$에서의 야코비 행렬:
+**풀이:** $\dot{x} = \sigma(y-x)$, $\dot{y} = x(\rho - z) - y$, $\dot{z} = xy - \beta z$에서 원점 $(0, 0, 0)$에서의 야코비안 행렬:
 
 $$Df(0) = \begin{pmatrix} -\sigma & \sigma & 0 \\ \rho & -1 & 0 \\ 0 & 0 & -\beta \end{pmatrix}$$
 
@@ -207,10 +207,10 @@ $\dot{V}$는 반정치 음수(음정치는 아니다 — $x = 0, y = 0$에서만
 **풀이:** $f(x) = r + x^2$. 고정점은 $r + x^2 = 0$에서 $x^* = \pm\sqrt{-r}$.
 
 - $r > 0$: 실수 고정점 없음. $f(x) > 0$이므로 모든 $x$가 증가.
-- $r = 0$: $x^* = 0$ (중근). $f'(0) = 0$ — 비쌍곡 고정점. $f(x) = x^2 \geq 0$이므로 $x > 0$에서는 증가, $x < 0$에서는 감소(하지만 느리게). 이 지점이 **분기점(bifurcation point)**이다.
+- $r = 0$: $x^* = 0$ (중근). $f'(0) = 0$ — 비쌍곡 고정점. $f(x) = x^2 \geq 0$이므로 $x > 0$에서는 증가, $x < 0$에서는 감소(하지만 느리게). 이 지점이 **분기점(bifurcation point)** 이다.
 - $r < 0$: 두 고정점 $x^* = \pm\sqrt{-r}$. $f'(x) = 2x$에서 $f'(\sqrt{-r}) = 2\sqrt{-r} > 0$ (불안정), $f'(-\sqrt{-r}) = -2\sqrt{-r} < 0$ (안정).
 
-$r$이 양수에서 음수로 감소하면 고정점이 없는 상태에서 갑자기 안정-불안정 고정점 쌍이 나타난다. 이를 **안장-매듭 분기(saddle-node bifurcation)**라 한다. 이는 가장 기본적인 분기 형태로, 레이저 물리, 신경과학, 생태학 등에서 관찰된다.
+$r$이 양수에서 음수로 감소하면 고정점이 없는 상태에서 갑자기 안정-불안정 고정점 쌍이 나타난다. 이를 **안장-매듭 분기(saddle-node bifurcation)** 라 한다. 이는 가장 기본적인 분기 형태로, 레이저 물리, 신경과학, 생태학 등에서 관찰된다.
 
 **예제 6 (호프 분기, Hopf bifurcation):** 2차원계 $\dot{r} = r(\mu - r^2)$, $\dot{\theta} = 1$ (극좌표)의 동역학을 분석하라.
 
@@ -220,7 +220,7 @@ $r$이 양수에서 음수로 감소하면 고정점이 없는 상태에서 갑�
 - $\mu = 0$: 분기점. $r = 0$ 근처에서 $\dot{r} = -r^3$ — 느린 감쇠.
 - $\mu > 0$: $r = 0$은 불안정해지고($\dot{r} \approx \mu r$), $r^* = \sqrt{\mu}$의 안정 한계 순환(stable limit cycle)이 출현한다.
 
-이는 **초임계 호프 분기(supercritical Hopf bifurcation)**의 전형적 예다. 한계 순환의 반지름은 $\sqrt{\mu}$로, 분기 직후 $\sqrt{\mu}\propto\sqrt{\mu}$로 연속적으로 성장한다(2차 분기). 유체역학의 푸앵카레-레일리의 베나드 대류(Bénard convection), 뉴런의 호지킨-헉슬리 모형에서 진동의 출현을 설명한다.
+이는 **초임계 호프 분기(supercritical Hopf bifurcation)** 의 전형적 예다. 한계 순환의 반지름은 $\sqrt{\mu}$로, 분기 직후 $\sqrt{\mu}\propto\sqrt{\mu}$로 연속적으로 성장한다(2차 분기). 유체역학의 푸앵카레-레일리의 베나드 대류(Bénard convection), 뉴런의 호지킨-헉슬리 모형에서 진동의 출현을 설명한다.
 
 ---
 ## 연결

@@ -53,7 +53,7 @@ $$\det\begin{pmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_
 
 $$\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} \det(A_{ij})$$
 
-여기서 $A_{ij}$는 $A$에서 $i$번째 행과 $j$번째 열을 제거한 $(n-1) \times (n-1)$ **소행렬(minor)** 이고, $C_{ij} = (-1)^{i+j} \det(A_{ij})$를 **여인수(cofactor)**라 한다.
+여기서 $A_{ij}$는 $A$에서 $i$번째 행과 $j$번째 열을 제거한 $(n-1) \times (n-1)$ **소행렬(minor)** 이고, $C_{ij} = (-1)^{i+j} \det(A_{ij})$를 **여인수(cofactor)** 라 한다.
 
 ---
 ## 주요 정리와 증명
@@ -155,7 +155,7 @@ $$= 2(3\cdot2 - 1\cdot1) - 1(1\cdot2 - 0\cdot1) = 2(6-1) - 1(2-0) = 10 - 2 = 8$$
 - **[rank·열공간·널공간](rank-nullspace.html)** : $\det A \neq 0$일 때 $\text{rank}(A) = n$ (full rank)이다.
 - **[행렬곱과 선형변환](matrix-multiplication.html)** : 행렬식은 선형변환의 부피 확대율로, $\det(AB) = \det A \det B$는 합성변환의 부피 변화율이 각각의 곱임을 의미한다.
 - **[고유값·고유벡터](eigenvalues.html)** : $\det(A - \lambda I) = 0$이 특성방정식이며, 행렬식은 모든 고유값의 곱과 같다.
-- **[야코비안·헤시안](jacobian-hessian.html)** : 다변수 적분에서 변수 변환 시 야코비 행렬식이 부피 변화율을 결정한다.
+- **[야코비안·헤시안](jacobian-hessian.html)** : 다변수 적분에서 변수 변환 시 야코비안 행렬식이 부피 변화율을 결정한다.
 
 ---
 

@@ -21,9 +21,9 @@ $x^TAx$는 행렬을 사이에 넣은 내적이며 결과는 숫자다. 새 좌�
 
 ## 직관적 설명
 
-**대칭행렬(symmetric matrix)**은 전치해도 자기 자신과 같은 행렬 $A = A^T$이다. 대칭행렬은 놀라운 성질을 가진다: 모든 고유값이 실수이고, 서로 다른 고유값에 대응하는 고유벡터들이 서로 직교하며, 항상 **직교 대각화(orthogonal diagonalization)**가 가능하다. 이 결과를 **스펙트럼 정리(spectral theorem)**라고 부른다.
+**대칭행렬(symmetric matrix)** 은 전치해도 자기 자신과 같은 행렬 $A = A^T$이다. 대칭행렬은 좋은 성질을 가진다: 모든 고유값이 실수이고, 서로 다른 고유값에 대응하는 고유벡터들이 서로 직교하며, 항상 **직교 대각화(orthogonal diagonalization)** 가 가능하다. 이 결과를 **스펙트럼 정리(spectral theorem)** 라고 부른다.
 
-**이차형식(quadratic form)** $Q(x) = x^T A x$는 대칭행렬 $A$가 정의하는 2차 함수다. $x^T A x$의 값의 부호와 분포는 $A$의 고유값에 의해 완전히 결정된다. 양정치(positive definite) 행렬의 이차형식은 타원체(ellipsoid)를, 부정부정(indefinite) 행렬은 쌍곡면(hyperboloid)을 정의한다.
+**이차형식(quadratic form)** $Q(x) = x^T A x$는 대칭행렬 $A$가 정의하는 2차 함수다. $x^T A x$의 값의 부호와 분포는 $A$의 고유값에 의해 완전히 결정된다. 양정치(positive definite) 행렬의 이차형식은 타원체(ellipsoid)를, 부정부호(indefinite) 행렬은 쌍곡면(hyperboloid)을 정의한다.
 
 스펙트럼 정리는 양자역학에서 관측 가능량(observable)이 에르미트 연산자(Hermitian operator)로 표현되는 이유의 수학적 기초다. 또한 주성분 분석(PCA), 이차 최적화(quadratic programming), 그래프 이론의 라플라시안 등 수많은 응용의 핵심에 자리잡고 있다.
 
@@ -51,7 +51,7 @@ $$R(x) = \frac{x^T A x}{x^T x}$$
 - **양정치 (positive definite):** $x \neq 0 \Rightarrow x^T A x > 0$ (모든 고유값 > 0)
 - **양반정치 (positive semidefinite):** $x \neq 0 \Rightarrow x^T A x \geq 0$ (모든 고유값 $\geq$ 0)
 - **음정치 (negative definite):** $x \neq 0 \Rightarrow x^T A x < 0$ (모든 고유값 < 0)
-- **부정부정 (indefinite):** 양수와 음수 값을 모두 가짐 (고유값에 양수와 음수 섞임)
+- **부정부호 (indefinite):** 양수와 음수 값을 모두 가짐 (고유값에 양수와 음수 섞임)
 
 ---
 ## 주요 정리와 증명
@@ -112,11 +112,11 @@ $Q$는 직교행렬들의 곱이므로 직교행렬이다. 따라서 $A = Q \Lam
 
 **따름정리 (스펙트럼 분해):**
 $$A = \sum_{i=1}^n \lambda_i q_i q_i^T$$
-여기서 $q_i$는 정규직교 고유벡터들이다. 이 표현을 $A$의 **스펙트럼 분해(spectral decomposition)**라 한다.
+여기서 $q_i$는 정규직교 고유벡터들이다. 이 표현을 $A$의 **스펙트럼 분해(spectral decomposition)** 라 한다.
 
 ### 정리 4: 이차형식의 주축 정리 (Principal Axis Theorem)
 
-대칭행렬 $A$에 대해 이차형식 $x^T A x$는 직교변수변환 $x = Qy$ ($Q$ 직교)를 통해 표준형으로 변환된다:
+대칭행렬 $A$의 이차형식 $x^T A x$는 직교 좌표변환 $x = Qy$ ($Q$ 직교)를 적용하면 교차항이 없는 표준형으로 정리된다:
 $$x^T A x = y^T \Lambda y = \sum_{i=1}^n \lambda_i y_i^2$$
 
 **증명:** 스펙트럼 정리에 의해 $A = Q \Lambda Q^T$ ($Q$ 직교)이므로
@@ -193,7 +193,7 @@ $\lambda_2 = -1$: $(A+I)v = \begin{pmatrix} 2 & 2 \\ 2 & 2 \end{pmatrix}v = 0$ �
 
 표준형: $Q = 3u^2 - v^2$.
 
-**해석:** $\lambda_1 > 0$, $\lambda_2 < 0$이므로 이 이차형식은 부정부정(indefinite)이다. $Q = 1$은 쌍곡선을, $Q = 0$은 두 직선 $3u^2 = v^2$ 즉 $v = \pm \sqrt{3}u$를 나타낸다.
+**해석:** $\lambda_1 > 0$, $\lambda_2 < 0$이므로 이 이차형식은 부정부호(indefinite)이다. $Q = 1$은 쌍곡선을, $Q = 0$은 두 직선 $3u^2 = v^2$ 즉 $v = \pm \sqrt{3}u$를 나타낸다.
 
 **예제 4:** $\mathbb{R}^3$에서 $x^T A x = 9$가 정의하는 곡면을 분류하라. 여기서 $A = \text{diag}(4, 1, -9)$.
 

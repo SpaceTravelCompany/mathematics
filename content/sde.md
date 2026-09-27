@@ -25,7 +25,7 @@ $X=W_t$에 $f(X)=X^2$를 적용하면 이토 공식은 $d(X^2)=2X\,dW_t+dt$를 �
 
 ## 직관적 설명
 
-**확률미분방정식(stochastic differential equation, SDE)**은 상미분방정식(ODE)에 무작위적인 잡음(random noise)을 추가한 것이다. 현실의 시스템은 항상 외부적 교란, 측정 오차, 또는 근본적인 확률성에 노출되어 있다. SDE는 이러한 현상을 수학적으로 포착한다.
+**확률미분방정식(stochastic differential equation, SDE)** 은 상미분방정식(ODE)에 무작위적인 잡음(random noise)을 추가한 것이다. 현실의 시스템은 항상 외부적 교란, 측정 오차, 또는 근본적인 확률성에 노출되어 있다. SDE는 이러한 현상을 수학적으로 포착한다.
 
 ODE가 $dx/dt = f(x, t)$라면, SDE는 미분 형식(differential form)으로
 
@@ -33,7 +33,7 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 
 와 같이 쓴다. 여기서 $dt$ 항은 **드리프트(drift)** — 결정론적 추세 — 를 나타내고, $dW_t$ 항은 **확산(diffusion)** — 무작위적 변동 — 을 나타낸다. $W_t$는 **브라운 운동(Brownian motion)** 또는 **위너 과정(Wiener process)** 으로, 연속적인 불규칙 보행(continuous random walk)이다.
 
-핵심 통찰: SDE에서 $dW_t$는 $dt$의 제곱근 크기($\sqrt{dt}$)로 움직인다. 이 증분들의 제곱을 누적한 극한이 시간 길이가 된다는 사실을 $(dW_t)^2=dt$로 압축해 쓴다. 개별 증분의 등식이 아니라 이차 변분의 계산 규칙이며, 이것이 이토 미적분이 일반 미적분과 다른 이유다. 연쇄법칙(chain rule)에 $f''$ 항이 추가로 등장하는 **이토 보조법(Itô's lemma)**이 그 결과다.
+핵심 통찰: SDE에서 $dW_t$는 $dt$의 제곱근 크기($\sqrt{dt}$)로 움직인다. 이 증분들의 제곱을 누적한 극한이 시간 길이가 된다는 사실을 $(dW_t)^2=dt$로 압축해 쓴다. 개별 증분의 등식이 아니라 이차 변분의 계산 규칙이며, 이것이 이토 미적분이 일반 미적분과 다른 이유다. 연쇄법칙(chain rule)에 $f''$ 항이 추가로 등장하는 **이토 보조법(Itô's lemma)** 이 그 결과다.
 
 ---
 ## 정의
@@ -59,7 +59,7 @@ $$dX_t = f(X_t, t)\,dt + g(X_t, t)\,dW_t$$
 
 $$X_t = X_0 + \int_0^t f(X_s, s)\,ds + \int_0^t g(X_s, s)\,dW_s$$
 
-첫 번째 적분은 시간에 대한 보통의 적분(연속적인 피적분함수에서는 리만 적분), 두 번째는 **이토 적분(Itô integral)**이다.
+첫 번째 적분은 시간에 대한 보통의 적분(연속적인 피적분함수에서는 리만 적분), 두 번째는 **이토 적분(Itô integral)** 이다.
 
 **이토 적분 (Itô integral):** 피적분 과정이 예측가능하고 $\mathbb E[\int_0^T\phi^2ds]<\infty$이면, 과거 정보만 쓰는 계단과정으로 근사한 적분의 $L^2$ 극한으로 정의한다. 예측가능성은 대략 각 구간의 잡음이 생기기 전에 적분 계수가 정해지는 조건이다. 연속인 적응 과정 등에서는 다음 왼쪽 끝점 합으로 나타낼 수 있다.
 
@@ -144,7 +144,7 @@ $$S_t = S_0 \exp\left( \left(\mu - \frac{\sigma^2}{2}\right) t + \sigma W_t \rig
 
 $\square$
 
-**관찰:** $\mathbb{E}[S_t] = S_0 e^{\mu t}$이다. 즉, 기하 브라운 운동의 기댓값은 결정론적 성장률 $\mu$를 따르지만, **중앙값(median)**은 $S_0 e^{(\mu - \sigma^2/2)t}$이다. 로그정규분포의 비대칭성(skewness) 때문이다. 이 모델은 블랙-숄즈(Black-Scholes) 옵션 가격 모형의 기초가 된다.
+**관찰:** $\mathbb{E}[S_t] = S_0 e^{\mu t}$이다. 즉, 기하 브라운 운동의 기댓값은 결정론적 성장률 $\mu$를 따르지만, **중앙값(median)** 은 $S_0 e^{(\mu - \sigma^2/2)t}$이다. 로그정규분포의 비대칭성(skewness) 때문이다. 이 모델은 블랙-숄즈(Black-Scholes) 옵션 가격 모형의 기초가 된다.
 
 ### 정리 4: 오른슈타인-울렌벡 과정 (Ornstein-Uhlenbeck Process)
 
@@ -191,7 +191,7 @@ $$\ln S_t - \ln S_0 = \left( \mu - \frac{\sigma^2}{2} \right) t + \sigma W_t$$
 
 $W_t \sim \mathcal{N}(0, t)$이므로 $\ln S_t \sim \mathcal{N}(\ln S_0 + (\mu - \sigma^2/2)t, \sigma^2 t)$.
 
-$S_t$는 **로그정규분포(lognormal distribution)**를 따른다:
+$S_t$는 **로그정규분포(lognormal distribution)** 를 따른다:
 
 $$f_{S_t}(s) = \frac{1}{s\sigma\sqrt{2\pi t}} \exp\left( -\frac{(\ln s - \ln S_0 - (\mu - \sigma^2/2)t)^2}{2\sigma^2 t} \right), \quad s > 0$$
 
@@ -260,8 +260,7 @@ $$\mathbb{E}\left[ \left( \int_0^t s\,dW_s \right)^2 \right] = \mathbb{E}\left[ 
 ---
 ## 연결
 
-- **[상미분방정식 기초](ode-basics.html)** : SDE는 ODE에 확산항 $g\,dW$를 추가한 확장이다.
-드리프트 $f$는 ODE의 우변과 동일한 역할을 한다.
+- **[상미분방정식 기초](ode-basics.html)** : SDE는 상미분방정식(ODE)에 확률적 변동을 뜻하는 확산항 $g\,dW$를 더한 확장이다. 결정론적 변화를 이끄는 드리프트 계수 $f$는 상미분방정식의 우변에 대응한다.
 - **[마르코프 체인](markov-chains.html)** : SDE의 해 $X_t$는 마르코프 성질을 만족한다 — 미래의 분포는 오직 현재 $X_t$에만 의존한다. 연속 시간·연속 공간의 마르코프 과정으로 볼 수 있다.
 - **[몬테카를로](monte-carlo.html)** : SDE의 해는 해석적으로 구할 수 없는 경우가 많다. 몬테카를로 시뮬레이션(오일러-마루야마 이산화)으로 수치적 근사를 구한다.
 

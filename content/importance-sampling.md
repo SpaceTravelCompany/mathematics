@@ -21,13 +21,13 @@ slug: importance-sampling
 
 ## 직관적 설명
 
-**중요도 샘플링(importance sampling)**은 "구하기 힘든 분포의 기댓값을, 구하기 쉬운 분포로 우회하여 계산하는 방법"이다. 우리가 관심 있는 분포 $p$에서 직접 샘플링하기 어려울 때, 샘플링이 쉬운 분포 $q$에서 샘플을 추출하고 가중치 $w(x) = p(x)/q(x)$를 곱해 보정한다:
+**중요도 샘플링(importance sampling)** 은 "구하기 힘든 분포의 기댓값을, 구하기 쉬운 분포로 우회하여 계산하는 방법"이다. 우리가 관심 있는 분포 $p$에서 직접 샘플링하기 어려울 때, 샘플링이 쉬운 분포 $q$에서 샘플을 추출하고 가중치 $w(x) = p(x)/q(x)$를 곱해 보정한다:
 
 $$\mathbb{E}_p[f(X)] = \mathbb{E}_q\left[f(X)\frac{p(X)}{q(X)}\right]$$
 
 이 아이디어는 몬테카를로 방법에서 매우 중요하다. 특히 희귀 사건(rare event) 추정, 베이즈 통계에서 사후분포(posterior)의 기댓값 계산, 강화학습에서 off-policy 평가 등에 사용된다.
 
-**재파라미터 트릭(reparameterization trick)**은 미분 가능한 샘플링을 가능하게 하는 기술이다. 확률변수 $x \sim p_\theta(x)$에서 샘플링하는 대신, $x = g_\theta(\epsilon)$, $\epsilon \sim p(\epsilon)$으로 표현한다. 이렇게 하면 $\theta$에 대한 기댓값의 그래디언트를 샘플 내부로 전파할 수 있다:
+**재파라미터 트릭(reparameterization trick)** 은 미분 가능한 샘플링을 가능하게 하는 기술이다. 확률변수 $x \sim p_\theta(x)$에서 샘플링하는 대신, $x = g_\theta(\epsilon)$, $\epsilon \sim p(\epsilon)$으로 표현한다. 이렇게 하면 $\theta$에 대한 기댓값의 그래디언트를 샘플 내부로 전파할 수 있다:
 
 $$\nabla_\theta \mathbb{E}_{p_\theta}[f(x)] = \mathbb{E}_{p(\epsilon)}[\nabla_\theta f(g_\theta(\epsilon))]$$
 
@@ -39,7 +39,7 @@ $$\nabla_\theta \mathbb{E}_{p_\theta}[f(x)] = \mathbb{E}_{p(\epsilon)}[\nabla_\t
 **중요도 샘플링 추정량 (importance sampling estimator):** $X_i \stackrel{\text{iid}}{\sim} q$일 때
 $$\hat{I}_{\text{IS}} = \frac{1}{N} \sum_{i=1}^N f(X_i) w(X_i), \quad w(x) = \frac{p(x)}{q(x)}$$
 
-여기서 $w(x)$를 **중요도 가중치(importance weight)**라 한다.
+여기서 $w(x)$를 **중요도 가중치(importance weight)** 라 한다.
 
 **지지 조건 (support condition):** $q(x) > 0$ whenever $p(x) > 0$, 즉 $p \ll q$ ($p$는 $q$에 절대연속).
 
@@ -188,7 +188,7 @@ $$q(x) = \frac{e^x}{e-1}, \quad w(x) = \frac{1}{e^x/(e-1)} = \frac{e-1}{e^x}$$
 
 $$\hat{I}_{\text{IS}} = \frac{e-1}{N}\sum_{i=1}^N 1 = e-1 \quad \text{(분산 0!)}$$
 
-최적 제안 $q^* \propto f(x)p(x) = e^x \cdot 1 = e^x$를 사용했으므로 분산이 0이 된다. 물론 이 예제는 $I$를 이미 알아야 $q$를 구성할 수 있어 현실적이지 않지만, 최적 제안의 원리를 극명하게 보여준다.
+최적 제안 $q^* \propto f(x)p(x) = e^x \cdot 1 = e^x$를 사용했으므로 분산이 0이 된다. 물론 이 예제는 구하려는 적분값 $I$를 미리 알아야 $q$를 구성할 수 있으므로 실전 계산용은 아니지만, 최적 제안 분포를 목표 피적분 함수에 맞출 때 분산이 어떻게 최소화되는지를 잘 보여준다.
 
 **예제 6 (재파라미터 트릭의 실제 사용):** 변분 오토인코더(variational autoencoder)에서 재파라미터 트릭이 어떻게 사용되는지 개념적으로 설명한다. $z \sim q_\phi(z|x) = \mathcal{N}(\mu_\phi(x), \sigma_\phi^2(x))$일 때,
 $$z = \mu_\phi(x) + \sigma_\phi(x) \odot \epsilon, \quad \epsilon \sim \mathcal{N}(0, I)$$

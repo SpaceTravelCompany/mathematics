@@ -21,7 +21,7 @@ $F=(-y/2,x/2)$는 2차원 회전이 1이다. 단위원 내부에 대해 회전�
 
 ## 직관적 설명
 
-**그린 정리(Green's theorem), 스토크스 정리(Stokes' theorem), 가우스 발산 정리(Gauss divergence theorem)** 는 벡터 미적분의 세 거대한 정리들이다. 이들은 모두 하나의 통일된 원리를 표현한다: **"경계(boundary)에서의 적분 = 내부(interior)에서의 미분의 적분"**.
+**그린 정리(Green's theorem), 스토크스 정리(Stokes' theorem), 가우스 발산 정리(Gauss divergence theorem)** 는 벡터 미적분을 대표하는 세 정리다. 이들은 모두 하나의 통일된 원리를 표현한다: **"경계(boundary)에서의 적분 = 내부(interior)에서의 미분의 적분"**.
 
 - **그린 정리:** 평면 영역 $D$의 경계 곡선 $\partial D$에서의 선적분 = $D$ 내부에서의 회전(2차원)의 2중적분.
 - **스토크스 정리:** 곡면 $S$의 경계 곡선 $\partial S$에서의 선적분 = $S$ 위에서의 회전(3차원)의 면적분.
