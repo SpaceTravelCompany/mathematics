@@ -3,16 +3,8 @@
   "brandMark": "∑",
   "storagePrefix": "math-roadmap",
   "theme": {
-    "light": {
-      "brand": "#1e3a8a",
-      "accent": "#1e3a8a",
-      "link": "#1d4ed8"
-    },
-    "dark": {
-      "brand": "#93b4f8",
-      "accent": "#93b4f8",
-      "link": "#7dd3fc"
-    }
+    "accent": "#9DB4FF",
+    "link": "#1d4ed8"
   },
   "references": [
     {

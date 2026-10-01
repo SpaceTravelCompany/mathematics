@@ -25,7 +25,7 @@ npm install         # topic-pages 의존성 설치
 npm run build       # dist/ 정적 HTML 생성
 ```
 
-`dist/index.html` + `dist/assets/` 번들로 동작하는 위키 페이지 앱이다.
+`dist/index.html`(랜딩) + `dist/topics/<slug>.html`(주제별) + `dist/assets/`로 구성된 정적 멀티페이지 사이트다. 라이트 모드 전용이며, 글자 크기는 브라우저 확대(`Ctrl` + 휠)로 조절한다. 각 주제 페이지 맨 아래의 이전/다음 카드는 `site.json`의 주제 순서를 따른다.
 
 `assets/`의 이미지·파비콘 등 추가 에셋도 빌드 시 자동으로 `dist/assets/`에 복사된다.
 
@@ -34,7 +34,7 @@ npm run build       # dist/ 정적 HTML 생성
 
 ## 구조
 
-- `site.json` — 섹션·주제·참조 링크·테마 정의
+- `site.json` — 섹션·주제·참조 링크·테마(`theme.accent` 액센트 색) 정의
 - `content/` — 주제별 마크다운 (기초 입문 2개를 포함한 75개 토픽)
 - `assets/` — 파비콘 (빌드 시 `dist/assets/`로 복사)
 - `package.json` — `topic-pages` 의존성 + 빌드 스크립트
